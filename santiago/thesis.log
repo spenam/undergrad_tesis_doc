@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 MAR 2020 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 MAR 2020 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,10 +754,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 13703 strings out of 492649
- 209091 string characters out of 6129622
- 399088 words of memory out of 5000000
- 17149 multiletter control sequences out of 15000+600000
+ 13707 strings out of 492649
+ 209204 string characters out of 6129622
+ 399103 words of memory out of 5000000
+ 17152 multiletter control sequences out of 15000+600000
  14298 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,5n,92p,1992b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -771,10 +771,10 @@ usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (42 pages, 840067 bytes).
+Output written on thesis.pdf (42 pages, 841030 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  16168 words of extra memory for PDF output out of 17280 (max. 10000000)
 
