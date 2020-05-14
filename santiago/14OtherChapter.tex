@@ -5,9 +5,9 @@
 
 \chapter{Double well and finite heat bath}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, justo nec malesuada adipiscing, sem sem accumsan odio, vel convallis orci ligula elementum ipsum. Nunc sodales dignissim orci eu placerat. Vestibulum cursus, neque ut vulputate venenatis, metus tellus iaculis turpis, et sagittis odio arcu nec est. Donec egestas bibendum bibendum. Nam ullamcorper sodales nunc, in feugiat ipsum porttitor quis. Vestibulum sem magna, ornare sed venenatis sed, molestie vitae dui. Etiam a libero sem. Nullam gravida massa nec nulla ornare consequat. Sed sed nisl sapien. Phasellus sollicitudin sapien ut odio mattis pharetra. Quisque tempor nunc et diam vehicula id scelerisque velit auctor.
+In this chapter we will use a model to test the interaction between a particle on a double well potential coupled bilinearly on position with a bath consisting of harmonic oscillators. This model is initially chaotic following the rules we have stated on the previous chapters regarding chaotic motion. The difference here with the previous chapters is that we will increase the number of degrees of freedom in the whole system by increasing the number of harmonic oscillators in the heat bath.\par 
 
-Quisque ultricies tellus eget neque imperdiet at congue nunc iaculis. Morbi semper commodo risus, ut mattis eros posuere vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quis magna at est mattis vestibulum. Nulla eleifend sodales vestibulum. Nulla ut justo et dui ullamcorper vestibulum nec vel purus. Mauris non nisl eget sapien eleifend cursus. Nunc aliquet porttitor dolor, eget congue nulla rutrum nec. Fusce aliquam mattis quam, in aliquam libero tempus at. Morbi vestibulum tincidunt est sit amet dignissim. Suspendisse dapibus sollicitudin dui, in rhoncus mauris congue nec. Duis pulvinar dignissim blandit. Suspendisse metus leo, gravida nec viverra vitae, dignissim quis magna. Cras quis nibh leo. Nam faucibus, elit quis aliquet fermentum, neque urna scelerisque nisi, sed mollis nulla mauris sit amet lectus.
+The main results of this chapter are related to the theory of  dissipative dynamics in open systems but with a finite number of oscillators in the heat bath. We will play with different parameters of the heat bath such as energy and frequencies following this matter.\par 
 
 \section{Double well as a two level system}
 
@@ -18,72 +18,248 @@ Quisque ultricies tellus eget neque imperdiet at congue nunc iaculis. Morbi semp
 
 \section{Dynamics of the system}
 
-Vestibulum lacinia commodo velit, ut posuere eros molestie ut. Phasellus purus nibh, mattis ac ultricies nec, vulputate non nibh. Curabitur et blandit tortor. Etiam in velit at est vulputate ultrices ut non nunc. Sed eu eros ut orci fringilla adipiscing id vel justo. Aliquam pulvinar commodo bibendum. Duis in neque ac augue molestie porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut tortor nisi. Fusce tempor posuere condimentum. Quisque eget mi dolor. Curabitur vehicula porta purus eu accumsan. Donec non ipsum dolor, a condimentum leo. Nulla ligula arcu, cursus vel tempor sit amet, fermentum tincidunt odio.
 
 \subsection{Hamilton equations of motion}
+This system is governed by the following hamiltonian:
+\begin{equation}
+H(p,x;\textbf{P,X})=H_{S}+H_B+H_{SB}
+\end{equation}
 
-Cras volutpat aliquet venenatis. Integer rhoncus pharetra elit vel auctor. Cras posuere nibh vel justo blandit venenatis. Praesent in nulla quis nunc rhoncus fringilla. Nulla enim arcu, congue at sodales ut, congue id orci. Sed leo quam, tempor id malesuada vitae, condimentum at quam. Quisque elit lectus, blandit at facilisis quis, varius id turpis.
+Where the hamiltonian for the central system $(S)$ can be viewed as a particle of mass $m$ moving in a double well potential of quartic nature. The corresponding hamiltonian reads as
+\begin{equation}
+H_{S}=\frac{p^2}{2m}-a\frac{x^2}{2}+b\frac{x^4}{4},
+\end{equation}
 
-Donec convallis turpis eu felis vehicula commodo nec quis arcu. Ut in lacinia leo. Nullam in risus felis, eget feugiat ligula. In nulla urna, tempus quis pellentesque a, iaculis sed mauris. Donec tincidunt semper sem, blandit pellentesque justo blandit ac. Vestibulum et mattis mi. In hendrerit, neque in suscipit pharetra, purus turpis aliquet lacus, vel auctor felis dolor id mi. Nullam ut felis massa. Curabitur et rutrum ligula. Maecenas ac lorem eget turpis viverra vehicula at quis lorem. Sed non eros dui. Sed aliquam faucibus pellentesque. Maecenas sit amet ligula non dolor varius auctor non quis ligula. Fusce dapibus auctor varius. Praesent tortor ligula, auctor ut dictum eu, rhoncus vitae nunc.
+where $p$ is the momentum of the particle, $q$ is te position of the particle, and $a,b$ are parameters that change the shape of the potential.The hamiltonian for the bath $(B)$ is described as a set of harmonic oscillators
+\begin{equation}
+H_B(\textbf{P,X})= \sum_{n=1}^N \Big(\frac{P_n^2}{2M_n}+M_n \omega_n^2\frac{X_n^2}{2} \Big),
+\end{equation}
 
-Quisque metus sem, consectetur sit amet pulvinar varius, sodales eget enim. Suspendisse molestie congue leo ac auctor. Donec erat erat, elementum at convallis sit amet, molestie et ipsum. Nunc venenatis mattis magna, id ultricies purus auctor nec. Donec pharetra turpis sit amet magna convallis consequat. In hac habitasse platea dictumst. Fusce porta molestie massa, sed lacinia felis sollicitudin non. Pellentesque vulputate laoreet consequat. Vivamus ante dolor, bibendum vitae pulvinar id, elementum nec purus. Nullam vel augue velit, ac egestas odio.
+each oscillator $n$ posses position $X_n$, momentum $P_N$, frequency $\omega_n$ and mass $M_n$. The last term of the hamiltonian consists on the interaction term where the system and bath positions are coupled bilinearly according to
+\begin{equation}
+H_{SB}(p,x;\textbf{P,X})=-x\sum_{n=1}^N g_n X_n+x^2 \sum_{n=1}^N\frac{g_n^2}{2M_n \omega_n}
+\end{equation}
+The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This hamiltonian is often called the Caldeira-Leggett hamiltonian CITAR POR QUE LLAMAN CALDEIRA LEGGETT.\par 
 
-\subsection{Integration of the system}
+The hamilton equations for this hamiltonian can be separated in the two parts, the particle and the heat bath. The hamilton equations of the particle read as
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, justo nec malesuada adipiscing, sem sem accumsan odio, vel convallis orci ligula elementum ipsum. Nunc sodales dignissim orci eu placerat. Vestibulum cursus, neque ut vulputate venenatis, metus tellus iaculis turpis, et sagittis odio arcu nec est. Donec egestas bibendum bibendum. Nam ullamcorper sodales nunc, in feugiat ipsum porttitor quis. Vestibulum sem magna, ornare sed venenatis sed, molestie vitae dui. Etiam a libero sem. Nullam gravida massa nec nulla ornare consequat. Sed sed nisl sapien. Phasellus sollicitudin sapien ut odio mattis pharetra. Quisque tempor nunc et diam vehicula id scelerisque velit auctor.
+\begin{equation}
+\dot{p}=\frac{-\partial H}{\partial x}=ax-bx^3+\sum_{n=1}^N g_n X_n-x\sum_{n=1}^N \frac{g_n^2}{M_n \omega_n^2},
+\end{equation}
 
-Quisque ultricies tellus eget neque imperdiet at congue nunc iaculis. Morbi semper commodo risus, ut mattis eros posuere vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quis magna at est mattis vestibulum. Nulla eleifend sodales vestibulum. Nulla ut justo et dui ullamcorper vestibulum nec vel purus. Mauris non nisl eget sapien eleifend cursus. Nunc aliquet porttitor dolor, eget congue nulla rutrum nec. Fusce aliquam mattis quam, in aliquam libero tempus at. Morbi vestibulum tincidunt est sit amet dignissim. Suspendisse dapibus sollicitudin dui, in rhoncus mauris congue nec. Duis pulvinar dignissim blandit. Suspendisse metus leo, gravida nec viverra vitae, dignissim quis magna. Cras quis nibh leo. Nam faucibus, elit quis aliquet fermentum, neque urna scelerisque nisi, sed mollis nulla mauris sit amet lectus.
+\begin{equation}
+\dot{x}=\frac{\partial H}{\partial p}=\frac{p}{m}.
+\end{equation}
 
-Vestibulum lacinia commodo velit, ut posuere eros molestie ut. Phasellus purus nibh, mattis ac ultricies nec, vulputate non nibh. Curabitur et blandit tortor. Etiam in velit at est vulputate ultrices ut non nunc. Sed eu eros ut orci fringilla adipiscing id vel justo. Aliquam pulvinar commodo bibendum. Duis in neque ac augue molestie porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut tortor nisi. Fusce tempor posuere condimentum. Quisque eget mi dolor. Curabitur vehicula porta purus eu accumsan. Donec non ipsum dolor, a condimentum leo. Nulla ligula arcu, cursus vel tempor sit amet, fermentum tincidunt odio.
+For the heat bath we find that the equations of motion for each of the $n$ oscillators are given by
+\begin{equation}
+\dot{P_n}=\frac{-\partial H}{\partial X_n}=-xg_n-M_n \omega _n ^2 X_n
+\end{equation}
 
-Cras volutpat aliquet venenatis. Integer rhoncus pharetra elit vel auctor. Cras posuere nibh vel justo blandit venenatis. Praesent in nulla quis nunc rhoncus fringilla. Nulla enim arcu, congue at sodales ut, congue id orci. Sed leo quam, tempor id malesuada vitae, condimentum at quam. Quisque elit lectus, blandit at facilisis quis, varius id turpis.
+\begin{equation}
+\dot{X_n}=\frac{\partial H}{\partial P_n}=\frac{P_n}{M_n}
+\end{equation}
 
-Donec convallis turpis eu felis vehicula commodo nec quis arcu. Ut in lacinia leo. Nullam in risus felis, eget feugiat ligula. In nulla urna, tempus quis pellentesque a, iaculis sed mauris. Donec tincidunt semper sem, blandit pellentesque justo blandit ac. Vestibulum et mattis mi. In hendrerit, neque in suscipit pharetra, purus turpis aliquet lacus, vel auctor felis dolor id mi. Nullam ut felis massa. Curabitur et rutrum ligula. Maecenas ac lorem eget turpis viverra vehicula at quis lorem. Sed non eros dui. Sed aliquam faucibus pellentesque. Maecenas sit amet ligula non dolor varius auctor non quis ligula. Fusce dapibus auctor varius. Praesent tortor ligula, auctor ut dictum eu, rhoncus vitae nunc.
+From these equations we can calculate the frequency of small oscillations for the double well potential, we proceed by taking the the potential given as
+\begin{equation}
+V(x)=-\frac{1}{2}ax^2+\frac{1}{4}bx^4,
+\end{equation}
+the equilibrium points are located where the potential $V$ is minimum or maximum, this is when the following condition is satisfied
+\begin{equation}
+\frac{d}{dx}V=0\rightarrow x(bx^2-a) = 0.
+\end{equation}
+
+The solutions for this equation are $x=0,\pm \sqrt{\frac{a}{b}}$, where $x=0$ is an unstable equilibrium point and $x=\pm \sqrt{\frac{a}{b}}$ are stable equilibrium points \par 
+We proceed to perform a Taylor expansion around a stable equilibrium point say $x_0=\sqrt{\frac{a}{b}}$ as
+\begin{equation}
+V(x_0 +\epsilon )=V(x_0)+U'(x_0)\epsilon + \frac{1}{2}V''(x_0)\epsilon ^2 + ...
+\end{equation}
+The first term on the right side is a constant term, this means it can be ignored. The second term is equal to zero due to the fact that $V'(x_0)=0$ is the condition for the stable minimum. The third term will be according to the result of $V''(x_0)=\frac{1}{2}(-a+3bx^2)| _{x=x_0}$, this results in the following expansion
+\begin{equation}
+V(x_0+\epsilon)\approx \frac{1}{2}(2a)\epsilon ^2.
+\end{equation}
+This potential is the same expression of a harmonic oscillator potential with a spring constant of $k=2a$ (compared with the harmonic oscillator potential $V_{HO}=\frac{1}{2}kx^2$). This means that the frequency of small oscillations around the stable minimum is given by
+
+\begin{equation}
+\omega =\sqrt{\frac{k}{m}}=\sqrt{\frac{2a}{m}}
+\end{equation}
+
+For the case of the particle coupled to the heat bath we can do the same analysis and see the role of the counter term in the hamiltonian resulting in the same results as above. The equilibrium points of the whole hamiltonian must satisfy the following condition
+
+\begin{equation}
+\frac{d}{d\textbf{x}}H=0\rightarrow \frac{d}{dx}H =0 \quad , \quad \frac{d}{dX_n}H  = 0.
+\end{equation}
+Evaluating the derivatives we arrive to the following equations
+\begin{equation}
+x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N \frac{xg_n^2}{M_n\omega_n}=0 \quad , \quad xg_n=M_n\omega_n^2 X_n 
+\end{equation}
+where the right hand side equation will provide the constraint to retrieve the original conditions of equilibrium for the potential on the right hand side
+\begin{equation}
+x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N \frac{xg_n^2}{M_n\omega_n}= x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N g_n X_n=x(bx^2-a)=0
+\end{equation}
+
+\subsection{Infinite heat bath and dissipation}
+
+
 
 \subsection{Poincaré surface plots}
+We start the numerical experiments of this model with only one oscillator coupled to the particle of the central system. This very simple model already exhibits the traits and characteristics of a chaotic system, this is due to the barrier of the unstable equilibrium position. We can illustrate this by picturing the particle moving on the double well potential without any coupling with the heat bath, if the particle has enough energy, it will move freely between the two wells, otherwise it will orbit around one well. This can be seen in two different ways, the first one is by looking at the potential part of the hamiltonian of each part of the whole system i.e. the quartic potential and the harmonic oscillator potential, plotting each potential along an axis we can see the contours of energy for the dynamics of the system.
 
-Quisque metus sem, consectetur sit amet pulvinar varius, sodales eget enim. Suspendisse molestie congue leo ac auctor. Donec erat erat, elementum at convallis sit amet, molestie et ipsum. Nunc venenatis mattis magna, id ultricies purus auctor nec. Donec pharetra turpis sit amet magna convallis consequat. In hac habitasse platea dictumst. Fusce porta molestie massa, sed lacinia felis sollicitudin non. Pellentesque vulputate laoreet consequat. Vivamus ante dolor, bibendum vitae pulvinar id, elementum nec purus. Nullam vel augue velit, ac egestas odio.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/energy_contour.png}
+\caption{Energy contour of the double well potential on the $x$ axis and the harmonic oscillator potential on the $y$ axis for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$\label{fig:contour_g0}}
 
-Morbi venenatis magna quis est rhoncus eget fermentum leo porttitor. Curabitur aliquet tortor a diam lacinia pellentesque. Praesent id malesuada elit. Suspendisse cursus erat augue, non tristique est. Aliquam erat volutpat. Curabitur eu nisi vitae ligula tincidunt tempor. Duis nec purus non justo congue laoreet. Aenean id sapien vitae mi dictum congue a sed tellus. Aliquam vehicula lectus nec elit dignissim convallis.
+\end{figure}
 
-Donec lacus turpis, tincidunt non bibendum nec, ullamcorper lobortis quam. Nunc nec lectus sagittis lectus dignissim posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta tempus volutpat. Nunc rhoncus justo nec ipsum molestie fermentum. Maecenas vel ligula tortor, tempus dictum nunc. Proin pretium porttitor mi, vel dignissim velit porttitor nec. Phasellus ligula dui, iaculis at luctus nec, condimentum vel sapien.
+In Figure (\ref{fig:contour_g0}) we see that as the dynamics is uncoupled, the particle moves freely on the double well potential and the harmonic oscillator doesn't really changes its motion. \par 
 
-Nam ut sem at dui vehicula tincidunt a vel ligula. Curabitur elit lorem, ornare nec commodo in, tincidunt in ante. Sed sit amet nisi id orci varius pharetra. Sed sapien diam, dictum id interdum a, malesuada nec metus. Suspendisse convallis molestie aliquet. Nam vestibulum, enim id accumsan consectetur, augue nibh eleifend nunc, sit amet aliquet ligula sem vitae sem. Duis congue convallis vestibulum. Etiam risus enim, consectetur et dignissim vitae, laoreet nec quam. Fusce sed ipsum eros. Donec facilisis facilisis lacus, in accumsan magna tempor mollis. Sed vitae tortor dui. Suspendisse non nibh sed orci fermentum aliquet ut et sem. Donec facilisis, dui eu euismod laoreet, justo orci auctor mauris, ut consequat quam leo eu ipsum. Donec auctor, nisi in rhoncus congue, massa urna vestibulum nisi, volutpat ullamcorper velit metus sed justo. Praesent eu libero ac mi laoreet posuere sit amet eu augue.
+Following this representation we can observe the perturbation induced by the harmonic oscillator when we "turn on" the coupling between the two systems, for a coupling of $g_1=0.1$ it is already evident that shape of the whole potential suffers a shearing effect:
 
-Etiam libero arcu, mollis eu lacinia gravida, faucibus id mi. Donec sit amet turpis quam, vel semper quam. Curabitur erat leo, vulputate quis ultrices vel, aliquet facilisis tellus. Nullam sodales urna a dui interdum adipiscing. Maecenas id purus sapien. Vivamus congue varius enim quis bibendum. In molestie porttitor magna a accumsan. Aliquam cursus erat eget metus mattis dapibus. Donec ullamcorper, neque quis malesuada malesuada, nunc ante posuere ipsum, vel mollis risus lacus sit amet neque. Fusce dignissim, nulla quis bibendum feugiat, dui erat venenatis leo, in sollicitudin augue mi a sapien. In neque diam, malesuada et dapibus at, ultricies a lacus. Vestibulum et eros sed lectus imperdiet porta. Suspendisse potenti. Fusce urna ligula, tristique id congue vel, commodo in mi. Phasellus tincidunt, dolor vitae consequat aliquam, lacus erat viverra nulla, non pellentesque augue sem in diam. Praesent lectus tellus, sagittis sed vestibulum quis, tincidunt vel purus. Nunc libero purus, adipiscing in semper sed, pharetra iaculis. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/energy_contour_coupled01.png}
+\caption{Energy contour of the double well potential on the $x$ axis and the harmonic oscillator potential on the $y$ axis for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.1$\label{fig:contour_g01}}
+
+\end{figure}
+This means that independently of the initial conditions of the particle, the motion will be certainly affected by the presence of the potential due to the harmonic oscillator.\par 
+
+Now that we have seen a visual representation of the system without solving the equations of motion of the system, it is necessary to take a look at the specific dynamics of the system numerically by using a symplectic integrator. The integrator of our choice is the Calvo Sanz-Serna 4th order symplectic integrator CITAR 
+
+Stephen K. Gray, Donald W. Noid and Bobby G. Sumpter, Symplectic integrators for large scale molecular dynamics simulations: A comparison of several explicit methods The Journal of Chemical Physics 101, 4062 (1994); doi: https://dx.doi.org/10.1063/1.467523
+
+M. P. Calvo & J. M. Sanz-Serna, Symplectic numerical methods for Hamiltonian problems, Int. J. Mod. Phys. C 4(1993), 617-634
+
+Rackauckas, C. & Nie, Q., (2017). DifferentialEquations.jl – A Performant and Feature-Rich Ecosystem for Solving Differential Equations in Julia. Journal of Open Research Software. 5(1), p.15. DOI: https://doi.org/10.5334/jors.151
+
+, we use a timestep defined by $dt=0.05*T$ where $T=\frac{2\pi}{\omega_t}$ is the period of a harmonic oscillator of frequency $\omega_t=12$. Here we set up different initial conditions for the particle along its phase space, the position of the oscillator always to start at $X_1=0$ and fixed the energy (twice the energy of the potential barrier between the wells here) as a constraint to be followed by the initial momentum of the oscillator. Each point of the poincaré section is registered as the event when the oscillator crosses its equilibrium position $X_1=0$ with a possitive momentum. We will take a number of initial conditions along the phase space of the particle and start to increase the coupling to see the behavior of the orbits in the phase space of the particle.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g0.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$\label{fig:poinc_g0}
+}
+\end{figure}
+
+In Figure (\ref{fig:poinc_g0}) we start with $g_1=0$ and see that the orbits on the phase space of the particle are closed, the particle is totally unaware of the harmonic oscillator's potential. Now we will slowly start to "turn on" the coupling between the systems.\par 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g0001.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.001$\label{fig:poinc_g0001}
+}
+\end{figure}
+
+As soon as there is coupling present in the dynamics of the system the orbits start to destroy progresively as we can see in this Figure (\ref{fig:poinc_g0001}). 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g0005.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.005$\label{fig:poinc_g0005}
+}
+\end{figure}
+
+The section of phase space where we start to see pure chaos at first is when the energy of the particle is very close to the energy of the barrier between the two wells as we can see in Figure (\ref{fig:poinc_g0005}), this particular behavior around this points is of particular interest for our case as we will later use the unstable equilibrium position as the initial condition for the particle.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g001.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.01$\label{fig:poinc_g001}
+}
+\end{figure}
+As we continue to increase the coupling strength we progress on the destruction of the orbits and approach to a more chaotic behavior.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g005.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.05$\label{fig:poinc_g005}
+}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g01.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.1$\label{fig:poinc_g01}
+}
+\end{figure}
+Finally in Figure (\ref{fig:poinc_g01}) we arrive to the coupling we used for Figure (\ref{fig:contour_g01}) $g=0.1$. As we can see from the poincaré section, the overall behavior of the system is very chaotic except for the stable islands very near to the condition of the particle to have small energy located near to the stable equilibrium points  with a small momentum. Comparing these two pictures we can see that even if the shearing behavior observed in the contour plots can barely be noticed, the dynamics of the system is almost completely chaotic.\par 
+
+Just for illustration we calculated the poincare section for $g=0.2$ to show that the behavior of pure chaos continues to increase, this is shown in Figure (\ref{fig:poinc_g02}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/poincare_g02.png}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.2$\label{fig:poinc_g02}
+}
+\end{figure} 
+
+
+
 
 \section{Variation of the parameters}
+As it is evident, in this particular system we can vary a big amount of parameters to search for different dynamics and properties that exhibit the system, the model is rich in quantities that can be calculated and extracted from it. This idea also plays against our odds because as there are many parameters to play with it is difficult to control the whole system in an optimal and hierarchical way. There are two types of parameters that we will monitor very closely: the frequency spectra and the energy spectra for the heat bath.
 
-Morbi venenatis magna quis est rhoncus eget fermentum leo porttitor. Curabitur aliquet tortor a diam lacinia pellentesque. Praesent id malesuada elit. Suspendisse cursus erat augue, non tristique est. Aliquam erat volutpat. Curabitur eu nisi vitae ligula tincidunt tempor. Duis nec purus non justo congue laoreet. Aenean id sapien vitae mi dictum congue a sed tellus. Aliquam vehicula lectus nec elit dignissim convallis.
 
-Donec lacus turpis, tincidunt non bibendum nec, ullamcorper lobortis quam. Nunc nec lectus sagittis lectus dignissim posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta tempus volutpat. Nunc rhoncus justo nec ipsum molestie fermentum. Maecenas vel ligula tortor, tempus dictum nunc. Proin pretium porttitor mi, vel dignissim velit porttitor nec. Phasellus ligula dui, iaculis at luctus nec, condimentum vel sapien.
+\subsection{Frequency spectra FALTA MUCHO POR ACABAR}
+The way the frequencies of the harmonic oscillators are distributed in this work is taken from the theory of quantum dissipation in open systems
 
-Nam ut sem at dui vehicula tincidunt a vel ligula. Curabitur elit lorem, ornare nec commodo in, tincidunt in ante. Sed sit amet nisi id orci varius pharetra. Sed sapien diam, dictum id interdum a, malesuada nec metus. Suspendisse convallis molestie aliquet. Nam vestibulum, enim id accumsan consectetur, augue nibh eleifend nunc, sit amet aliquet ligula sem vitae sem. Duis congue convallis vestibulum. Etiam risus enim, consectetur et dignissim vitae, laoreet nec quam. Fusce sed ipsum eros. Donec facilisis facilisis lacus, in accumsan magna tempor mollis. Sed vitae tortor dui. Suspendisse non nibh sed orci fermentum aliquet ut et sem. Donec facilisis, dui eu euismod laoreet, justo orci auctor mauris, ut consequat quam leo eu ipsum. Donec auctor, nisi in rhoncus congue, massa urna vestibulum nisi, volutpat ullamcorper velit metus sed justo. Praesent eu libero ac mi laoreet posuere sit amet eu augue.
+\begin{equation}
+J(\omega) ~ w^s f(\omega,\omega_c)
+\label{eq:spectral_density}
+\end{equation}
+Where $\omega_c$ is the characteristic frequency of the bath, and $f(\omega,\omega_c)$ is a damping function which helps $J(\omega)$ to vanish in the limit of $\omega \rightarrow \infty$. There are many different ways to choose $f(\omega,\omega_c)$ (CITAR CITE From coherent motion to localization: II. Dynamics of the spin-boson model
+with sub-Ohmic spectral density at zero temperature), in this case we will choose an exponential cut-off damping type as $f(\omega,\omega_c)=e^{\omega/\omega_c}$.   
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/frequency_spectra.png}
+\caption{Frequency spectrum distribution without normalization for the case of $s=0.6$.\label{fig:frequency_spectra}
+}
+\end{figure} 
+
 
 \subsection{Energy spectra}
+In this work we will monitor the energy spectra in two different ways, both are related to the idea of having a cloud of harmonic oscillators with initial conditions around the origin of phase space. The first idea is by  drawing the energy of the oscillators from a distribution with a certain mean and variance, the second one consists of using the Box-Muller transform to sample a quasigaussian two dimensional distribution of harmonic oscillators in phase space. 
+\subsubsection{Drawing energy from a distribution}
+The method outlined in this subsection consists on drawing the energy of each harmonic oscillator from a probability distribution (mostly a gaussian) with a determined mean and variance. This method will let us normalize the energy of the heat bath at will, having the energy of each harmonic oscillator will let us compute the sum and divide each energy by the normalization desired.\par 
+Now to decide where to locate each oscillator we sample a random number from a uniform distribution $[0,2\pi)$, this will represent an angle on a circle which will be deformed into an ellipse acording to the energy and frequency of each harmonic oscillator obtaining finally a position of a harmonic oscillator according to a determined energy ellipse. This process is repeated for every oscillator on the bath giving as a result a distribution of oscillators in phase space with an energy distribution of the heat bath perfectly defined and normalized.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, justo nec malesuada adipiscing, sem sem accumsan odio, vel convallis orci ligula elementum ipsum. Nunc sodales dignissim orci eu placerat. Vestibulum cursus, neque ut vulputate venenatis, metus tellus iaculis turpis, et sagittis odio arcu nec est. Donec egestas bibendum bibendum. Nam ullamcorper sodales nunc, in feugiat ipsum porttitor quis. Vestibulum sem magna, ornare sed venenatis sed, molestie vitae dui. Etiam a libero sem. Nullam gravida massa nec nulla ornare consequat. Sed sed nisl sapien. Phasellus sollicitudin sapien ut odio mattis pharetra. Quisque tempor nunc et diam vehicula id scelerisque velit auctor.
+\subsubsection{Quasi-gaussian distribution in phase space}
+This method consists in implementing the Box-Muller transform algorithm onto a uniform distribution to obtain a two dimensional distribution grid of points that represent a gaussian with a defined mean and variance along each dimension (CITE CITAR BOX MULLER TRANSFORM).
 
-Quisque ultricies tellus eget neque imperdiet at congue nunc iaculis. Morbi semper commodo risus, ut mattis eros posuere vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quis magna at est mattis vestibulum. Nulla eleifend sodales vestibulum. Nulla ut justo et dui ullamcorper vestibulum nec vel purus. Mauris non nisl eget sapien eleifend cursus. Nunc aliquet porttitor dolor, eget congue nulla rutrum nec. Fusce aliquam mattis quam, in aliquam libero tempus at. Morbi vestibulum tincidunt est sit amet dignissim. Suspendisse dapibus sollicitudin dui, in rhoncus mauris congue nec. Duis pulvinar dignissim blandit. Suspendisse metus leo, gravida nec viverra vitae, dignissim quis magna. Cras quis nibh leo. Nam faucibus, elit quis aliquet fermentum, neque urna scelerisque nisi, sed mollis nulla mauris sit amet lectus.
 
-Vestibulum lacinia commodo velit, ut posuere eros molestie ut. Phasellus purus nibh, mattis ac ultricies nec, vulputate non nibh. Curabitur et blandit tortor. Etiam in velit at est vulputate ultrices ut non nunc. Sed eu eros ut orci fringilla adipiscing id vel justo. Aliquam pulvinar commodo bibendum. Duis in neque ac augue molestie porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut tortor nisi. Fusce tempor posuere condimentum. Quisque eget mi dolor. Curabitur vehicula porta purus eu accumsan. Donec non ipsum dolor, a condimentum leo. Nulla ligula arcu, cursus vel tempor sit amet, fermentum tincidunt odio.
 
-Cras volutpat aliquet venenatis. Integer rhoncus pharetra elit vel auctor. Cras posuere nibh vel justo blandit venenatis. Praesent in nulla quis nunc rhoncus fringilla. Nulla enim arcu, congue at sodales ut, congue id orci. Sed leo quam, tempor id malesuada vitae, condimentum at quam. Quisque elit lectus, blandit at facilisis quis, varius id turpis.
 
-Donec convallis turpis eu felis vehicula commodo nec quis arcu. Ut in lacinia leo. Nullam in risus felis, eget feugiat ligula. In nulla urna, tempus quis pellentesque a, iaculis sed mauris. Donec tincidunt semper sem, blandit pellentesque justo blandit ac. Vestibulum et mattis mi. In hendrerit, neque in suscipit pharetra, purus turpis aliquet lacus, vel auctor felis dolor id mi. Nullam ut felis massa. Curabitur et rutrum ligula. Maecenas ac lorem eget turpis viverra vehicula at quis lorem. Sed non eros dui. Sed aliquam faucibus pellentesque. Maecenas sit amet ligula non dolor varius auctor non quis ligula. Fusce dapibus auctor varius. Praesent tortor ligula, auctor ut dictum eu, rhoncus vitae nunc.
-
-\subsection{Frequency spectra}
-
-Quisque metus sem, consectetur sit amet pulvinar varius, sodales eget enim. Suspendisse molestie congue leo ac auctor. Donec erat erat, elementum at convallis sit amet, molestie et ipsum. Nunc venenatis mattis magna, id ultricies purus auctor nec. Donec pharetra turpis sit amet magna convallis consequat. In hac habitasse platea dictumst. Fusce porta molestie massa, sed lacinia felis sollicitudin non. Pellentesque vulputate laoreet consequat. Vivamus ante dolor, bibendum vitae pulvinar id, elementum nec purus. Nullam vel augue velit, ac egestas odio.
-
-Morbi venenatis magna quis est rhoncus eget fermentum leo porttitor. Curabitur aliquet tortor a diam lacinia pellentesque. Praesent id malesuada elit. Suspendisse cursus erat augue, non tristique est. Aliquam erat volutpat. Curabitur eu nisi vitae ligula tincidunt tempor. Duis nec purus non justo congue laoreet. Aenean id sapien vitae mi dictum congue a sed tellus. Aliquam vehicula lectus nec elit dignissim convallis.
-
-Donec lacus turpis, tincidunt non bibendum nec, ullamcorper lobortis quam. Nunc nec lectus sagittis lectus dignissim posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta tempus volutpat. Nunc rhoncus justo nec ipsum molestie fermentum. Maecenas vel ligula tortor, tempus dictum nunc. Proin pretium porttitor mi, vel dignissim velit porttitor nec. Phasellus ligula dui, iaculis at luctus nec, condimentum vel sapien.
-
-Nam ut sem at dui vehicula tincidunt a vel ligula. Curabitur elit lorem, ornare nec commodo in, tincidunt in ante. Sed sit amet nisi id orci varius pharetra. Sed sapien diam, dictum id interdum a, malesuada nec metus. Suspendisse convallis molestie aliquet. Nam vestibulum, enim id accumsan consectetur, augue nibh eleifend nunc, sit amet aliquet ligula sem vitae sem. Duis congue convallis vestibulum. Etiam risus enim, consectetur et dignissim vitae, laoreet nec quam. Fusce sed ipsum eros. Donec facilisis facilisis lacus, in accumsan magna tempor mollis. Sed vitae tortor dui. Suspendisse non nibh sed orci fermentum aliquet ut et sem. Donec facilisis, dui eu euismod laoreet, justo orci auctor mauris, ut consequat quam leo eu ipsum. Donec auctor, nisi in rhoncus congue, massa urna vestibulum nisi, volutpat ullamcorper velit metus sed justo. Praesent eu libero ac mi laoreet posuere sit amet eu augue.
-
-Etiam libero arcu, mollis eu lacinia gravida, faucibus id mi. Donec sit amet turpis quam, vel semper quam. Curabitur erat leo, vulputate quis ultrices vel, aliquet facilisis tellus. Nullam sodales urna a dui interdum adipiscing. Maecenas id purus sapien. Vivamus congue varius enim quis bibendum. In molestie porttitor magna a accumsan. Aliquam cursus erat eget metus mattis dapibus. Donec ullamcorper, neque quis malesuada malesuada, nunc ante posuere ipsum, vel mollis risus lacus sit amet neque. Fusce dignissim, nulla quis bibendum feugiat, dui erat venenatis leo, in sollicitudin augue mi a sapien. In neque diam, malesuada et dapibus at, ultricies a lacus. Vestibulum et eros sed lectus imperdiet porta. Suspendisse potenti. Fusce urna ligula, tristique id congue vel, commodo in mi. Phasellus tincidunt, dolor vitae consequat aliquam, lacus erat viverra nulla, non pellentesque augue sem in diam. Praesent lectus tellus, sagittis sed vestibulum quis, tincidunt vel purus. Nunc libero purus, adipiscing in semper sed, pharetra iaculis. 
 
 \section{Number of modes in the bath}
+A very important parameter to determine the dynamics of the system is the number of oscillators in the heat bath. According to dissipative dynamics theory, we retrieve an equation of Langevin type dynamics in the limit of infinite harmonic oscillators in the bath.We have already shown the behavior of the dynamics under the influence of only one harmonic oscillator coupled to the particle. What we will do in this work will be increase steadily the number of harmonic oscillators of a finite heat bath to achieve dissipative behavior without the need of extending the system to infinity. Therefore, it is important to keep an eye on the dynamics of each case of the number of harmonic oscillators and change different parameters of the system in order to understand in a more general way the behavior of the whole system as a function of the number of modes of the bath. This analysis will lead to the conclusion to modelate dissipative dynamics in a finite heath bath with a very small number of modes.
 
-Etiam libero arcu, mollis eu lacinia gravida, faucibus id mi. Donec sit amet turpis quam, vel semper quam. Curabitur erat leo, vulputate quis ultrices vel, aliquet facilisis tellus. Nullam sodales urna a dui interdum adipiscing. Maecenas id purus sapien. Vivamus congue varius enim quis bibendum. In molestie porttitor magna a accumsan. Aliquam cursus erat eget metus mattis dapibus. Donec ullamcorper, neque quis malesuada malesuada, nunc ante posuere ipsum, vel mollis risus lacus sit amet neque. Fusce dignissim, nulla quis bibendum feugiat, dui erat venenatis leo, in sollicitudin augue mi a sapien. In neque diam, malesuada et dapibus at, ultricies a lacus. Vestibulum et eros sed lectus imperdiet porta. Suspendisse potenti. Fusce urna ligula, tristique id congue vel, commodo in mi. Phasellus tincidunt, dolor vitae consequat aliquam, lacus erat viverra nulla, non pellentesque augue sem in diam. Praesent lectus tellus, sagittis sed vestibulum quis, tincidunt vel purus. Nunc libero purus, adipiscing in semper sed, pharetra iaculis. 
+\subsection{Chaos to dissipation dynamics}
+In this section we will start to evidence the loss of chaotic dynamics due to the increasing number of oscillators. 
+
+
+\subsection{Variation of the double well and heat bath parameters}
+There are four types of parameters that are interesting for us to look at the variation of the dynamics of the system: The exponent $s$ in the  equation (\ref{eq:spectral_density}), the coupling constant of the oscillators $g_0$ that multiplies the coupling constant of each oscillator $g_i=g_0/\sqrt{N}$, the height of the potential barrier and the initial energy of the heat bath. Each of these conditions will affect the number of jumps from one well to the other that the particle makes. We will therefore evaluate the results of changing these parameters for different number of oscillators for $100$ test cases where the positions, frequencies and energies are randomized every time and the numbers of jumps will be averaged. The way of sampling the energies and initial conditions are described in the method of drawing energies from a gaussian distribution in order to have more control on the energies of the harmonic oscillators. For most of the cases we will use fixed values for each parameter unless explicitly stated otherwise, these values are $s=0.5$, $g_0=0.1$, the initial energy of the heat bath $E_{bath}=0.1$ and the height of the potential barrier $PB=1$
+
+\subsubsection{Changing the exponent $s$}
+According to the microscopic theory of dissipation (CITAR CITE EL ARTICULO DE LEGGET), the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the "ohmic" case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called "super-ohmic" and the case of $0<s<1$ is called "sub-ohmic". Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
+
+FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE S\par 
+
+We conclude that for the classical case, the parameter $s$ in the spectral density does not really affect the dynamics of the system in a particular way as we don't see a real difference between having a bath with sub-ohmic, ohmic or super-ohmic nature. We see the general behavior of dissipation where the jumps between the wells decrease with the increase in the in the number of oscillators in the heat bath and it is independent of the parameter $s$.
+
+\subsubsection{Changing the individual coupling $g_0$}
+We have seen the effect of the coupling involving chaos with only one oscillator in one of the previous sections, this showed us the effect of different values for the coupling constants that develop into increasing chaotic motion. In this section we will continue to study the effects on the dynamics of the whole system when we use different values for the constant $g_0$ that multiplies each of the individual coupling constants $g_i \sim 1/\sqrt(N)$
+
+\subsubsection{Changing the initial energy of the heat bath}
+asd
+
+\subsubsection{Changing the height of the potential barrier}
+asd
+
+
+
+
+
+

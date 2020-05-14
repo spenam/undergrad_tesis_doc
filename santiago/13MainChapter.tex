@@ -10,7 +10,7 @@ In this chapter we are going to introduce some important concepts regarding dyna
 
 
 
-\subsection{Dynamical systems- OTT Y JOAO}
+\section{Dynamical systems- OTT Y JOAO}
 Generally speaking, a dynamical system may be defined as set of deterministic mathematical equations whose solution shows how the system evolves in time. Time may be taken as a continuous or a discrete variable. An example of a dynamical system with time as a parameter varying in  a continuous way is a system of $n$ first order, autonomous, ordinary differential equations,
 
 \begin{align}
@@ -28,11 +28,11 @@ this set of equations may be written as a compact equation using the vector form
 \end{align}
 where $\vec{x}$ is an $n$ dimensional vector that represents the state of the system at a given time $t$ and $\vec{F}$ is a function of the variable $\vec{x}$. This set of equations represent a dinamical system, for an initial state given by $\vec{x}(0)$, we may be able in principle to solve the set of equations and obtain the state $\vec{x}(t)$ of the system for any given $t>0$. The figure FIGURA QUE NO HE HECHO shows the points followed as the system evolves in time for the case of $n=3$. The space $(x^{(1)},x^{(2)}x^{(3)}$ in the figure is more known as the phase space, and the path in the phase space is referred as orbit or trajectory. In the case of dynamical systems of continuous time, it is common to reffer to these orbits as a flow.
 
-FIGURA\\
-QUE\\
-NO\\
-HE\\
-HECHO\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.\textwidth]{Figures/orbit_3d.pdf}
+\caption{Orbit in three dimensional phase space}
+\end{figure}
 
 For the case of discrete systems, time is represented as integer values ($t=1,2,3,...$). An example of a dynamical system with discrete time is a map, which can be written as vector form as
 \begin{equation}
@@ -212,15 +212,14 @@ where $\delta_{ij}$ is the kronecker delta, for all $i$ and $j$ CITAR HAMILTONIA
 \end{equation}
 where $\nabla=(\partial/\partial q_1,...,\partial/\partial q_N,\partial/\partial p_1,...,\partial/\partial p_N)$ is the nabla operator of phase space, must be linearly independent at all the points in phase space CITE LIBRO DE MECANICA ANALITICA QUE DIGA ESO. If the conditions (\ref{eq:integrability_1})-(\ref{eq:integrability_3}) apply to any $i$ and $j$, then we say that the $N$ constants of motion are in involution.\par 
 
-When an $N$ dimensional Hamiltonian system is integrable possesing $N$ independent constants of motion, the topology of the surface on which its trajectories evolve in the phase space are restricted to an $N$ dimensional torus CITE HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. For the case $N=2$, an orbit over a torus is shown in Fig. REF FIGURA QUE NO HE HECHO DE LA TRAYECTORIA SOBRE EL TORO.
+When an $N$ dimensional Hamiltonian system is integrable possesing $N$ independent constants of motion, the topology of the surface on which its trajectories evolve in the phase space are restricted to an $N$ dimensional torus CITE HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. For the case $N=2$, an orbit over a torus is shown in Figure (\ref{fig:trajectory_torus})
 
-FIGURA\par 
-QUE\par
-NO\par
-HE\par 
-HECHO\par
-DEL\par
-TORO\par
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/trajectory_torus.png}
+\caption{Trajectory on a torus for a bidimensional system with two constants of motion}
+\label{fig:trajectory_torus}
+\end{figure}
 
 A simpler description of the movement of integrable Hamiltonian systems over the $N$ dimensional torus, can be made using the description in terms of the action-angle variables and the Hamilton-Jacobi equations, whose formalism can be found in Ref. CITAR AL GOLDSTEIN. For this, a canonical change of variables $(\bm{p},\bm{q})=\rightarrow (\tilde{\bm{p}},\tilde{\bm{q}})$ is introduced such that the Hamiltonian $\tilde{H}$ depends only on $\tilde{\bm{p}}$ and not on $\tilde{\bm{q}}$. This way, the Hamilton's equations with the new Hamiltonian become
 \begin{equation}
@@ -334,38 +333,62 @@ In general, the effect of the perturbation on an integrable system can be summar
 
 When the perturbation on the integrable system breaks all tori, including the "noblest", the system starts to present characteristics such as ergodicity, drops of correlations, etc...
 
+
+
+\section{Symplectic Integrator NUMERICAL HAMILTONIAN PROBLEMS}
+As we said previously, symplecticness is a very important property of the Hamiltonian. Numerical integrators are generally speaking numerical mappings of the differential equations, generally these mappings are nonsymplectic. Applying nonsymplectic algorithms to hamiltonian problems tend to show solutions where the area in phase space is not conserved as is showed below
+
+
+\begin{figure}[H]%
+    \centering
+    \subfloat[Position dynamics]{{\includegraphics[width=10cm]{Figures/harmonic_oscillator.png} }}%
+    \qquad
+    \subfloat[Phase space dynamics]{{\includegraphics[width=10cm]{Figures/harmonic_oscillator_PS.png} }}%
+    \caption{Euler non symplectic integrator compared to symplectic Verlet Leapfrog method}}%
+    \label{fig:euler}%
+\end{figure}
+
+This failure of mimicking well known Hamiltonian dynamics suggested the consideration of schemes that generate a symplectic mapping $Psi$ when applied to Hamiltonian problems. Such methods are called symplectic or canonical. Early references on symplectic integration are CITAR A RUTH CHANNEL MENYUK FENG, even though the idea of symplectic integration apparently goes back to DeVogelaere in 1956 CITAR CHANNEL SCOVEL 1990.
+
+\subsection{Importance of symplecticness in an integrator}
+A symplectic integrator is then an integrator whose solution resides on a symplectic manifold. Because of discretization error, when it is solving a Hamiltonian system it doesn't get exactly the correct trajectoy on the manifold. Instead, that trajectory itself is perturbed $\mathcal{O}(\Delta h^n)$ for the order $n$ from the true trajectory. Then there's a linear drift due to numerical error of this trajectory over time. Normal integrators tend to have a quadratic (or more) drift, and do not have any good global guarantees about this phase space path, it only guarantees the path in a local sense.\par
+
+
+
+
+What this tends to mean is that symplectic integrators tend to capture the long-time patterns better than normal integrators because of this lack of drift and this almost guarantee the periodicity of certain problems. 
+
+\subsection{Conservation of constants of motion}
+As we have seen previously, when one uses a symplectic integrator of order $n$ what you do is to solve in an exact way the evolution of the system, but not using the hamiltonian $H$ but one softly perturbated as $\tilde{H}=H+\epsilon H_1$, where $\epsilon=t^n$ and $H_1=H_1^0+hH_1^1+h^2H_1^2+...$ If what we really want to obtain is a qualitative information of the behavior of the system, we can expect that if $\epsilon H_1$ is sufficiently small, the system will evolve in a very similar way for $\tilde{H}$ as for $H$.\par
+
+Consider now a system that has $m$ independent constants of motion $J_i$ where $i=1,...,m$, this means that for every $J_i$ it satisfies the condition of a null poisson bracket with the hamiltonian as $\{H,J_i\}=0$. As the integrator is solving in an exact way the evolution due to the hamiltonian $\tilde{H}$, it will follow that the constants of motion, in general, will not be constant as they will not have a null poisson bracket, in principle, with this new hamiltonian. Nonetheless, the following is obtained
+\begin{equation}
+\{\tilde{H},J_i\}=\{H+\mathcal{O}(h^n),J_i\}=\mathcal{O}(h^n).
+\end{equation}
+Despite some exceptions, the constants of motion $J_i$ will not be constant along the evolution of the system, but they will disagree to being it in the same order as the energy does. Therefore, for an efficient integrator with high order precision the constants of motion will certainly be constant along the dynamical trajectory.
+
+
+
+
+\subsection{Chaos and integrators TOCA METERLE VARIAS REFERENCIAS}
+
+Numerical chaos has been a very interactive branch of study for many years since the surge of computers. As we have shown, numerical stability of differential equations is very sensitive to systems involving chaos, even the slightest difference on the floating point error gives rise to diverging trajectories in phase space, this makes chaotic systems very interesting problems numerically speaking. As we know, floating numbers that computer algorithms work with have a finite value for decimals, when coputing a solution of a differential equation using a given algorithm computers truncate this decimals leaving some round-off error. These truncations are not overseen by chaotic systems, chaotic systems has the nature to amplify the slightest perturbance of the system into an observable result, this means that numerical truncations on floating point numbers have long term consequences when interpreting what we consider the solution. It is necessary to take into account these considerations when solving a chaotic system.\par
+
+Numerical integrators and chaos consequently gather on an exotic dance of conditions to consider, on one hand it is important for integrators to have a high order of accuracy by using intermediate steps before computing a definitive step on the trajectory of the solution and it is also important to have a small enough integration step to manage sensibility for the trajectory; on the other hand, error propagation of the floating point decimal truncation everytime the integrator performs an operation discourages all the effort put into calculating derivatives using intermediate steps and raises the question on what is the important aspect to consider. The answer is often unknown, solving these numerical problems with optimal efficiency is truly a very complicated task for the majority of chaotic problems.
+
+
+
 \section{Randomness in classical and quantum mechanics}
 
+Randomness and chaos share similarities physically speaking, they amplify any type of noise from the microscopical degrees of freedom and show them visible in the outcome of the dynamics of the systems. The idea to achieve true randomness on experiments or random number generators is a dream for many experimentalists, but the true situation is that most of the times, classically you can't have the perfect un-biased scenario of randomness. One great example is illustrated bu Diaconis et al. CITAR PAPER DIACONIS MONEDA where very precise measurements and theroretical descriptions are applied to the commonly known random event of the coin toss. The outcome of this research is that for natural flips the result of the coin is biased to come up as started $51%$ of the times. Another example of a physical method to come up with random numbers is related to optical chaos CITAR A (Li, Pu; Wang, Yun-Cai; Zhang, Jian-Zhong (2010-09-13). "All-optical fast random number generator". Optics Express. 18 (19): 20360–20369. Bibcode:2010OExpr..1820360L. doi:10.1364/OE.18.020360. ISSN 1094-4087. PMID 20940928.
+Li, Pu; Sun, Yuanyuan; Liu, Xianglian; Yi, Xiaogang; Zhang, Jianguo; Guo, Xiaomin; Guo, Yanqiang; Wang, Yuncai (2016-07-15). "Fully photonics-based physical random bit generator". Optics Letters. 41 (14): 3347–3350. Bibcode:2016OptL...41.3347L. doi:10.1364/OL.41.003347. ISSN 1539-4794. PMID 27420532.
+), it has  has a high potential to physically produce high-speed random numbers due to its high bandwidth and large amplitude. A prototype of a high speed, real-time physical random bit generator based on a chaotic laser was built in 2013 CITAR A (Wang, Anbang; Li, Pu; Zhang, Jianguo; Zhang, Jianzhong; Li, Lei; Wang, Yuncai (2013-08-26). "4.5 Gbps high-speed real-time physical random bit generator". Optics Express. 21 (17): 20452–20462.).\par
 
-\section{Symplectic Integrator}
-In order to have a symplectic numerical integrator, several parameters are needed.
 
-\subsection{Time step evaluation}
+Determinism defined as the property of events to be determined completely by previously existing causes is an important concept concerning classical mechanics, given the equations of motion of a system, we know in an exact way the state of the system in a future time with arbitrary precision. Chaotic systems are very sensitive to small changes on the initial conditions and they are often missunderstood as random, but as we have previously described, chaotic systems do not exhibit random behavior in the sense that it can be at any place located in phase space but we have shown that it certainly remains conditioned by a certain degree to the motion on the KAM tori giving place to quasiperiodicity.\par 
 
-Vestibulum lacinia commodo velit, ut posuere eros molestie ut. Phasellus purus nibh, mattis ac ultricies nec, vulputate non nibh. Curabitur et blandit tortor. Etiam in velit at est vulputate ultrices ut non nunc. Sed eu eros ut orci fringilla adipiscing id vel justo. Aliquam pulvinar commodo bibendum. Duis in neque ac augue molestie porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut tortor nisi. Fusce tempor posuere condimentum. Quisque eget mi dolor. Curabitur vehicula porta purus eu accumsan. Donec non ipsum dolor, a condimentum leo. Nulla ligula arcu, cursus vel tempor sit amet, fermentum tincidunt odio.
+On the other hand, quantum mechanics seems to have fundamental randomness in its roots, measurements are regarded as probability measurements of the system to be in a determined state.  The Born's interpretation of the quantum mechanics of the wave function implies that we can count only on a probabilistic description of reality, therefore quantum mechanics is inherently probabilistic CITAR LA INTERPRETACION DE BORN DE QM. Randomness in quantum mechanics is also regarded to be due to the interaction of a measurement apparatus and an environment with the initial pure states. This is consistent and parallel to the modern way of intepretations of the collapse of the wave functions and the quantum measurements CITAR A WHEELER AND ZUREK 1983 ZUREK 2003 Y ZUREK 2009.\par 
 
-\subsection{Order of the integrator}
-
-Cras volutpat aliquet venenatis. Integer rhoncus pharetra elit vel auctor. Cras posuere nibh vel justo blandit venenatis. Praesent in nulla quis nunc rhoncus fringilla. Nulla enim arcu, congue at sodales ut, congue id orci. Sed leo quam, tempor id malesuada vitae, condimentum at quam. Quisque elit lectus, blandit at facilisis quis, varius id turpis.
-
-Donec convallis turpis eu felis vehicula commodo nec quis arcu. Ut in \gls{pi} lacinia leo. Nullam in risus felis, eget feugiat ligula. In nulla urna, tempus quis pellentesque a, iaculis sed mauris. Donec tincidunt semper sem, blandit pellentesque justo blandit ac. Vestibulum et mattis mi. In hendrerit, neque in suscipit pharetra, purus turpis aliquet lacus, vel auctor felis dolor id mi. Nullam ut felis massa. Curabitur et rutrum ligula. Maecenas ac lorem eget turpis viverra vehicula at quis lorem. Sed non eros dui. Sed aliquam faucibus pellentesque. Maecenas sit amet ligula non dolor varius auctor non quis ligula. Fusce dapibus auctor varius. Praesent tortor ligula, auctor ut dictum eu, rhoncus vitae nunc.
-
-Quisque metus sem, consectetur sit amet pulvinar varius, sodales eget enim. Suspendisse molestie congue leo ac auctor. Donec erat erat, elementum at convallis sit amet, molestie et ipsum. Nunc venenatis mattis magna, id ultricies purus auctor nec. Donec pharetra turpis sit amet magna convallis consequat. In hac habitasse platea dictumst. Fusce porta molestie massa, sed lacinia felis sollicitudin non. Pellentesque vulputate laoreet consequat. Vivamus ante dolor, bibendum vitae pulvinar id, elementum nec purus. Nullam vel augue velit, ac egestas odio.
-
-\subsection{Numerical tests}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere, justo nec malesuada adipiscing, sem sem accumsan odio, vel convallis orci ligula elementum ipsum. Nunc sodales dignissim orci eu placerat. Vestibulum cursus, neque ut vulputate venenatis, metus tellus iaculis turpis, et sagittis odio arcu nec est. Donec egestas bibendum bibendum. Nam ullamcorper sodales nunc, in feugiat ipsum porttitor quis. Vestibulum sem magna, ornare sed venenatis sed, molestie vitae dui. Etiam a libero sem. Nullam gravida massa nec nulla ornare consequat. Sed sed nisl sapien. Phasellus sollicitudin sapien ut odio mattis pharetra. Quisque tempor nunc et diam vehicula id scelerisque velit auctor.
-
-Quisque ultricies tellus eget neque imperdiet at congue nunc iaculis. Morbi semper commodo risus, ut mattis eros posuere vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec quis magna at est mattis vestibulum. Nulla eleifend sodales vestibulum. Nulla ut justo et dui ullamcorper vestibulum nec vel purus. Mauris non nisl eget sapien eleifend cursus. Nunc aliquet porttitor dolor, eget congue nulla rutrum nec. Fusce aliquam mattis quam, in aliquam libero tempus at. Morbi vestibulum tincidunt est sit amet dignissim. Suspendisse dapibus sollicitudin dui, in rhoncus mauris congue nec. Duis pulvinar dignissim blandit. Suspendisse metus leo, gravida nec viverra vitae, dignissim quis magna. Cras quis nibh leo. Nam faucibus, elit quis aliquet fermentum, neque urna scelerisque nisi, sed mollis nulla mauris sit amet lectus.
-
-Vestibulum lacinia commodo velit, ut posuere eros molestie ut. Phasellus purus nibh, mattis ac ultricies nec, vulputate non nibh. Curabitur et blandit tortor. Etiam in velit at est vulputate ultrices ut non nunc. Sed eu eros ut orci fringilla adipiscing id vel justo. Aliquam pulvinar commodo bibendum. Duis in neque ac augue molestie porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut tortor nisi. Fusce tempor posuere condimentum. Quisque eget mi dolor. Curabitur vehicula porta purus eu accumsan. Donec non ipsum dolor, a condimentum leo. Nulla ligula arcu, cursus vel tempor sit amet, fermentum tincidunt odio.
-
-Cras volutpat aliquet venenatis. Integer rhoncus pharetra elit vel auctor. Cras posuere nibh vel justo blandit venenatis. Praesent in nulla quis nunc rhoncus fringilla. Nulla enim arcu, congue at sodales ut, congue id orci. Sed leo quam, tempor id malesuada vitae, condimentum at quam. Quisque elit lectus, blandit at facilisis quis, varius id turpis.
-
-Donec convallis turpis eu felis vehicula commodo nec quis arcu. Ut in lacinia leo. Nullam in risus felis, eget feugiat ligula. In nulla urna, tempus quis pellentesque a, iaculis sed mauris. Donec tincidunt semper sem, blandit pellentesque justo blandit ac. Vestibulum et mattis mi. In hendrerit, neque in suscipit pharetra, purus turpis aliquet lacus, vel auctor felis dolor id mi. Nullam ut felis massa. Curabitur et rutrum ligula. Maecenas ac lorem eget turpis viverra vehicula at quis lorem. Sed non eros dui. Sed aliquam faucibus pellentesque. Maecenas sit amet ligula non dolor varius auctor non quis ligula. Fusce dapibus auctor varius. Praesent tortor ligula, auctor ut dictum eu, rhoncus vitae nunc.
-
-\subsection{Chaos and integrators}
-
-Quisque metus sem, consectetur sit amet pulvinar varius, sodales eget enim. Suspendisse molestie congue leo ac auctor. Donec erat erat, elementum at convallis sit amet, molestie et ipsum. Nunc venenatis mattis magna, id ultricies purus auctor nec. Donec pharetra turpis sit amet magna convallis consequat. In hac habitasse platea dictumst. Fusce porta molestie massa, sed lacinia felis sollicitudin non. Pellentesque vulputate laoreet consequat. Vivamus ante dolor, bibendum vitae pulvinar id, elementum nec purus. Nullam vel augue velit, ac egestas odio.
+It is important for us to talk about the experiment to measure a spin component along a direction. If we take the $z$ component  as an example similar to the Stern-Gerlach experiment CITAR EL EXPERIMENTO DE STERN GERLACH, in this experiment the particles before the measurement are regarded to be in a neutral state along the $z$ component, after the particles go through the inhomogeneous magnetic field the spin aligns along a direction of the $z$ component and gets deflected along this direction. The result of the experiment is seen in a screen where two clouds of particles are seen, one in the upper location and one in the lower one. The counts of particles on each cloud is the same in both cases, this translates as the probability of the particles to be aligned along certain direction is the same. Particles then have a completely random probability to the aligned along certain direction, this idea can be compared with the one of the coin toss, only two possible outcomes of the measurement. There is a big difference between both pictures besides one being classical and the other one quantum, it is that the coin toss is not truly random as it depends strongly on the initial conditions on how the coin toss is made meanwhile the spin measurement seems to be totally random as long as the particle is initially in a non-commuting state with the $z$ component of the spin. This idea is the one we are going to exploit on the next chapters and explore a little bit the grounds of the environment and its role of introducing bias to the outcome of the measurements.
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  5 APR 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  14 MAY 2020 08:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -490,39 +490,734 @@ s
 \f@nch@O@olf=\skip75
 \f@nch@O@orf=\skip76
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box33
-\beforetitleunit=\skip77
-\aftertitleunit=\skip78
-\ttl@plus=\dimen133
-\ttl@minus=\dimen134
-\ttl@toksa=\toks32
-\titlewidth=\dimen135
-\titlewidthlast=\dimen136
-\titlewidthfirst=\dimen137
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen133
+\pgfutil@tempdimb=\dimen134
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box33
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen135
+\pgf@y=\dimen136
+\pgf@xa=\dimen137
+\pgf@ya=\dimen138
+\pgf@xb=\dimen139
+\pgf@yb=\dimen140
+\pgf@xc=\dimen141
+\pgf@yc=\dimen142
+\w@pgf@writea=\write6
+\r@pgf@reada=\read1
+\c@pgf@counta=\count143
+\c@pgf@countb=\count144
+\c@pgf@countc=\count145
+\c@pgf@countd=\count146
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip79
-\bibsep=\skip80
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count143
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count147
+\pgfsyssoftpath@bigbuffer@items=\count148
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks33
-\thm@bodyfont=\toks34
-\thm@headfont=\toks35
-\thm@notefont=\toks36
-\thm@headpunct=\toks37
-\thm@preskip=\skip81
-\thm@postskip=\skip82
-\thm@headsep=\skip83
-\dth@everypar=\toks38
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-\c@definition=\count144
-\c@example=\count145
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen143
+\pgfmath@count=\count149
+\pgfmath@box=\box34
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count150
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen144
+\pgf@picmaxx=\dimen145
+\pgf@picminy=\dimen146
+\pgf@picmaxy=\dimen147
+\pgf@pathminx=\dimen148
+\pgf@pathmaxx=\dimen149
+\pgf@pathminy=\dimen150
+\pgf@pathmaxy=\dimen151
+\pgf@xx=\dimen152
+\pgf@xy=\dimen153
+\pgf@yx=\dimen154
+\pgf@yy=\dimen155
+\pgf@zx=\dimen156
+\pgf@zy=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen158
+\pgf@path@lasty=\dimen159
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen160
+\pgf@shorten@start@additional=\dimen161
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count151
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen162
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen163
+\pgf@pt@y=\dimen164
+\pgf@pt@temp=\dimen165
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen166
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen167
+\pgf@sys@shading@range@num=\count152
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box38
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box39
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen168
+\pgf@nodesepend=\dimen169
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen170
+\pgffor@skip=\dimen171
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count153
+\pgfplotmarksize=\dimen172
+)
+\tikz@lastx=\dimen173
+\tikz@lasty=\dimen174
+\tikz@lastxsaved=\dimen175
+\tikz@lastysaved=\dimen176
+\tikzleveldistance=\dimen177
+\tikzsiblingdistance=\dimen178
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count154
+\tikznumberofchildren=\count155
+\tikznumberofcurrentchild=\count156
+\tikz@fig@count=\count157
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count158
+\pgfmatrixcurrentcolumn=\count159
+\pgf@matrix@numberofcolumns=\count160
+)
+\tikz@expandcount=\count161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (./tikz-3dplot.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen179
+))) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count162
+\float@exts=\toks44
+\float@box=\box44
+\@float@everytoks=\toks45
+\@floatcapt=\box45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks46
+\inpenc@posthook=\toks47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip77
+\subfigcapskip=\skip78
+\subfigcaptopadj=\dimen180
+\subfigbottomskip=\skip79
+\subfigcapmargin=\dimen181
+\subfiglabelskip=\skip80
+\c@subfigure=\count163
+\c@lofdepth=\count164
+\c@subtable=\count165
+\c@lotdepth=\count166
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip81
+\subfig@bottom=\skip82
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count167
+\lst@gtempboxa=\box46
+\lst@token=\toks48
+\lst@length=\count168
+\lst@currlwidth=\dimen182
+\lst@column=\count169
+\lst@pos=\count170
+\lst@lostspace=\dimen183
+\lst@width=\dimen184
+\lst@newlines=\count171
+\lst@lineno=\count172
+\lst@maxwidth=\dimen185
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count173
+\lst@skipnumbers=\count174
+\lst@framebox=\box47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen186
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count176
+)
+\es@quottoks=\toks49
+\es@quotdepth=\count177
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/selinput.sty
+Package: selinput 2016/05/17 v1.4 Semi-automatic input encoding detection (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ix-name.def
+File: ix-name.def 2016/05/16 v1.11 Name list (inputenx)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-utf8.def
+File: se-utf8.def 2016/05/16 v1.11 stringenc: UTF-8
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Package selinput Info: Encoding `utf8' selected on input line 24.
+
+
+! LaTeX Error: Option clash for package graphicx.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \usepackage
+                {subfig}
+The package graphicx has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [demo]
+Adding the global options:
+  ,demo
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -530,41 +1225,105 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen138
-\captionmargin@=\dimen139
-\captionwidth=\dimen140
-\caption@tempdima=\dimen141
-\caption@indent=\dimen142
-\caption@parindent=\dimen143
-\caption@hangindent=\dimen144
+\captionmargin=\dimen187
+\captionmargin@=\dimen188
+\captionwidth=\dimen189
+\caption@tempdima=\dimen190
+\caption@indent=\dimen191
+\caption@parindent=\dimen192
+\caption@hangindent=\dimen193
 )
-\c@ContinuedFloat=\count146
+\c@ContinuedFloat=\count178
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
+Package caption Info: subfigure package is loaded.
 Package caption Info: supertabular package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count147
-\sf@farskip=\skip84
-\sf@captopadj=\dimen145
-\sf@capskip=\skip85
-\sf@nearskip=\skip86
-\c@subfigure=\count148
-\c@subfigure@save=\count149
-\c@lofdepth=\count150
-\c@subtable=\count151
-\c@subtable@save=\count152
-\c@lotdepth=\count153
-\sf@top=\skip87
-\sf@bottom=\skip88
-))
-(./02ThesisInfo.tex) (./03Abstract.tex) (./04Acknowledgments.tex) (./thesis.aux
+\c@KVtest=\count179
+\sf@farskip=\skip83
+\sf@captopadj=\dimen194
+\sf@capskip=\skip84
+\sf@nearskip=\skip85
+\sf@top=\skip86
+\sf@bottom=\skip87
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box48
+\beforetitleunit=\skip88
+\aftertitleunit=\skip89
+\ttl@plus=\dimen195
+\ttl@minus=\dimen196
+\ttl@toksa=\toks50
+\titlewidth=\dimen197
+\titlewidthlast=\dimen198
+\titlewidthfirst=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip90
+\bibsep=\skip91
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count180
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks51
+\thm@bodyfont=\toks52
+\thm@headfont=\toks53
+\thm@notefont=\toks54
+\thm@headpunct=\toks55
+\thm@preskip=\skip92
+\thm@postskip=\skip93
+\thm@headsep=\skip94
+\dth@everypar=\toks56
+)
+\c@definition=\count181
+\c@example=\count182
+
+
+! Package caption Error: `small' undefined in families `caption'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 
+     
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `bf' undefined in families `caption'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 
+     
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./02ThesisInfo.tex) (./03Abstract.tex) (./04Acknowledgments.tex)
+(./thesis.aux
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 )
 \openout1 = `thesis.aux'.
 
@@ -582,19 +1341,20 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
-\scratchdimen=\dimen146
-\scratchbox=\box34
-\nofMPsegments=\count155
-\nofMParguments=\count156
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count157
-\MPscratchDim=\dimen147
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count183
+\scratchdimen=\dimen256
+\scratchbox=\box49
+\nofMPsegments=\count184
+\nofMParguments=\count185
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen257
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
+\everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -627,7 +1387,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box35
+\AtBeginShipoutBox=\box50
 Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -636,29 +1396,44 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count160
+\c@section@level=\count189
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write6
-\openout6 = `thesis.out'.
+\@outlinefile=\write7
+\openout7 = `thesis.out'.
 
+ ABD: EveryShipout initializing macros
+\c@lstlisting=\count190
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-\cam@logorightnudge=\skip89
-\cam@logo=\box36
-<CollegeShields/CUni.pdf, id=160, 779.55241pt x 426.8748pt>
+
+! Undefined control sequence.
+<argument> \sf@counterlist 
+                           
+l.29 \begin{document}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\cam@logorightnudge=\skip95
+\cam@logo=\box51
+<CollegeShields/CUni.pdf, id=191, 779.55241pt x 426.8748pt>
 File: CollegeShields/CUni.pdf Graphic file (type pdf)
 <use CollegeShields/CUni.pdf>
 Package pdftex.def Info: CollegeShields/CUni.pdf  used on input line 31.
 (pdftex.def)             Requested size: 207.70511pt x 113.73355pt.
-\cam@title=\box37
+\cam@title=\box52
 LaTeX Font Info:    Try loading font information for U+msa on input line 31.
-
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -673,17 +1448,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-\cam@collegeshieldbox=\box38
-<CollegeShields/escudo.pdf, id=161, 289.08pt x 370.98601pt>
+\cam@collegeshieldbox=\box53
+<CollegeShields/escudo.pdf, id=192, 289.08pt x 370.98601pt>
 File: CollegeShields/escudo.pdf Graphic file (type pdf)
 <use CollegeShields/escudo.pdf>
 Package pdftex.def Info: CollegeShields/escudo.pdf  used on input line 31.
 (pdftex.def)             Requested size: 44.33936pt x 56.9055pt.
-\cam@authorcollege=\box39
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ­ in font cmr12!
-\cam@submitnotice=\box40
-\cam@titlepagevspace=\skip90
+\cam@authorcollege=\box54
+\cam@submitnotice=\box55
+\cam@titlepagevspace=\skip96
  [1
 
 \openout4 = `thesis.ist'.
@@ -695,24 +1468,20 @@ pdfTeX warning: pdflatex (file ./CollegeShields/escudo.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >] [2
 
-]
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ­ in font cmr12!
- [3] [4
+] [3] [4
 
-]
-Missing character: There is no Ã in font cmti12!
-Missing character: There is no ­ in font cmti12!
- [5] [6
+] [5] [6
 
 ] [7] [8
 
 ] (./thesis.toc
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
  [9])
-\tf@toc=\write7
-\openout7 = `thesis.toc'.
+\tf@toc=\write8
+\openout8 = `thesis.toc'.
 
  [10]
 No file thesis.gls.
@@ -721,19 +1490,19 @@ No file thesis.gls.
 ] [12
 
 ] (./11Introduction.tex
-Chapter 1.
-) (./12Background.tex [13
+Cap\'{\i }tulo 1.
+[13
 
-] [14
-
-]
-Chapter 2.
-<./Figures/RevUni.pdf, id=288, 250.9375pt x 74.2775pt>
+]) (./12Background.tex [14]
+Cap\'{\i }tulo 2.
+<./Figures/RevUni.pdf, id=326, 250.9375pt x 74.2775pt>
 File: ./Figures/RevUni.pdf Graphic file (type pdf)
 <use ./Figures/RevUni.pdf>
 Package pdftex.def Info: ./Figures/RevUni.pdf  used on input line 7.
 (pdftex.def)             Requested size: 250.93687pt x 74.27731pt.
-[15 <./Figures/RevUni.pdf>] [16]) (./13MainChapter.tex
+[15
+
+ <./Figures/RevUni.pdf>] [16]) (./13MainChapter.tex
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -750,14 +1519,10 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [18
 
 ]
-Chapter 3.
+Cap\'{\i }tulo 3.
 
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 19 unde
 fined on input line 7.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
 
 
 ! LaTeX Error: \begin{align} on input line 16 ended by \end{eqnarray}.
@@ -887,42 +1652,50 @@ The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
 
- []
-
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
-
-LaTeX Warning: Reference `eq:set_diff_eqs' on page 20 undefined on input line 4
-4.
-
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--51
-
- []
-
+pdfTeX warning: pdflatex (file ./Figures/orbit_3d.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<Figures/orbit_3d.pdf, id=354, 711.3185pt x 512.14938pt>
+File: Figures/orbit_3d.pdf Graphic file (type pdf)
+<use Figures/orbit_3d.pdf>
+Package pdftex.def Info: Figures/orbit_3d.pdf  used on input line 33.
+(pdftex.def)             Requested size: 472.03123pt x 339.86392pt.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
+[20 <./Figures/orbit_3d.pdf>]
+
+LaTeX Warning: Reference `eq:set_diff_eqs' on page 21 undefined on input line 4
+4.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
+
+ []
 
 
 LaTeX Warning: Reference `eq_:vect_diff_eqs' on page 21 undefined on input line
  52.
 
 
-Overfull \hbox (6.07607pt too wide) in paragraph at lines 54--54
+Overfull \hbox (11.47606pt too wide) in paragraph at lines 54--54
 |[]\OT1/cmr/bx/n/17.28 Hamilton equa-tions and Sym-plec-tic Structure- OTT
  []
 
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -982,16 +1755,18 @@ The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 22 unde
+fined on input line 73.
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 22 unde
-fined on input line 73.
-
+[22]
 ! Extra }, or forgotten $.
 l.103 \frac{\partial H}{\partial \tilde{\bm{x}}}}
                                                  =\begin{bmatrix}
@@ -1002,13 +1777,6 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
-
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 23 unde
 fined on input line 120.
 
@@ -1016,10 +1784,8 @@ fined on input line 120.
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 23 unde
 fined on input line 120.
 
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 23 unde
-fined on input line 123.
-
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1027,6 +1793,10 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 24 unde
+fined on input line 123.
+
 ! Extra }, or forgotten $.
 l.158 ...that $\partial^2H/\partial\tilde{\bm{x}}}
                                                   \partial\tilde{\bm{x}}}$ i...
@@ -1045,8 +1815,17 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
 
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 24 unde
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 25 unde
 fined on input line 168.
 
 ! Undefined control sequence.
@@ -1058,7 +1837,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ´ in font cmr12!
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 ...es, we will highlight here the Poincar\Â´
+                                                  e  Recurrence Theorem CITE...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 ! Undefined control sequence.
 l.174 are the Poincar\Â
                        ´e Cycles and $t_j$ the Poincar\Â´e Recurrence Times....
@@ -1068,7 +1860,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ´ in font cmr12!
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 are the Poincar\Â´
+                        e Cycles and $t_j$ the Poincar\Â´e Recurrence Times....
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 ! Undefined control sequence.
 l.174 ...oincar\Â´e Cycles and $t_j$ the Poincar\Â
                                                   ´e Recurrence Times. \par
@@ -1078,14 +1883,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ´ in font cmr12!
 
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
 
-[24]
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 ...incar\Â´e Cycles and $t_j$ the Poincar\Â´
+                                                  e Recurrence Times. \par
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 ! Undefined control sequence.
 l.180 Poincar\Â
                ´e proved that for a movement in a finite region of space in ...
@@ -1095,7 +1905,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ´ in font cmr12!
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 Poincar\Â´
+                e proved that for a movement in a finite region of space in ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1103,6 +1928,9 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1110,10 +1938,25 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
+<Figures/trajectory_torus.png, id=433, 463.0098pt x 347.3778pt>
+File: Figures/trajectory_torus.png Graphic file (type png)
+<use Figures/trajectory_torus.png>
+Package pdftex.def Info: Figures/trajectory_torus.png  used on input line 219.
+(pdftex.def)             Requested size: 330.42041pt x 247.90149pt.
+LaTeX Info: Redefining \. on input line 240.
+LaTeX Info: Redefining \% on input line 240.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./Figures/trajectory_torus.png (PNG copy)>]
 ! Undefined control sequence.
 <argument> \partal 
                    \bm {I}
-l.252 ...artial \tilde{H}(\bm{I})}{\partal \bm{I}}
+l.251 ...artial \tilde{H}(\bm{I})}{\partal \bm{I}}
                                                   \equiv \bm{\omega}(\bm{I}),
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1122,20 +1965,15 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27]
-
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 28 unde
-fined on input line 270.
+fined on input line 269.
 
 
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 28 unde
-fined on input line 270.
+fined on input line 269.
 
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1143,45 +1981,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 29 unde
-fined on input line 289.
-
-! Undefined control sequence.
-l.289 ...ts. This result is known as the Poincar\Â
-                                                  ´e Birkhoff theorem CITE R...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no ´ in font cmr12!
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 29 unde
-fined on input line 289.
-
-! Undefined control sequence.
-l.289 ...de{q}=3$ and $\tilde{q}=4$ in a Poincar\Â
-                                                  ´e section for a system wi...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no ´ in font cmr12!
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 29 unde
-fined on input line 291.
-
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 29 unde
-fined on input line 293.
-
-
-Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 29 unde
-fined on input line 293.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1192,18 +1993,72 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [29]
 
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 30 unde
-fined on input line 295.
+fined on input line 288.
 
 ! Undefined control sequence.
-l.295 ...oints the allowed region of the Poincar\Â
-                                                  ´e section. We will now se...
+l.288 ...ts. This result is known as the Poincar\Â
+                                                  ´e Birkhoff theorem CITE R...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ´ in font cmr12!
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 ...s. This result is known as the Poincar\Â´
+                                                  e Birkhoff theorem CITE RE...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 30 unde
+fined on input line 288.
+
+! Undefined control sequence.
+l.288 ...de{q}=3$ and $\tilde{q}=4$ in a Poincar\Â
+                                                  ´e section for a system wi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 ...e{q}=3$ and $\tilde{q}=4$ in a Poincar\Â´
+                                                  e section for a system wit...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 30 unde
+fined on input line 290.
+
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 30 unde
+fined on input line 292.
+
+
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 30 unde
+fined on input line 292.
+
+LaTeX Info: Redefining \. on input line 294.
+LaTeX Info: Redefining \% on input line 294.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1213,8 +2068,33 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [30]
 
 Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 31 unde
-fined on input line 323.
+fined on input line 294.
 
+! Undefined control sequence.
+l.294 ...oints the allowed region of the Poincar\Â
+                                                  ´e section. We will now se...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294 ...ints the allowed region of the Poincar\Â´
+                                                  e section. We will now see...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Info: Redefining \. on input line 320.
+LaTeX Info: Redefining \% on input line 320.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1223,6 +2103,12 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [31]
 
+Package natbib Warning: Citation `ottChaosDynamicalSystems2002' on page 32 unde
+fined on input line 322.
+
+LaTeX Info: Redefining \. on input line 340.
+LaTeX Info: Redefining \% on input line 340.
+
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1230,12 +2116,67 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [32]
 
+! LaTeX Error: No counter 'subfigure@save' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344     \subfloat
+                   [Position dynamics]{{\includegraphics[width=10cm]{Figures...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Figures/harmonic_oscillator.png, id=482, 602.25pt x 401.5pt>
+File: Figures/harmonic_oscillator.png Graphic file (type png)
+<use Figures/harmonic_oscillator.png>
+Package pdftex.def Info: Figures/harmonic_oscillator.png  used on input line 34
+4.
+(pdftex.def)             Requested size: 284.52756pt x 189.69136pt.
+
+! LaTeX Error: No counter 'subfigure@save' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.346     \subfloat
+                   [Phase space dynamics]{{\includegraphics[width=10cm]{Figu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Figures/harmonic_oscillator_PS.png, id=483, 602.25pt x 401.5pt>
+File: Figures/harmonic_oscillator_PS.png Graphic file (type png)
+<use Figures/harmonic_oscillator_PS.png>
+Package pdftex.def Info: Figures/harmonic_oscillator_PS.png  used on input line
+ 346.
+(pdftex.def)             Requested size: 284.52756pt x 189.69136pt.
+! Extra }, or forgotten \endgroup.
+\sf@endfloatbox ...gefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.349 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
+
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]) (./14OtherChapter.tex
+[33 <./Figures/harmonic_oscillator.png> <./Figures/harmonic_oscillator_PS.png>]
+LaTeX Info: Redefining \. on input line 369.
+LaTeX Info: Redefining \% on input line 369.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1243,17 +2184,97 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-Chapter 4.
-[35
 
-]
+LaTeX Warning: Command \textendash invalid in math mode on input line 384.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 385.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.385 ...cs Express. 21 (17): 20452â€“20462.).\par
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (189.4596pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 (-20) 51\OML/cmm/m/it/12 Li; Pu\OT1/cmr/m/n/12 (-20) ; \OML/cmm
+/m/it/12 Sun; Yuanyuan\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Liu; Xianglian\O
+T1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Yi; Xiaogang\OT1/cmr/m/n/12 (-20) ; \OML
+/cmm/m/it/12 Zhang; Jianguo\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Guo; Xiaomi
+n\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Guo; Yanqiang\OT1/cmr/m/n/12 (-20) ; 
+\OML/cmm/m/it/12 Wang; Yuncai\OT1/cmr/m/n/12 (-20) (2016 \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (67.024pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 (-20) 07 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (-20) 15)\OML/cmm
+/m/it/12 :\OT1/cmr/m/n/12 (-20) "\OML/cmm/m/it/12 Fullyphotonics \OMS/cmsy/m/n/
+12 ^^@ \OML/cmm/m/it/12 basedphysicalrandombitgenerator\OT1/cmr/m/n/12 (-20) "\
+OML/cmm/m/it/12 :OpticsLetters[]\OT1/cmr/m/n/12 (-20) 41(14) : 3347{3350\OML/cm
+m/m/it/12 :Bibcode \OT1/cmr/m/n/12 (-20) :
+ []
+
+
+Overfull \hbox (225.7938pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 (-20) 2016\OML/cmm/m/it/12 OptL::[]\OT1/cmr/m/n/12 (-20) 41[]33
+47\OML/cmm/m/it/12 L:doi \OT1/cmr/m/n/12 (-20) : 10[]1364\OML/cmm/m/it/12 =OL[]
+\OT1/cmr/m/n/12 (-20) 41[]003347\OML/cmm/m/it/12 :ISSN\OT1/cmr/m/n/12 (-20) 153
+9 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (-20) 4794\OML/cmm/m/it/12 :PMID\OT1/cmr
+/m/n/12 (-20) 27420532\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) )\OML/cmm/m/it/12
+ ; ithashasahighpotentialtophysicallyproducehigh \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (28.76854pt too wide) in paragraph at lines 383--385
+\OML/cmm/m/it/12 speedrandomnumbersduetoitshighbandwidthandlargeamplitude:Aprot
+otypeofahighspeed; real \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (407.81075pt too wide) in paragraph at lines 383--385
+\OML/cmm/m/it/12 timephysicalrandombitgeneratorbasedonachaoticlaserwasbuiltin\O
+T1/cmr/m/n/12 (-20) 2013\OML/cmm/m/it/12 CITARA\OT1/cmr/m/n/12 (-20) (\OML/cmm/
+m/it/12 Wang; Anbang\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Li; Pu\OT1/cmr/m/n
+/12 (-20) ; \OML/cmm/m/it/12 Zhang; Jianguo\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/i
+t/12 Zhang; Jianzhong\OT1/cmr/m/n/12 (-20) ; \OML/cmm/m/it/12 Li; Lei\OT1/cmr/m
+/n/12 (-20) ; \OML/cmm/m/it/12 Wang; Yuncai\OT1/cmr/m/n/12 (-20) (2013 \OMS/cms
+y/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (5.99562pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 (-20) 08 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (-20) 26)\OML/cmm
+/m/it/12 :\OT1/cmr/m/n/12 (-20) "4[]5\OML/cmm/m/it/12 Gbpshigh \OMS/cmsy/m/n/12
+ ^^@ \OML/cmm/m/it/12 speedreal \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 timephysi
+calrandombitgenerator\OT1/cmr/m/n/12 (-20) "\OML/cmm/m/it/12 :OpticsExpress[]\O
+T1/cmr/m/n/12 (-20) 21(17) :
+ []
+
+LaTeX Info: Redefining \. on input line 385.
+LaTeX Info: Redefining \% on input line 385.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[35]
+LaTeX Info: Redefining \. on input line 393.
+LaTeX Info: Redefining \% on input line 393.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]) (./14OtherChapter.tex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1261,8 +2282,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [37]
-Missing character: There is no Ã in font cmbx12!
-Missing character: There is no © in font cmbx12!
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1270,14 +2291,14 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[38
 
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
+]
+Cap\'{\i }tulo 4.
 [39]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1285,68 +2306,212 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]) (./15ResultsEvaluation.tex
+[41]
+<Figures/energy_contour.png, id=541, 433.62pt x 289.08pt>
+File: Figures/energy_contour.png Graphic file (type png)
+<use Figures/energy_contour.png>
+Package pdftex.def Info: Figures/energy_contour.png  used on input line 110.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
-Chapter 5.
-) (./16RelatedWork.tex [43
+[42 <./Figures/energy_contour.png>]
+<Figures/energy_contour_coupled01.png, id=551, 433.62pt x 289.08pt>
+File: Figures/energy_contour_coupled01.png Graphic file (type png)
+<use Figures/energy_contour_coupled01.png>
+Package pdftex.def Info: Figures/energy_contour_coupled01.png  used on input li
+ne 121.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
 
-]
+! Misplaced alignment tab character &.
+l.131 M. P. Calvo &
+                    J. M. Sanz-Serna, Symplectic numerical methods for Hamil...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Misplaced alignment tab character &.
+l.133 Rackauckas, C. &
+                       Nie, Q., (2017). DifferentialEquations.jl â€“ A Perfo...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-[44
-
-]
-Chapter 6.
-) (./17FutureWork.tex [45]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[46
-
-]
-Chapter 7.
-) (./18Conclusion.tex [47]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[48
-
-]
-Chapter 8.
-) [49]
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50
+[43 <./Figures/energy_contour_coupled01.png>]
+<Figures/poincare_g0.png, id=559, 433.62pt x 289.08pt>
+File: Figures/poincare_g0.png Graphic file (type png)
+<use Figures/poincare_g0.png>
+Package pdftex.def Info: Figures/poincare_g0.png  used on input line 139.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+<Figures/poincare_g0001.png, id=561, 433.62pt x 289.08pt>
+File: Figures/poincare_g0001.png Graphic file (type png)
+<use Figures/poincare_g0001.png>
+Package pdftex.def Info: Figures/poincare_g0001.png  used on input line 149.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
 
-] (./thesis.bbl) (./21Appendix.tex [51
 
-]
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./Figures/poincare_g0.png>]
+<Figures/poincare_g0005.png, id=569, 433.62pt x 289.08pt>
+File: Figures/poincare_g0005.png Graphic file (type png)
+<use Figures/poincare_g0005.png>
+Package pdftex.def Info: Figures/poincare_g0005.png  used on input line 158.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./Figures/poincare_g0001.png> <./Figures/poincare_g0005.png>]
+<Figures/poincare_g001.png, id=580, 433.62pt x 289.08pt>
+File: Figures/poincare_g001.png Graphic file (type png)
+<use Figures/poincare_g001.png>
+Package pdftex.def Info: Figures/poincare_g001.png  used on input line 167.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+<Figures/poincare_g005.png, id=581, 433.62pt x 289.08pt>
+File: Figures/poincare_g005.png Graphic file (type png)
+<use Figures/poincare_g005.png>
+Package pdftex.def Info: Figures/poincare_g005.png  used on input line 175.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+<Figures/poincare_g01.png, id=582, 433.62pt x 289.08pt>
+File: Figures/poincare_g01.png Graphic file (type png)
+<use Figures/poincare_g01.png>
+Package pdftex.def Info: Figures/poincare_g01.png  used on input line 182.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./Figures/poincare_g001.png> <./Figures/poincare_g005.png>]
+<Figures/poincare_g02.png, id=594, 433.62pt x 289.08pt>
+File: Figures/poincare_g02.png Graphic file (type png)
+<use Figures/poincare_g02.png>
+Package pdftex.def Info: Figures/poincare_g02.png  used on input line 192.
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./Figures/poincare_g01.png>]
+<Figures/frequency_spectra.png, id=602, 433.62pt x 289.08pt>
+File: Figures/frequency_spectra.png Graphic file (type png)
+<use Figures/frequency_spectra.png>
+Package pdftex.def Info: Figures/frequency_spectra.png  used on input line 216.
+
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./Figures/poincare_g02.png>]
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./Figures/frequency_spectra.png>]
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 252.
+
+) (./15ResultsEvaluation.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1356,8 +2521,11 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [52
 
 ]
-Appendix A.
-) (./22Index.tex [53]
+Cap\'{\i }tulo 5.
+) (./16RelatedWork.tex [53]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -1367,6 +2535,67 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [54
 
 ]
+Cap\'{\i }tulo 6.
+) (./17FutureWork.tex [55]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56
+
+]
+Cap\'{\i }tulo 7.
+) (./18Conclusion.tex [57]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58
+
+]
+Cap\'{\i }tulo 8.
+) [59]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60
+
+] (./thesis.bbl) (./21Appendix.tex [61
+
+]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62
+
+]
+Ap\'{e}ndice A.
+) (./22Index.tex [63]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64
+
+]
 No file thesis.ind.
 )
 
@@ -1374,11 +2603,16 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
-(./thesis.aux)
+(./thesis.aux
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FC1A81E9C375FE3DF7D15D0461317777;2805.
+(rerunfilecheck)             Checksum: 8587812B920E6F2B62928A8AF0839423;3676.
 
 
 LaTeX Warning: There were undefined references.
@@ -1386,36 +2620,32 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 14074 strings out of 492982
- 212841 string characters out of 6134895
- 403790 words of memory out of 5000000
- 17111 multiletter control sequences out of 15000+600000
- 17299 words of font info for 101 fonts, out of 8000000 for 9000
+ 28355 strings out of 492982
+ 492110 string characters out of 6134895
+ 664353 words of memory out of 5000000
+ 31036 multiletter control sequences out of 15000+600000
+ 16740 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,92p,1992b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:pi} has been referenced but does not exist, r
-eplaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (54 pages, 974057 bytes).
+ 63i,12n,96p,1992b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (64 pages, 1757533 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 533 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 17224 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 778 PDF objects out of 1000 (max. 8388607)
+ 654 compressed objects within 7 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 16850 words of extra memory for PDF output out of 17280 (max. 10000000)
 
