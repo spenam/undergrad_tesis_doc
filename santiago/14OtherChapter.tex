@@ -63,6 +63,7 @@ For the heat bath we find that the equations of motion for each of the $n$ oscil
 From these equations we can calculate the frequency of small oscillations for the double well potential, we proceed by taking the the potential given as
 \begin{equation}
 V(x)=-\frac{1}{2}ax^2+\frac{1}{4}bx^4,
+\label{eq:potential}
 \end{equation}
 the equilibrium points are located where the potential $V$ is minimum or maximum, this is when the following condition is satisfied
 \begin{equation}
@@ -82,6 +83,7 @@ This potential is the same expression of a harmonic oscillator potential with a 
 
 \begin{equation}
 \omega =\sqrt{\frac{k}{m}}=\sqrt{\frac{2a}{m}}
+\label{eq:freq_small_oscillations}
 \end{equation}
 
 For the case of the particle coupled to the heat bath we can do the same analysis and see the role of the counter term in the hamiltonian resulting in the same results as above. The equilibrium points of the whole hamiltonian must satisfy the following condition
@@ -95,8 +97,18 @@ x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N \frac{xg_n^2}{M_n\omega_n}=0 \quad 
 \end{equation}
 where the right hand side equation will provide the constraint to retrieve the original conditions of equilibrium for the potential on the right hand side
 \begin{equation}
-x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N \frac{xg_n^2}{M_n\omega_n}= x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N g_n X_n=x(bx^2-a)=0
+x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N \frac{xg_n^2}{M_n\omega_n}= x(bx^2-a)-\sum_{n=1}^N g_n X_n +\sum_{n=1}^N g_n X_n=x(bx^2-a)=0.
 \end{equation}
+We can also calculate the height of the potential barrier (the difference between the height of the unstable equilibrium with the stable equilibrium), we can do this by insterting one of the minima on equation (\ref{eq:potential}):
+\begin{equation}
+V(\sqrt{\frac{a}{b}})=-a\frac{a}{2b}+b\frac{a^2}{4b^2}=\frac{-a^2}{2b}+\frac{a^2}{4b}=-\frac{a^2}{4b},
+\end{equation}
+For this particular situation the unstable equilibrium is located at the $0$ height, meaning that in general the height of the potential barrier will be the difference between the unstable and the equilibrium point given as
+\begin{equation}
+PB(a,b)=\frac{a^2}{4b}
+\label{eq:PB_eq}
+\end{equation}
+
 
 \subsection{Infinite heat bath and dissipation}
 
@@ -114,7 +126,7 @@ We start the numerical experiments of this model with only one oscillator couple
 
 In Figure (\ref{fig:contour_g0}) we see that as the dynamics is uncoupled, the particle moves freely on the double well potential and the harmonic oscillator doesn't really changes its motion. \par 
 
-Following this representation we can observe the perturbation induced by the harmonic oscillator when we "turn on" the coupling between the two systems, for a coupling of $g_1=0.1$ it is already evident that shape of the whole potential suffers a shearing effect:
+Following this representation we can observe the perturbation induced by the harmonic oscillator when we \say{turn on} the coupling between the two systems, for a coupling of $g_1=0.1$ it is already evident that shape of the whole potential suffers a shearing effect:
 
 \begin{figure}[H]
 \centering
@@ -141,7 +153,7 @@ Rackauckas, C. & Nie, Q., (2017). DifferentialEquations.jl – A Performant and 
 }
 \end{figure}
 
-In Figure (\ref{fig:poinc_g0}) we start with $g_1=0$ and see that the orbits on the phase space of the particle are closed, the particle is totally unaware of the harmonic oscillator's potential. Now we will slowly start to "turn on" the coupling between the systems.\par 
+In Figure (\ref{fig:poinc_g0}) we start with $g_1=0$ and see that the orbits on the phase space of the particle are closed, the particle is totally unaware of the harmonic oscillator's potential. Now we will slowly start to \say{turn on} the coupling between the systems.\par 
 
 
 \begin{figure}[H]
@@ -243,21 +255,33 @@ In this section we will start to evidence the loss of chaotic dynamics due to th
 There are four types of parameters that are interesting for us to look at the variation of the dynamics of the system: The exponent $s$ in the  equation (\ref{eq:spectral_density}), the coupling constant of the oscillators $g_0$ that multiplies the coupling constant of each oscillator $g_i=g_0/\sqrt{N}$, the height of the potential barrier and the initial energy of the heat bath. Each of these conditions will affect the number of jumps from one well to the other that the particle makes. We will therefore evaluate the results of changing these parameters for different number of oscillators for $100$ test cases where the positions, frequencies and energies are randomized every time and the numbers of jumps will be averaged. The way of sampling the energies and initial conditions are described in the method of drawing energies from a gaussian distribution in order to have more control on the energies of the harmonic oscillators. For most of the cases we will use fixed values for each parameter unless explicitly stated otherwise, these values are $s=0.5$, $g_0=0.1$, the initial energy of the heat bath $E_{bath}=0.1$ and the height of the potential barrier $PB=1$
 
 \subsubsection{Changing the exponent $s$}
-According to the microscopic theory of dissipation (CITAR CITE EL ARTICULO DE LEGGET), the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the "ohmic" case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called "super-ohmic" and the case of $0<s<1$ is called "sub-ohmic". Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
+According to the microscopic theory of dissipation (CITAR CITE EL ARTICULO DE LEGGET), the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the \say{ohmic} case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called \say{super-ohmic} and the case of $0<s<1$ is called \say{sub-ohmic}. Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
 
 FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE S\par 
 
 We conclude that for the classical case, the parameter $s$ in the spectral density does not really affect the dynamics of the system in a particular way as we don't see a real difference between having a bath with sub-ohmic, ohmic or super-ohmic nature. We see the general behavior of dissipation where the jumps between the wells decrease with the increase in the in the number of oscillators in the heat bath and it is independent of the parameter $s$.
 
 \subsubsection{Changing the individual coupling $g_0$}
-We have seen the effect of the coupling involving chaos with only one oscillator in one of the previous sections, this showed us the effect of different values for the coupling constants that develop into increasing chaotic motion. In this section we will continue to study the effects on the dynamics of the whole system when we use different values for the constant $g_0$ that multiplies each of the individual coupling constants $g_i \sim 1/\sqrt(N)$
+We have seen the effect of the coupling involving chaos with only one oscillator in one of the previous sections, this showed us the effect of different values for the coupling constants that develop into increasing chaotic motion. In this section we will continue to study the effects on the dynamics of the whole system when we use different values for the constant $g_0$ that multiplies each of the individual coupling constants $g_i \sim 1/\sqrt{N}$. Previously, the method we used to describe the dynamics and the effects of the change in the coupling was the Poincaré surface section, with this method we could visualize the increase of chaotic dynamics when the rational tori got destroyed. Unfortunately, when we increase the number of harmonic oscillators, the Poincaré sections stop being very useful, this is due to the amount of degrees of freedom the system will have. We could visualize the dynamics of the system because there was only two degrees of freedom, this made it possible to find planes where the dynamics was projected and this were the Poincaré surface sections, when we increase the number of oscillators the Poincaré planes will become hyperplanes that we cannot visualize properly, this means we would have to project the planes onto lower dimensions but doing this we would loose most of the details of the dynamics. For this reason we will visualize the change of the behavior using the same method of analysing the frequency of jumps between the wells.\par 
+
+We simulated the dynamics of the $100$ test cases for different values of $g_0$ and different number of harmonic oscillators. We know from previous the experience of only one oscillator that if the coupling is strong the overall behavior will tend to be more chaotic, but now that we have more harmonic oscillators we start to see the effects of dissipation over chaos. A big coupling constant will continue to result in strong interactions between the oscillators and the particles, but the tendency of the particle to stay on one side will prevail.
+
+FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE G\par 
+
+In Figure (REFERENCIAR LA FIGURA ANTERIOR) we evidence that the overall tendency of dissipation is observed when the number of harmonic oscillators increases regardless the coupling constant $g_0$ (for $g=0.001$ in the figure we believe for a bigger number of harmonic oscillators this behavior will be seen). It is also interesting to see that for coupling $g_0=0.3$ the curve descends really fast but seems to start to grow again, this can be attributed to the fact that this value for the coupling constant starts to be a very strong interaction of the bath with the system making it not very suitable for a dissipation model in long term. 
+
 
 \subsubsection{Changing the initial energy of the heat bath}
-asd
+The initial energy of the heat bath is an important parameter statistically speaking, this is because it represents the \say{temperature} of the environment our central system is located in. If the whole system has initially a very high temperature then the dynamics will become very difficult to predict in long term as it will take longer time to reach a thermal equilibrium, if we take the temperature of the system to be relatively low compared to the height of the unstable equilibirum point where the particle is always located then we can see how energy from the particle is transfered to the heat bath in a somewhat irreversible manner. This analysis involved then different initial energies for the heat bath and how it affects the number of jumps between the wells of the particle.\par 
+
+FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE E_bath\par 
+
+In Figure (REFERENCIAR LA FIGURA QUE ACABO DE HACER) we can evidence that the different initial energies of the heat bath will result in a change of scale of the number of jumps that the particle suffers. The overall behavior of dissipation is continued to be present. For a heat bath with a high initial energy or \say{temperature} we see that the particle jumps between the wells more times than for a small energy but when the number of oscillators increases then the jumps decrease. When we \say{freeze} the heat bath by giving it a low initial energy we experience less jumps between the wells and a faster decay of it when the number of oscillators increase. Then we can conclude that the overall consequence of changing the initial energy of the heat bath will be a scaling factor in the exponential decay of the jumps.
+
+
 
 \subsubsection{Changing the height of the potential barrier}
-asd
-
+The particle of the central system is located on the unstable equilibrium unless otherwise stated for the simulations done in this work, then a very interesting parameter to study is the difference in the dynamics when this unstable equilibrium point located on the top of the potential barrier is changed. We recall that the shape of the quarctic potential por the particle is given by equation (\ref{eq:potential}) where the parameters $a$ and $b$ are in charge of the shape of the double well potential. We have shown previously in equation (\ref{eq:PB_eq}) that the height of the potential barrier is completely determined by the parameters $a$ and $b$ and that the resonance frequency of small oscillations for the two minima is given by equation (\ref{eq:freq_small_oscillations}) which only depends on parameter $a$. This ideas are relevant to determine how to change the potential barrier height, if we change $a$ and $b$ but mantaining the ration $a/b$ we will rescale the whole potentail, but this is not considered because this means that the resonance frequency will change and the particle will have to travel more distance to imitate the same kind of dynamics as before meaning it will require more calculation time. The way we changed the height is by only changing the parameter $b$, this will mantain 
 
 
 

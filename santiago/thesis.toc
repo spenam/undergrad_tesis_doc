@@ -24,26 +24,26 @@
 \contentsline {subsection}{\numberline {4.2.2}Infinite heat bath and dissipation}{42}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Poincar\IeC {\'e} surface plots}{42}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Variation of the parameters}{48}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Frequency spectra FALTA MUCHO POR ACABAR}{48}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Frequency spectra FALTA MUCHO POR ACABAR}{49}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Energy spectra}{49}{subsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Drawing energy from a distribution}{49}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Drawing energy from a distribution}{50}{subsubsection.4.3.2.1}
 \contentsline {subsubsection}{\numberline {4.3.2.2}Quasi-gaussian distribution in phase space}{50}{subsubsection.4.3.2.2}
 \contentsline {section}{\numberline {4.4}Number of modes in the bath}{50}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Chaos to dissipation dynamics}{50}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Variation of the double well and heat bath parameters}{50}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.1}Chaos to dissipation dynamics}{51}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Variation of the double well and heat bath parameters}{51}{subsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.2.1}Changing the exponent $s$}{51}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Changing the individual coupling $g_0$}{51}{subsubsection.4.4.2.2}
-\contentsline {subsubsection}{\numberline {4.4.2.3}Changing the initial energy of the heat bath}{51}{subsubsection.4.4.2.3}
-\contentsline {subsubsection}{\numberline {4.4.2.4}Changing the height of the potential barrier}{51}{subsubsection.4.4.2.4}
-\contentsline {chapter}{\numberline {5}Approach to the Measurement theory}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Classical Measurement}{53}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Stability of a system}{53}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Quantum Measurement}{53}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Postulates of Quantum Mechanics}{53}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Can this be considered as a measurement?}{53}{section.5.3}
-\contentsline {chapter}{\numberline {6}Related work}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}Quantum measurement in a unitary setting}{55}{section.6.1}
-\contentsline {chapter}{\numberline {7}Future work}{57}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}
-\contentsline {chapter}{Bibliography}{61}{section*.19}
-\contentsline {chapter}{\numberline {A}Extra Information}{63}{appendix.Alph1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Changing the individual coupling $g_0$}{52}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}Changing the initial energy of the heat bath}{52}{subsubsection.4.4.2.3}
+\contentsline {subsubsection}{\numberline {4.4.2.4}Changing the height of the potential barrier}{53}{subsubsection.4.4.2.4}
+\contentsline {chapter}{\numberline {5}Approach to the Measurement theory}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Classical Measurement}{55}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Stability of a system}{55}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Quantum Measurement}{55}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Postulates of Quantum Mechanics}{55}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Can this be considered as a measurement?}{55}{section.5.3}
+\contentsline {chapter}{\numberline {6}Related work}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Quantum measurement in a unitary setting}{57}{section.6.1}
+\contentsline {chapter}{\numberline {7}Future work}{59}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{61}{chapter.8}
+\contentsline {chapter}{Bibliography}{63}{section*.19}
+\contentsline {chapter}{\numberline {A}Extra Information}{65}{appendix.Alph1}

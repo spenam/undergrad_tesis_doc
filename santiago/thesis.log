@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  14 MAY 2020 08:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  14 MAY 2020 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,6 +1254,10 @@ Package caption Info: supertabular package is loaded.
 \sf@top=\skip86
 \sf@bottom=\skip87
 )
+(/usr/share/texlive/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+Package: dirtytalk 2010/11/21 A package making "quoting" easier
+\c@dirtytalk@qdepth=\count180
+)
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box48
@@ -1271,7 +1275,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip90
 \bibsep=\skip91
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count180
+\c@NAT@ctr=\count181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
@@ -1285,8 +1289,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip94
 \dth@everypar=\toks56
 )
-\c@definition=\count181
-\c@example=\count182
+\c@definition=\count182
+\c@example=\count183
 
 
 ! Package caption Error: `small' undefined in families `caption'.
@@ -1295,7 +1299,7 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 
+l.95 
      
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
@@ -1310,7 +1314,7 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 
+l.95 
      
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
@@ -1344,16 +1348,16 @@ LaTeX Font Info:    ... okay on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count183
+\scratchcounter=\count184
 \scratchdimen=\dimen256
 \scratchbox=\box49
-\nofMPsegments=\count184
-\nofMParguments=\count185
+\nofMPsegments=\count185
+\nofMParguments=\count186
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count186
+\MPscratchCnt=\count187
 \MPscratchDim=\dimen257
-\MPnumerator=\count187
-\makeMPintoPDFobject=\count188
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1396,7 +1400,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count189
+\c@section@level=\count190
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1407,7 +1411,7 @@ LaTeX Info: Redefining \nameref on input line 29.
 \openout7 = `thesis.out'.
 
  ABD: EveryShipout initializing macros
-\c@lstlisting=\count190
+\c@lstlisting=\count191
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 Package caption Info: Begin \AtBeginDocument code.
@@ -2296,8 +2300,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 ]
 Cap\'{\i }tulo 4.
 [39]
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2306,8 +2310,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2316,13 +2320,13 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [41]
-<Figures/energy_contour.png, id=541, 433.62pt x 289.08pt>
+<Figures/energy_contour.png, id=542, 433.62pt x 289.08pt>
 File: Figures/energy_contour.png Graphic file (type png)
 <use Figures/energy_contour.png>
-Package pdftex.def Info: Figures/energy_contour.png  used on input line 110.
+Package pdftex.def Info: Figures/energy_contour.png  used on input line 122.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2330,16 +2334,25 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42 <./Figures/energy_contour.png>]
-<Figures/energy_contour_coupled01.png, id=551, 433.62pt x 289.08pt>
+[42]
+<Figures/energy_contour_coupled01.png, id=552, 433.62pt x 289.08pt>
 File: Figures/energy_contour_coupled01.png Graphic file (type png)
 <use Figures/energy_contour_coupled01.png>
 Package pdftex.def Info: Figures/energy_contour_coupled01.png  used on input li
-ne 121.
+ne 133.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
 
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./Figures/energy_contour.png> <./Figures/energy_contour_coupled01.png>]
 ! Misplaced alignment tab character &.
-l.131 M. P. Calvo &
+l.143 M. P. Calvo &
                     J. M. Sanz-Serna, Symplectic numerical methods for Hamil...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2349,7 +2362,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.133 Rackauckas, C. &
+l.145 Rackauckas, C. &
                        Nie, Q., (2017). DifferentialEquations.jl – A Perfo...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2358,42 +2371,32 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43 <./Figures/energy_contour_coupled01.png>]
-<Figures/poincare_g0.png, id=559, 433.62pt x 289.08pt>
+<Figures/poincare_g0.png, id=562, 433.62pt x 289.08pt>
 File: Figures/poincare_g0.png Graphic file (type png)
 <use Figures/poincare_g0.png>
-Package pdftex.def Info: Figures/poincare_g0.png  used on input line 139.
+Package pdftex.def Info: Figures/poincare_g0.png  used on input line 151.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-<Figures/poincare_g0001.png, id=561, 433.62pt x 289.08pt>
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+<Figures/poincare_g0001.png, id=569, 433.62pt x 289.08pt>
 File: Figures/poincare_g0001.png Graphic file (type png)
 <use Figures/poincare_g0001.png>
-Package pdftex.def Info: Figures/poincare_g0001.png  used on input line 149.
+Package pdftex.def Info: Figures/poincare_g0001.png  used on input line 161.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44 <./Figures/poincare_g0.png>]
-<Figures/poincare_g0005.png, id=569, 433.62pt x 289.08pt>
+<Figures/poincare_g0005.png, id=571, 433.62pt x 289.08pt>
 File: Figures/poincare_g0005.png Graphic file (type png)
 <use Figures/poincare_g0005.png>
-Package pdftex.def Info: Figures/poincare_g0005.png  used on input line 158.
+Package pdftex.def Info: Figures/poincare_g0005.png  used on input line 170.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2401,24 +2404,34 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45 <./Figures/poincare_g0001.png> <./Figures/poincare_g0005.png>]
-<Figures/poincare_g001.png, id=580, 433.62pt x 289.08pt>
+[45 <./Figures/poincare_g0.png> <./Figures/poincare_g0001.png>]
+<Figures/poincare_g001.png, id=581, 433.62pt x 289.08pt>
 File: Figures/poincare_g001.png Graphic file (type png)
 <use Figures/poincare_g001.png>
-Package pdftex.def Info: Figures/poincare_g001.png  used on input line 167.
+Package pdftex.def Info: Figures/poincare_g001.png  used on input line 179.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-<Figures/poincare_g005.png, id=581, 433.62pt x 289.08pt>
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./Figures/poincare_g0005.png> <./Figures/poincare_g001.png>]
+<Figures/poincare_g005.png, id=590, 433.62pt x 289.08pt>
 File: Figures/poincare_g005.png Graphic file (type png)
 <use Figures/poincare_g005.png>
-Package pdftex.def Info: Figures/poincare_g005.png  used on input line 175.
+Package pdftex.def Info: Figures/poincare_g005.png  used on input line 187.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-<Figures/poincare_g01.png, id=582, 433.62pt x 289.08pt>
+<Figures/poincare_g01.png, id=591, 433.62pt x 289.08pt>
 File: Figures/poincare_g01.png Graphic file (type png)
 <use Figures/poincare_g01.png>
-Package pdftex.def Info: Figures/poincare_g01.png  used on input line 182.
+Package pdftex.def Info: Figures/poincare_g01.png  used on input line 194.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2426,30 +2439,14 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./Figures/poincare_g001.png> <./Figures/poincare_g005.png>]
-<Figures/poincare_g02.png, id=594, 433.62pt x 289.08pt>
+[47 <./Figures/poincare_g005.png> <./Figures/poincare_g01.png>]
+<Figures/poincare_g02.png, id=603, 433.62pt x 289.08pt>
 File: Figures/poincare_g02.png Graphic file (type png)
 <use Figures/poincare_g02.png>
-Package pdftex.def Info: Figures/poincare_g02.png  used on input line 192.
+Package pdftex.def Info: Figures/poincare_g02.png  used on input line 204.
 (pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47 <./Figures/poincare_g01.png>]
-<Figures/frequency_spectra.png, id=602, 433.62pt x 289.08pt>
-File: Figures/frequency_spectra.png Graphic file (type png)
-<use Figures/frequency_spectra.png>
-Package pdftex.def Info: Figures/frequency_spectra.png  used on input line 216.
-
-(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2458,8 +2455,14 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <./Figures/poincare_g02.png>]
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
+<Figures/frequency_spectra.png, id=610, 433.62pt x 289.08pt>
+File: Figures/frequency_spectra.png Graphic file (type png)
+<use Figures/frequency_spectra.png>
+Package pdftex.def Info: Figures/frequency_spectra.png  used on input line 228.
+
+(pdftex.def)             Requested size: 330.42041pt x 220.28973pt.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2468,8 +2471,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [49 <./Figures/frequency_spectra.png>]
-LaTeX Info: Redefining \. on input line 244.
-LaTeX Info: Redefining \% on input line 244.
+LaTeX Info: Redefining \. on input line 254.
+LaTeX Info: Redefining \% on input line 254.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2480,23 +2483,58 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [50]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 264.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 252.
+(hyperref)                removing `subscript' on input line 264.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 264.
+
+LaTeX Info: Redefining \. on input line 265.
+LaTeX Info: Redefining \% on input line 265.
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.277 ...RE DE LOS SALTOS CAMBIANDO EL VALOR DE E_
+                                                  bath\par
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.277 ...S SALTOS CAMBIANDO EL VALOR DE E_bath\par
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 ) (./15ResultsEvaluation.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -2508,21 +2546,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[52
-
-]
-Cap\'{\i }tulo 5.
-) (./16RelatedWork.tex [53]
+[53]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -2535,8 +2559,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [54
 
 ]
-Cap\'{\i }tulo 6.
-) (./17FutureWork.tex [55]
+Cap\'{\i }tulo 5.
+) (./16RelatedWork.tex [55]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -2549,8 +2573,11 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [56
 
 ]
-Cap\'{\i }tulo 7.
-) (./18Conclusion.tex [57]
+Cap\'{\i }tulo 6.
+) (./17FutureWork.tex [57]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -2560,8 +2587,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [58
 
 ]
-Cap\'{\i }tulo 8.
-) [59]
+Cap\'{\i }tulo 7.
+) (./18Conclusion.tex [59]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -2570,7 +2597,18 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [60
 
-] (./thesis.bbl) (./21Appendix.tex [61
+]
+Cap\'{\i }tulo 8.
+) [61]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62
+
+] (./thesis.bbl) (./21Appendix.tex [63
 
 ]
 LaTeX Info: Redefining \. on input line 2.
@@ -2582,18 +2620,18 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62
+[64
 
 ]
 Ap\'{e}ndice A.
-) (./22Index.tex [63]
+) (./22Index.tex [65]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64
+[66
 
 ]
 No file thesis.ind.
@@ -2620,10 +2658,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 28355 strings out of 492982
- 492110 string characters out of 6134895
- 664353 words of memory out of 5000000
- 31036 multiletter control sequences out of 15000+600000
+ 28382 strings out of 492982
+ 492706 string characters out of 6134895
+ 664851 words of memory out of 5000000
+ 31055 multiletter control sequences out of 15000+600000
  16740 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,96p,1992b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2642,10 +2680,10 @@ mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (64 pages, 1757533 bytes).
+Output written on thesis.pdf (66 pages, 1763591 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 654 compressed objects within 7 object streams
- 190 named destinations out of 1000 (max. 500000)
+ 793 PDF objects out of 1000 (max. 8388607)
+ 667 compressed objects within 7 object streams
+ 194 named destinations out of 1000 (max. 500000)
  16850 words of extra memory for PDF output out of 17280 (max. 10000000)
 
