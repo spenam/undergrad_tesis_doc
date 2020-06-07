@@ -1,38 +1,38 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.13)  7 MAR 2020 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=latex 2018.4.16)  23 MAY 2020 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **01Preamble.tex
 (./01Preamble.tex
-LaTeX2e <2017-04-15>
+LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip41
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen102
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen103
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count79
+\inf@bad=\count80
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count80
-\leftroot@=\count81
+\uproot@=\count81
+\leftroot@=\count82
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count82
-\DOTSCASE@=\count83
+\classnum@=\count83
+\DOTSCASE@=\count84
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -41,15 +41,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen104
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count84
-\c@MaxMatrixCols=\count85
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
 \dotsspace@=\muskip10
-\c@parentequation=\count86
-\dspbrk@lvl=\count87
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
 \tag@help=\toks15
-\row@=\count88
-\column@=\count89
-\maxfields@=\count90
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
 \andhelp@=\toks16
 \eqnshift@=\dimen105
 \alignsep@=\dimen106
@@ -64,20 +64,299 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                bm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage{
+                fancyhdr}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \usepackage{
+                tikz}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \usepackage{
+                 tikz-3dplot}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 float}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \usepackage{
+                 amsmath}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \usepackage{
+                 inputenc}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \usepackage{
+                 subfigure}	
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \usepackage{
+                 listings}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \usepackage{
+                 amsmath,amsfonts,amssymb}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \usepackage[English]{
+                          babel}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \selectlanguage{English}
+                             
+You may proceed, but expect wrong results
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \usepackage{
+                 selinput}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.20 \SelectInputMappings
+                         {%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21   a
+        acute={á},
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+LaTeX Font Info:    Try loading font information for +cmr on input line 21.
+LaTeX Font Info:    No file cmr.fd. on input line 21.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 21.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.21   aacute={á
+                 },
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 21.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no = in font nullfont!
+
+! Package inputenc Error: Unicode character € (U+20AC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23   Euro={€
+                }
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \usepackage[demo]{
+                       graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \usepackage{
+                 subfig}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \usepackage{
+                 dirtytalk}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+Overfull \hbox (30.00003pt too wide) in paragraph at lines 21--28
+[]\/cmr/m/n/10 ^^Sa
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 21--28
+\/cmr/m/n/10 ~n
+ []
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box28
 \beforetitleunit=\skip44
@@ -164,11 +443,11 @@ and I'll forget about whatever was undefined.
 Package titlesec Warning: Non standard sectioning command detected
 (titlesec)                Using default spacing and no format.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count91
+\etb@tempcnta=\count92
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
@@ -183,7 +462,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count92
+\c@NAT@ctr=\count93
 
 ! LaTeX Error: Environment thebibliography undefined.
 
@@ -196,7 +475,7 @@ l.1063 \renewenvironment{thebibliography}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks20
 \thm@bodyfont=\toks21
@@ -208,7 +487,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip50
 \dth@everypar=\toks25
 )
-\c@definition=\count93
+\c@definition=\count94
 
 
 ! LaTeX Error: No counter 'chapter' defined.
@@ -217,13 +496,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62 \newtheorem{definition}{Definition}[chapter]
+l.82 \newtheorem{definition}{Definition}[chapter]
                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\c@example=\count94
+\c@example=\count95
 
 ! LaTeX Error: No counter 'chapter' defined.
 
@@ -231,20 +510,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 \newtheorem{example}{Example}[chapter]
+l.86 \newtheorem{example}{Example}[chapter]
                                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
 )
@@ -266,10 +545,10 @@ Package caption Warning: Unsupported document class (or package) detected,
 See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = undefined.
-\c@ContinuedFloat=\count95
-) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+\c@ContinuedFloat=\count96
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count96
+\c@KVtest=\count97
 \sf@farskip=\skip53
 \sf@captopadj=\dimen123
 \sf@capskip=\skip54
@@ -283,14 +562,7 @@ l.297 \ProcessPackageOptions
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-! Extra \endcsname.
-\@ifundefined ...dafter \ifx \csname #1\endcsname 
-                                                  \relax \expandafter \@firs...
-l.297 \ProcessPackageOptions
-                            
-I'm ignoring this, since I wasn't doing a \csname.
-
-\c@subfigure=\count97
+\c@subfigure=\count98
 
 ! LaTeX Error: No counter 'figure' defined.
 
@@ -304,7 +576,15 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\c@subfigure@save=\count98
+\c@subfigure@save=\count99
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ext@figure 
@@ -331,26 +611,6 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 ! Extra \endcsname.
-\@ifundefined ...dafter \ifx \csname #1\endcsname 
-                                                  \relax \expandafter \@firs...
-l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ext@figure 
-l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-! Extra \endcsname.
 \newcounter ...ifdefinable \csname c@#1\endcsname 
                                                   {\@definecounter {#1}}\@if...
 l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
@@ -365,7 +625,7 @@ l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-\c@=\count99
+\c@=\count100
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -374,6 +634,26 @@ Missing character: There is no h in font nullfont!
 ! Extra \endcsname.
 \@definecounter ...ewcount \csname c@#1\endcsname 
                                                   \setcounter {#1}\z@ \globa...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
 l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
@@ -430,7 +710,7 @@ look up `weird error' in the index to The TeXbook.)
 l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -483,6 +763,26 @@ l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
@@ -593,6 +893,26 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 \c@subtable@save=\count
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ext@table 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ext@table 
@@ -726,8 +1046,55 @@ followed by the required stuff, so I'm ignoring it.
 
 )
 ! Undefined control sequence.
-l.92 \graphicspath
-                  {{./Figures/}}
+<argument> \undefinedpagestyle 
+                               
+l.104 \pagestyle{fancy}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.105 \fancyhf
+              {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.106 \rhead
+            {\leftmark}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.107 \lhead
+            {\thepage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.107 \lhead{\thepage
+                     }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.115 \graphicspath
+                   {{./Figures/}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -741,8 +1108,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 \graphicspath{{.
-                     /Figures/}}
+l.115 \graphicspath{{.
+                      /Figures/}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -757,12 +1124,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no / in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--116
 [] 
  []
 
 ! Undefined control sequence.
-l.107 \newglossaryentry
+l.130 \newglossaryentry
                        {pi}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -777,7 +1144,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \newglossaryentry{p
+l.130 \newglossaryentry{p
                          i}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -792,10 +1159,10 @@ Missing character: There is no = in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -804,14 +1171,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -820,10 +1187,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -832,10 +1199,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -844,14 +1211,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -860,10 +1227,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -872,10 +1239,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -884,14 +1251,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -900,10 +1267,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -912,10 +1279,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -924,14 +1291,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -940,10 +1307,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -952,10 +1319,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -964,14 +1331,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -980,10 +1347,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -992,10 +1359,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1004,14 +1371,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1020,10 +1387,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1032,10 +1399,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1044,14 +1411,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1060,10 +1427,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1072,10 +1439,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1084,14 +1451,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1100,10 +1467,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1112,10 +1479,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1124,14 +1491,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1140,10 +1507,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1152,10 +1519,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1164,14 +1531,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1180,10 +1547,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1192,10 +1559,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1204,14 +1571,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1220,10 +1587,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1232,10 +1599,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1244,14 +1611,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1260,10 +1627,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1272,10 +1639,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1284,10 +1651,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1296,10 +1663,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1308,14 +1675,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1324,10 +1691,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1336,10 +1703,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1348,10 +1715,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1360,10 +1727,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1372,10 +1739,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1384,14 +1751,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1400,10 +1767,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1412,10 +1779,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1424,10 +1791,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1436,10 +1803,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1448,10 +1815,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1460,14 +1827,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1476,10 +1843,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1488,10 +1855,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1500,10 +1867,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1512,10 +1879,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1524,10 +1891,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1536,14 +1903,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1552,10 +1919,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1564,10 +1931,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1576,10 +1943,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1588,10 +1955,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1600,10 +1967,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1612,14 +1979,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1628,10 +1995,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1640,10 +2007,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1652,10 +2019,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1664,10 +2031,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1676,10 +2043,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1688,14 +2055,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1704,10 +2071,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1716,10 +2083,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1728,10 +2095,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1740,10 +2107,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1752,10 +2119,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1764,14 +2131,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing = inserted for ifdim.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1780,10 +2147,10 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1792,10 +2159,10 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
 To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
@@ -1804,16 +2171,16 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    p@ 
-l.108     name={\ensuremath{\pi}
+l.131     name={\ensuremath{\pi}
                                 },
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 3143 strings out of 493007
- 44087 string characters out of 6136718
- 118671 words of memory out of 5000000
- 7156 multiletter control sequences out of 15000+600000
+ 3152 strings out of 492650
+ 44409 string characters out of 6129648
+ 117099 words of memory out of 5000000
+ 7076 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 36i,1n,38p,788b,42s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 36i,1n,38p,788b,93s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 No pages of output.

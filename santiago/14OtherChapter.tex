@@ -110,7 +110,7 @@ PB(a,b)=\frac{a^2}{4b}
 \end{equation}
 
 
-\subsection{Infinite heat bath and dissipation}
+
 
 
 
@@ -207,9 +207,38 @@ Just for illustration we calculated the poincare section for $g=0.2$ to show tha
 \end{figure} 
 
 
+\subsection{Dynamics for 1 oscillator}
+We have seen in the precious subsection that with only one oscillator, the system is immediately chaotic. We will now study the usual trajectories that the central system will follow for only one oscillator. The conditions for the general parameters of these cases will be similar to the ones of the previous section. 
+
+FIGURA DE \par 
+TRAYECTORIA \par 
+TIPICA \par 
+
+ In Figura (REFERENCIAR FIGURA ANTERIOR) we see a typical trajectory of the particle interacting with a harmonic oscillator, we see that the particle falls to one well and the other in an erratically way. The chaotic dynamics makes it difficult to predict to which side the particle will fall when the dynamics begins. The phase space trajectory permits the
+ 
+ FIGURA DE \par 
+TRAYECTORIA \par 
+OSCILADOR ARMONICO \par 
+ESPACIO DE FASE \par 
+
+In Figure (REFERENCIAR FIGURA ANTERIOR) we can see the phase space trajectory of the harmonic oscillator and how it is perturbed compared with a typical trajectory of  a harmonic oscillator without a coupling whose orbits in phase space are perfect ellipses.\par 
+
+We can also see in Figure (REFERENCIAR FIGURA ANTERIOR) that the dynamics is antisymmetric with the inversion of the initial conditions of the harmonic oscillator $X_1\rightarrow -X_1$ and $P_1 \rightarrow -P_1$.
 
 
-\section{Variation of the parameters}
+\subsection{Dynamics for 2 oscillators}
+When we start to increase the number of harmonic oscillators that compose the heat bath we start to evidence the tendency to stay on one well for a longer period of time as it is shown in Figure (REFERENCIAR FIGURA SIGUIENTE) .
+
+FIGURA DE \par 
+TRAYECTORIA \par 
+TIPICA \par 
+DOS OSCI \par 
+
+The harmonic oscillators will share some of the initial energy of the particle for a longer time and  this means that the particle will take longer to have again enough energy to jump from one well to the other. 
+
+
+
+\section{Nature of the heat bath}
 As it is evident, in this particular system we can vary a big amount of parameters to search for different dynamics and properties that exhibit the system, the model is rich in quantities that can be calculated and extracted from it. This idea also plays against our odds because as there are many parameters to play with it is difficult to control the whole system in an optimal and hierarchical way. There are two types of parameters that we will monitor very closely: the frequency spectra and the energy spectra for the heat bath.
 
 
@@ -217,11 +246,11 @@ As it is evident, in this particular system we can vary a big amount of paramete
 The way the frequencies of the harmonic oscillators are distributed in this work is taken from the theory of quantum dissipation in open systems
 
 \begin{equation}
-J(\omega) ~ w^s f(\omega,\omega_c)
+J(\omega) \sim w^s f(\omega,\omega_c)
 \label{eq:spectral_density}
 \end{equation}
 Where $\omega_c$ is the characteristic frequency of the bath, and $f(\omega,\omega_c)$ is a damping function which helps $J(\omega)$ to vanish in the limit of $\omega \rightarrow \infty$. There are many different ways to choose $f(\omega,\omega_c)$ (CITAR CITE From coherent motion to localization: II. Dynamics of the spin-boson model
-with sub-Ohmic spectral density at zero temperature), in this case we will choose an exponential cut-off damping type as $f(\omega,\omega_c)=e^{\omega/\omega_c}$.   
+with sub-Ohmic spectral density at zero temperature), in this case we will choose an exponential cut-off damping type as $f(\omega,\omega_c)=e^{-\omega/\omega_c}$.   
 
 \begin{figure}[H]
 \centering
@@ -232,13 +261,13 @@ with sub-Ohmic spectral density at zero temperature), in this case we will choos
 
 
 \subsection{Energy spectra}
-In this work we will monitor the energy spectra in two different ways, both are related to the idea of having a cloud of harmonic oscillators with initial conditions around the origin of phase space. The first idea is by  drawing the energy of the oscillators from a distribution with a certain mean and variance, the second one consists of using the Box-Muller transform to sample a quasigaussian two dimensional distribution of harmonic oscillators in phase space. 
+In this work we will monitor the energy spectra in two different ways, both are related to the idea of having a cloud of harmonic oscillators with initial conditions around the origin of phase space. The first idea is by  drawing the energy of the oscillators from a distribution with a certain mean and variance, the second one consists of using the Box-Muller transform to sample a quasi-gaussian two dimensional distribution of harmonic oscillators in phase space. 
 \subsubsection{Drawing energy from a distribution}
 The method outlined in this subsection consists on drawing the energy of each harmonic oscillator from a probability distribution (mostly a gaussian) with a determined mean and variance. This method will let us normalize the energy of the heat bath at will, having the energy of each harmonic oscillator will let us compute the sum and divide each energy by the normalization desired.\par 
-Now to decide where to locate each oscillator we sample a random number from a uniform distribution $[0,2\pi)$, this will represent an angle on a circle which will be deformed into an ellipse acording to the energy and frequency of each harmonic oscillator obtaining finally a position of a harmonic oscillator according to a determined energy ellipse. This process is repeated for every oscillator on the bath giving as a result a distribution of oscillators in phase space with an energy distribution of the heat bath perfectly defined and normalized.
+Now to decide where to locate each oscillator we sample a random number from a uniform distribution $[0,2\pi)$, this will represent an angle on a circle which will be deformed into an ellipse according to the energy and frequency of each harmonic oscillator obtaining finally a position of a harmonic oscillator according to a determined energy ellipse. This process is repeated for every oscillator on the bath giving as a result a distribution of oscillators in phase space with an energy distribution of the heat bath perfectly defined and normalized.
 
 \subsubsection{Quasi-gaussian distribution in phase space}
-This method consists in implementing the Box-Muller transform algorithm onto a uniform distribution to obtain a two dimensional distribution grid of points that represent a gaussian with a defined mean and variance along each dimension (CITE CITAR BOX MULLER TRANSFORM).
+This method consists in implementing the Box-Muller transform algorithm onto a uniform distribution to obtain a two dimensional distribution grid of points that represent a gaussian with a defined mean and variance along each dimension (CITE CITAR BOX MULLER TRANSFORM). This method is important in the way that it allows us to have a gaussian distribution in phase space for the harmonic oscillators that can be canged at will to have a defined width along position or momentum as desired, this feedom in choosing the shape of the distribution gives us freedom in the nature of the heat bath on how the harmonic oscillators' motion changes in the initial conditions have different consequences in the particle's motion. This method can also be normalized efficiently.
 
 
 
@@ -247,7 +276,7 @@ This method consists in implementing the Box-Muller transform algorithm onto a u
 \section{Number of modes in the bath}
 A very important parameter to determine the dynamics of the system is the number of oscillators in the heat bath. According to dissipative dynamics theory, we retrieve an equation of Langevin type dynamics in the limit of infinite harmonic oscillators in the bath.We have already shown the behavior of the dynamics under the influence of only one harmonic oscillator coupled to the particle. What we will do in this work will be increase steadily the number of harmonic oscillators of a finite heat bath to achieve dissipative behavior without the need of extending the system to infinity. Therefore, it is important to keep an eye on the dynamics of each case of the number of harmonic oscillators and change different parameters of the system in order to understand in a more general way the behavior of the whole system as a function of the number of modes of the bath. This analysis will lead to the conclusion to modelate dissipative dynamics in a finite heath bath with a very small number of modes.
 
-\subsection{Chaos to dissipation dynamics}
+\subsection{Chaos to dissipative dynamics}
 In this section we will start to evidence the loss of chaotic dynamics due to the increasing number of oscillators. 
 
 
@@ -281,8 +310,24 @@ In Figure (REFERENCIAR LA FIGURA QUE ACABO DE HACER) we can evidence that the di
 
 
 \subsubsection{Changing the height of the potential barrier}
-The particle of the central system is located on the unstable equilibrium unless otherwise stated for the simulations done in this work, then a very interesting parameter to study is the difference in the dynamics when this unstable equilibrium point located on the top of the potential barrier is changed. We recall that the shape of the quarctic potential por the particle is given by equation (\ref{eq:potential}) where the parameters $a$ and $b$ are in charge of the shape of the double well potential. We have shown previously in equation (\ref{eq:PB_eq}) that the height of the potential barrier is completely determined by the parameters $a$ and $b$ and that the resonance frequency of small oscillations for the two minima is given by equation (\ref{eq:freq_small_oscillations}) which only depends on parameter $a$. This ideas are relevant to determine how to change the potential barrier height, if we change $a$ and $b$ but mantaining the ration $a/b$ we will rescale the whole potentail, but this is not considered because this means that the resonance frequency will change and the particle will have to travel more distance to imitate the same kind of dynamics as before meaning it will require more calculation time. The way we changed the height is by only changing the parameter $b$, this will mantain 
+The particle of the central system is located on the unstable equilibrium unless otherwise stated for the simulations done in this work, then a very interesting parameter to study is the difference in the dynamics when the height of the potential barrier where the unstable equilibrium point is changed. We recall that the shape of the quartic potential for the particle is given by equation (\ref{eq:potential}) where the parameters $a$ and $b$ are in charge of the shape of the double well potential. We have shown previously in equation (\ref{eq:PB_eq}) that the height of the potential barrier is completely determined by the parameters $a$ and $b$ and that the resonance frequency of small oscillations for the two minima is given by equation (\ref{eq:freq_small_oscillations}) which only depends on parameter $a$. This ideas are relevant to determine how to change the potential barrier height, in general there will be two ways in which we can change this height. If we change only $b$ we will rescale the whole potential, this means that the resonance frequency will change and the particle will have to travel more distance in general to go from one well to the other. The difference between changing the height this way is shown in Figure (REF FIGURA VARIANDO SOLAMENTE B) where the shape of the potential is completely scaled.\par 
+PONER\par 
+FIGURA\par 
+FIGURE\par 
+VARIANDO\par 
+SOLO\par 
+B\par 
 
+The other way to change the height of the potential barrier is by changing both $a$ and $b$ but mantaining the ratio $a/b$, this ensures the roots of $V(x)$ to remain unchanged but makes the minimums of the potential deeper and as a consequence changing the height of the potential barrier as it is shown on Figure (REF FIGURA VARIANDO A Y B). It is to be noted that this change of the wells' dept will in fact change the frequency of small oscillations  around the potential minima.
+
+PONER\par 
+FIGURA\par 
+FIGURE\par 
+VARIANDO\par 
+A Y\par 
+B\par 
+
+The height of the potential barrier is an important parameter for the reason that whenever the particle is inside one of the wells it will need an energy near to the height of the potential barrier in order to be able to jump to the other side. If the potential barrier is small then the particle does not need a lot of energy to be given from the oscillators in order to be able to surpass it, while if the potential barrier is big then it will need the oscillators to synchronize in a way to be able to give the particle enough energy to jump to the other well. In Figure (REF FIGURA JUMPS VARIANDO LA PROFUNDIDAD) we test both cases of changing the height of the potential barrier. The results coincide with the intuition in the sense of more height means less jumps and less height means more jumps, also when the bath is composed of more harmonic oscillators then the number of jumps reduce significantly. In Figure (REF FIGURA JUMPS VARIANDO LA PROFUNDIDAD) we also evidence that there is not a significant difference on how we decide to change the height of the potential barrier as both cases have similar results on the counts of jumps.
 
 
 

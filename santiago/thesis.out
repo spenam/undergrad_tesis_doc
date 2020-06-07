@@ -1,46 +1,45 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction REVISARLA}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Background}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Hamiltonian systems and Symplectic structure- OTT Y JOAO}{}% 3
-\BOOKMARK [1][-]{section.3.1}{Dynamical systems- OTT Y JOAO}{chapter.3}% 4
-\BOOKMARK [1][-]{section.3.2}{Hamilton equations and Symplectic Structure- OTT Y JOAO}{chapter.3}% 5
-\BOOKMARK [2][-]{subsection.3.2.1}{Integrability in Hamiltonian problems}{section.3.2}% 6
-\BOOKMARK [2][-]{subsection.3.2.2}{KAM Theorem}{section.3.2}% 7
-\BOOKMARK [2][-]{subsection.3.2.3}{Rational Tori}{section.3.2}% 8
-\BOOKMARK [2][-]{subsection.3.2.4}{Irrational Tori}{section.3.2}% 9
-\BOOKMARK [1][-]{section.3.3}{Symplectic Integrator NUMERICAL HAMILTONIAN PROBLEMS}{chapter.3}% 10
-\BOOKMARK [2][-]{subsection.3.3.1}{Importance of symplecticness in an integrator}{section.3.3}% 11
-\BOOKMARK [2][-]{subsection.3.3.2}{Conservation of constants of motion}{section.3.3}% 12
-\BOOKMARK [2][-]{subsection.3.3.3}{Chaos and integrators TOCA METERLE VARIAS REFERENCIAS}{section.3.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Randomness in classical and quantum mechanics}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Double well and finite heat bath}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Double well as a two level system}{chapter.4}% 16
-\BOOKMARK [2][-]{subsection.4.1.1}{Quantum modeling for continuous variables}{section.4.1}% 17
-\BOOKMARK [2][-]{subsection.4.1.2}{Heat bath proper modeling}{section.4.1}% 18
-\BOOKMARK [1][-]{section.4.2}{Dynamics of the system}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.2.1}{Hamilton equations of motion}{section.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.2.2}{Infinite heat bath and dissipation}{section.4.2}% 21
-\BOOKMARK [2][-]{subsection.4.2.3}{Poincar\351 surface plots}{section.4.2}% 22
-\BOOKMARK [1][-]{section.4.3}{Variation of the parameters}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.3.1}{Frequency spectra FALTA MUCHO POR ACABAR}{section.4.3}% 24
-\BOOKMARK [2][-]{subsection.4.3.2}{Energy spectra}{section.4.3}% 25
-\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Drawing energy from a distribution}{subsection.4.3.2}% 26
-\BOOKMARK [3][-]{subsubsection.4.3.2.2}{Quasi-gaussian distribution in phase space}{subsection.4.3.2}% 27
-\BOOKMARK [1][-]{section.4.4}{Number of modes in the bath}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.4.1}{Chaos to dissipation dynamics}{section.4.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.2}{Variation of the double well and heat bath parameters}{section.4.4}% 30
-\BOOKMARK [3][-]{subsubsection.4.4.2.1}{Changing the exponent s}{subsection.4.4.2}% 31
-\BOOKMARK [3][-]{subsubsection.4.4.2.2}{Changing the individual coupling g0}{subsection.4.4.2}% 32
-\BOOKMARK [3][-]{subsubsection.4.4.2.3}{Changing the initial energy of the heat bath}{subsection.4.4.2}% 33
-\BOOKMARK [3][-]{subsubsection.4.4.2.4}{Changing the height of the potential barrier}{subsection.4.4.2}% 34
-\BOOKMARK [0][-]{chapter.5}{Approach to the Measurement theory}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Classical Measurement}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.1.1}{Stability of a system}{section.5.1}% 37
-\BOOKMARK [1][-]{section.5.2}{Quantum Measurement}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Postulates of Quantum Mechanics}{section.5.2}% 39
-\BOOKMARK [1][-]{section.5.3}{Can this be considered as a measurement?}{chapter.5}% 40
-\BOOKMARK [0][-]{chapter.6}{Related work}{}% 41
-\BOOKMARK [1][-]{section.6.1}{Quantum measurement in a unitary setting}{chapter.6}% 42
-\BOOKMARK [0][-]{chapter.7}{Future work}{}% 43
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 44
-\BOOKMARK [0][-]{section*.19}{Bibliography}{}% 45
-\BOOKMARK [0][-]{appendix.Alph1}{Extra Information}{}% 46
+\BOOKMARK [0][-]{chapter.1}{Introduction\040REVISARLA}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Hamiltonian\040systems\040and\040Symplectic\040structure-\040OTT\040Y\040JOAO}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Dynamical\040systems-\040OTT\040Y\040JOAO}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Hamilton\040equations\040and\040Symplectic\040Structure-\040OTT\040Y\040JOAO}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Integrability\040in\040Hamiltonian\040problems}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{KAM\040Theorem}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{Rational\040Tori}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.4}{Irrational\040Tori}{section.2.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Symplectic\040Integrator\040NUMERICAL\040HAMILTONIAN\040PROBLEMS}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.3.1}{Importance\040of\040symplecticness\040in\040an\040integrator}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.2}{Conservation\040of\040constants\040of\040motion}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.3}{Chaos\040and\040integrators\040TOCA\040METERLE\040VARIAS\040REFERENCIAS}{section.2.3}% 12
+\BOOKMARK [1][-]{section.2.4}{Randomness\040in\040classical\040and\040quantum\040mechanics}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Double\040well\040and\040finite\040heat\040bath}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Double\040well\040as\040a\040two\040level\040system}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.1.1}{Quantum\040modeling\040for\040continuous\040variables}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Heat\040bath\040proper\040modeling}{section.3.1}% 17
+\BOOKMARK [1][-]{section.3.2}{Dynamics\040of\040the\040system}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Hamilton\040equations\040of\040motion}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Poincaré surface plots}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.3}{Dynamics\040for\0401\040oscillator}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.4}{Dynamics\040for\0402\040oscillators}{section.3.2}% 22
+\BOOKMARK [1][-]{section.3.3}{Nature\040of\040the\040heat\040bath}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.1}{Frequency\040spectra\040FALTA\040MUCHO\040POR\040ACABAR}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.2}{Energy\040spectra}{section.3.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Drawing\040energy\040from\040a\040distribution}{subsection.3.3.2}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Quasi-gaussian\040distribution\040in\040phase\040space}{subsection.3.3.2}% 27
+\BOOKMARK [1][-]{section.3.4}{Number\040of\040modes\040in\040the\040bath}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.4.1}{Chaos\040to\040dissipative\040dynamics}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.2}{Variation\040of\040the\040double\040well\040and\040heat\040bath\040parameters}{section.3.4}% 30
+\BOOKMARK [3][-]{subsubsection.3.4.2.1}{Changing\040the\040exponent\040s}{subsection.3.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.4.2.2}{Changing\040the\040individual\040coupling\040g0}{subsection.3.4.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.4.2.3}{Changing\040the\040initial\040energy\040of\040the\040heat\040bath}{subsection.3.4.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.4.2.4}{Changing\040the\040height\040of\040the\040potential\040barrier}{subsection.3.4.2}% 34
+\BOOKMARK [0][-]{chapter.4}{Approach\040to\040the\040Measurement\040theory}{}% 35
+\BOOKMARK [1][-]{section.4.1}{Classical\040Measurement}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.2}{Quantum\040Measurement}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{Postulates\040of\040Quantum\040Mechanics}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{Can\040our\040model\040be\040considered\040as\040a\040measurement?}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{Related\040work}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Quantum\040measurement\040in\040a\040unitary\040setting}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Future\040work}{}% 42
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 43
+\BOOKMARK [0][-]{section*.18}{Bibliography}{}% 44
+\BOOKMARK [0][-]{appendix.A}{Extra\040Information}{}% 45

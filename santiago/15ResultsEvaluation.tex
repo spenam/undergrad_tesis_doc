@@ -1,13 +1,44 @@
 \chapter{Approach to the Measurement theory}
-
+The measurement theory is right now a widely worked research branch of quantum physics and it is related to the intrinsic nature and foundations of quantum mechanics. In this chapter we will talk about how measurement is interpreted in classical mechanics and why it is difficult to find a somewhat correct interpretation of this phenomena in quantum physics. Finally we will talk about the result of this work and how it is related to this interesting subject.
 \section{Classical Measurement}
+The concept of classical measurement appears as a process in classical statistical mechanics. In this formalism the objects are not in phase space location but are represented by a probability distribution $\rho$ as a state in space.  This probability distribution can be evolved in time, this motion is governed by the Liouville equation given as 
+\begin{equation}
+	\frac{\partial \rho}{\partial t}=\{ \rho,H\},
+	\label{eq:liouville_equation}
+\end{equation}
+this equation represents the probability distribution as an abstract fluid, with this in mind the probability flows along the hamiltonian trajectories of the system. From this equation the Liouville theorem can be derived, it states that the flow of the probability distribution is incompressible, hence the density of the vicinity of a given point traveling through phase space is constant in time and in a more general way the entropy of the system is conserved.\par
 
-\subsection{Stability of a system}
+The probability distribution in classical mechanics is the closest analog we can find of the state vector in quantum mechanics, the way the Liouville equation (\ref{eq:liouville_equation}) evolves the probability distribution in time is analogous to the Schrödinger equation given by
+\begin{equation}
+	i\hbar \frac{d }{dt}\ket{\Psi(t)}=\hat{H}\ket{\Psi(t)}
+	\label{eq:schrodinger_equation}
+\end{equation}
+in the quantum mechanical sense. \par 
+In the classical regime we can refer to classical statistical measurement process. This states that you, as an observer, can learn something about the phase space determined of the system. In this framework, the process is to use your knowledge to reduce the probability distribution of the classical state of the system to a smaller volume, thus reducing the entropy of the system. This second process is totally related to the observation procedure and is not directly related to the equations of motion of the system, it is moreover involved with the abstract concept of the probability distribution we use.\par
+
+We will now introduce the notions of classical information theory which can be applied to both continuous and discrete variables, to make things easier we will focus on the case of continuous variables.
+Let us consider shannon entropy bla blah
+
+
+
+
 
 
 \section{Quantum Measurement}
+The standard textbook approach to quantum mechanics considers this theory to be an inherently probabilistic theory (CITE CITAR (Cohen-Tannoudji et al., 1991; Messiah, 2014; Wheeler and Zurek, 1983) ), this means that quantum mechanics can make predictions about the results of measurements but most of the times just in a probabilistic way. The few cases where measurements ahve deterministic outcomes happens when the system is in an eigenstate of an observable and this observable is the one that will be measured. In most of the cases, even if we have full knowledge about the quantum mechanical state of the system and its characteristics, the outcome of measurements remain in principle as a random process. We can provide a simple illustration of this idea by considering a system with n states, the space of states will be held by the states $\ket{1},\ket{2},...,\ket{n}$. We suppose that we know that the system is initially in the superposition state $psi=\sum_{i=1}^n \chi_i\ket{i}$, where $\chi_i$ are complex probability amplitudes and the completeness relation follows as $psi=\sum_{i=1}^n \abs{\chi_i}^2$, and the question here will be to test if we find the system in the state $\ket{j}$. We can test our hypothesis by considering the operator for the observable $\hat{O}$ as a projector operator $\hat{O}=\ket{j}\bra{j}$, this is a very illustrative example because it projects the system onto the state $\ket{j}$. When the operator is applied to the initial state we obtain the result of the measurement to be one (the system to be in the state $\ket{j}$) with probability $\abs{\chi_j}^2$ and zero (the system is in any other state) with probability $1-\abs{\chi_j}^2$.\par 
+This is the general scheme of a quantum measurement in the context of orthodox quantum mechanics, recently there have been some attempts to evaluate different ways to explain the process of quantum measurement that try to explain what happens  during  the process the measurement of the abstract state and returns a real measurement.
+
 
 \subsection{Postulates of Quantum Mechanics}
+The way we understand quantum mechanics is related to its mathematical formulation and structure, this mathematical formulation relies in the theory of abstract algebra and in particular mostly on the theory of Hilbert spaces. This formulation leads to what we call the postulates of quantum mechanics, which is the handbook for the rules of quantum mechanics. We will not talk about all the postulates but we will emphasize on the ones that illustrate the measurement and the order will follow Cohen-Tannoudji’s order (CITAR COHEN TANNOUDJI).
+\begin{itemize}
+\item Second Postulate: Every measurable physical quantity $Q$ is described by an operator $\hat{Q}$; this operator is called an observable.
+\item Third Postulate: The only posible result of the measurement of a physical quantity $Q$ is one of the eigenvalues of the corrensponding observable $\hat{Q}$.
+\item  Fourth Postulate: When a measurement of an observable $\hat{Q}$ is made on a generic state $\ket{\psi}$, the probability of obtaining an eigenvalue $q_n$ is given by the square of the inner product of the state $\ket{\psi}$ with the eigenstate $\ket{q_n}$, $\abs{\bra{q_n} \ket{\psi}}^2$.
+\item Fifth Postulate (collapse): If the measurement of the physical quantity $Q$ on the system in the state $\ket{\psi}$ gives the result $q_n$, the state of the system immediately after the measurement is the normalized eigenstate $\ket{q_n}$ (this is of course the postulate most difficult to digest as it involves what we call the collapse of the superposition state of the wave function into just one measurable state).
+\end{itemize}
 
 
-\section{Can this be considered as a measurement?}
+
+\section{Can our model be considered as a measurement?}
+The short answer to this question would be yes, as we previously compared this system to a quantum system with continuous variables. One of the postulates of quantum mechanics is about the collapse of the wave function into one of the eigenstates of the system, this means that every time we measure the system again we would in fact have probability one to obtain the system on the same eigenstate, this means the state measured is stationary over time. We can consider our system to follow this argument: when the system is evolved in time, the particle initially in a neutral state on top of the energy barrier will fall into one of the wells, as we concluded in the previous sections, when we increase the number of modes in the bath the particle will dissipate its energy and remain on one of the wells for longer time in an asymptotic way resembling a measurement. Therefore every time we check the system again we will find the particle on the same well as the previous measurements as if it was the eigenstate that the system collapsed into.
