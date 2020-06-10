@@ -1,17 +1,17 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {1}Introduction REVISARLA}{13}{chapter.1}
 \contentsline {chapter}{\numberline {2}Hamiltonian systems and Symplectic structure- OTT Y JOAO}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Dynamical systems- OTT Y JOAO}{15}{section.2.1}
+\contentsline {section}{\numberline {2.1}Dynamical systems}{15}{section.2.1}
 \contentsline {section}{\numberline {2.2}Hamilton equations and Symplectic Structure- OTT Y JOAO}{18}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Integrability in Hamiltonian problems}{22}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}KAM Theorem}{25}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Rational Tori}{26}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Irrational Tori}{27}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Irrational Tori}{28}{subsection.2.2.4}
 \contentsline {section}{\numberline {2.3}Symplectic Integrator NUMERICAL HAMILTONIAN PROBLEMS}{29}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Importance of symplecticness in an integrator}{30}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Conservation of constants of motion}{30}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Conservation of constants of motion}{31}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Chaos and integrators TOCA METERLE VARIAS REFERENCIAS}{31}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Randomness in classical and quantum mechanics}{31}{section.2.4}
+\contentsline {section}{\numberline {2.4}Randomness in classical and quantum mechanics}{32}{section.2.4}
 \contentsline {chapter}{\numberline {3}Double well and finite heat bath}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Double well as a two level system}{35}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Quantum modeling for continuous variables}{35}{subsection.3.1.1}
@@ -40,7 +40,6 @@
 \contentsline {section}{\numberline {4.3}Can our model be considered as a measurement?}{55}{section.4.3}
 \contentsline {chapter}{\numberline {5}Related work}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}Quantum measurement in a unitary setting}{57}{section.5.1}
-\contentsline {chapter}{\numberline {6}Future work}{59}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{61}{chapter.7}
-\contentsline {chapter}{Bibliography}{63}{section*.18}
-\contentsline {chapter}{\numberline {A}Extra Information}{65}{appendix.A}
+\contentsline {chapter}{\numberline {6}Conclusion}{59}{chapter.6}
+\contentsline {chapter}{Bibliography}{61}{section*.18}
+\contentsline {chapter}{\numberline {A}Extra Information}{63}{appendix.A}

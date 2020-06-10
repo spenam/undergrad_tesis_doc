@@ -4,16 +4,17 @@
 \lhead{\thepage}
 
 \chapter{Hamiltonian systems and Symplectic structure- OTT Y JOAO}
-In this chapter we are going to introduce some important concepts regarding dynamical systems and how they relate to hamiltonian systems and its geometric structure. Also we describe the theory involving the numerical integration of differential equations conserving the symplectic structure. These descriptions are made following Ref. \cite{ottChaosDynamicalSystems2002} and Ref. FALTA CITA DE INTEGRADORES NUMERICOS SIMPLECTICOS
+In this chapter we are going to introduce some important concepts regarding dynamical systems and how they relate to hamiltonian systems and its geometric structure. Also we describe the theory involving the numerical integration of differential equations conserving the symplectic structure. These descriptions are made mostly following Ref. \cite{ottChaosDynamicalSystems2002} and Ref. FALTA CITA DE INTEGRADORES NUMERICOS SIMPLECTICOS
 
 
 
 
 
-\section{Dynamical systems- OTT Y JOAO}
-Generally speaking, a dynamical system may be defined as set of deterministic mathematical equations whose solution shows how the system evolves in time. Time may be taken as a continuous or a discrete variable. An example of a dynamical system with time as a parameter varying in  a continuous way is a system of $n$ first order, autonomous, ordinary differential equations,
+\section{Dynamical systems}
+Generally speaking, a dynamical system may be defined as set of deterministic mathematical equations whose solution shows how the system evolves in time. Time may be taken as a continuous or a discrete variable. A typical example of a dynamical system that adopts time as a parameter varying in  a continuous way is a system of $n$ first order, autonomous, ordinary differential equations,
 
-\begin{align}
+%\begin{align}
+\begin{eqnarray} 
 \frac{dx^{(1)}}{dt}&=F_1(x^{(1)},x^{(2)},...,x^{(n)}),\nonumber \\
 \frac{dx^{(2)}}{dt}&=F_2(x^{(1)},x^{(2)},...,x^{(n)}),\\
 &\vdots \nonumber \\
@@ -21,27 +22,32 @@ Generally speaking, a dynamical system may be defined as set of deterministic ma
 \nonumber
 \label{eq:set_diff_eqs}
 \end{eqnarray} 
-this set of equations may be written as a compact equation using the vector form of equations
+%\end{align}
+we can rewrite this set of equations by adopting a notation for a compact equation using the vector form of equations
+
 \begin{equation}
 \frac{d\vec{x}(t)}{dt}=\vec{F}[\vec{x}(t)],
 \label{eq_:vect_diff_eqs}
-\end{align}
-where $\vec{x}$ is an $n$ dimensional vector that represents the state of the system at a given time $t$ and $\vec{F}$ is a function of the variable $\vec{x}$. This set of equations represent a dinamical system, for an initial state given by $\vec{x}(0)$, we may be able in principle to solve the set of equations and obtain the state $\vec{x}(t)$ of the system for any given $t>0$. The figure FIGURA QUE NO HE HECHO shows the points followed as the system evolves in time for the case of $n=3$. The space $(x^{(1)},x^{(2)}x^{(3)}$ in the figure is more known as the phase space, and the path in the phase space is referred as orbit or trajectory. In the case of dynamical systems of continuous time, it is common to reffer to these orbits as a flow.
+\end{equation}
+
+here we take $\vec{x}$ as an $n$ dimensional vector that represents the state of the system at a given time $t$ and $\vec{F}$ is a function depending on the variable $\vec{x}$. This set of equations represent a dynamical system, for an initial state given by $\vec{x}(0)$, it is possible in principle to be able to solve this set of equations in time and retrieve the state $\vec{x}(t)$ of the system for any given $t>0$. The figure (\ref{fig:3d_orbit_ps}) shows the points followed as the system evolves in time for the case of $n=3$. The space $(x^{(1)},x^{(2)}x^{(3)}$ in the figure is more known as the phase space, and the path in the phase space is referred as orbit or trajectory. When we speak of dynamical systems using continuous time, it is common to reffer to these orbits as a flow.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.\textwidth]{Figures/orbit_3d.pdf}
 \caption{Orbit in three dimensional phase space}
+\label{fig:3d_orbit_ps}
 \end{figure}
 
-For the case of discrete systems, time is represented as integer values ($t=1,2,3,...$). An example of a dynamical system with discrete time is a map, which can be written as vector form as
+For the case of discrete systems, time is represented as integer values ($t=1,2,3,...$). The best example of a dynamical system with discrete time is a map, which can be written in vector notation as
 \begin{equation}
+
 \vec{x}_{t+1}=\vec{M}(\vec{x}_t)
 \label{eq:discrete_dyn_sys}
 \end{equation}
-where $\vec{x}_t$ is an n-dimensional vector $\vec{x}_t=(x^{1}_t,x^{2}_t,...,x^{n}_t)$ and $\vec{M}$ a function of $\vec{x}_t$. Given an initial state $\vec{x}_0$, it is possible to obtain the state at time $t=1$ by $\vec{x}_{1}=\vec{M}(\vec{x}_0)$. Having determined $\vec{x}_1$ it will be possible to determine the state at time $t=2$ by $\vec{x}_2=\vec{M}(\vec{x}_1)$ and so on. Thus, given an initial condition $\vec{x}_0$ we generate a trajectory of the discrete time system: $\vec{x}_0,\vec{x}_1,\vec{x}_2,...$. 
+where $\vec{x}_t$ is an n-dimensional vector $\vec{x}_t=(x^{1}_t,x^{2}_t,...,x^{n}_t)$ and $\vec{M}$ a function of $\vec{x}_t$. Given an initial state $\vec{x}_0$, it is possible to obtain the state at time $t=1$ by applying the map $\vec{x}_{1}=\vec{M}(\vec{x}_0)$. Having determined $\vec{x}_1$ it will be possible to determine the state at time $t=2$ by applying the map again but to the new state at $t=1$ as $\vec{x}_2=\vec{M}(\vec{x}_1)$ and so on. Thus, given an initial condition $\vec{x}_0$ we generate a trajectory of the discrete time system in time: $\vec{x}_0,\vec{x}_1,\vec{x}_2,...$. 
 
-A dynamical system that posses continuos time evolution may be reduced to a discrete time system by using the technique called Poincaré Surface Section. We consider a set of $n$ first order, autonomous, ordinary differential equations \ref{eq:set_diff_eqs}, a Poincaré map represents a reduction of the flow in the n-dimensional space to a map of dimension $n-1$. To illustrate this, an example with $n=3$ is given:
+A dynamical system that posses continuous time evolution may be reduced to a discrete time system to evaluate in more detail the dynamical properties of the system, this is done by using the technique called Poincaré Surface Section. To do so we consider a set of $n$ first order, autonomous, ordinary differential equations such as in  (\ref{eq:set_diff_eqs}), a Poincaré map represents a reduction of the flow in the n-dimensional space to a map of dimension $n-1$. To illustrate this, an example with $n=3$ is given:
 
 FIGURA\\
 QUE\\
@@ -49,30 +55,30 @@ NO\\
 HE\\
 HECHO\\
 
-Fig (NUMERO DE LA FIGURA) is a Poincaré section on a two dimensional plane $S$ on $x^{3}=constant$. The points A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always on the same direction. Given a point A, using Eq. (\ref{eq_:vect_diff_eqs}), we can determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition by changing the sign of time on the same equation. Thus, the Poincar\'e map in this illustration represents an invertible two dimensional map transforming the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertivle map.
+Fig (NUMERO DE LA FIGURA) shows a Poincaré section on a two dimensional plane $S$ where the fixed condition will be $x^{3}=constant$. The points labeled as A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always considered to be on the same direction, a crossing of the plane through the opposite direction will result into another section. Given the point A, by using Equation (\ref{eq_:vect_diff_eqs}), we can certainly determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition, this is done just by changing the sign of time on the same equation. Thus, the Poincar\'e map in this illustration represents an invertible two dimensional map that transforms the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertible map.
 
 \section{Hamilton equations and Symplectic Structure- OTT Y JOAO}
 
-Hamiltonian systems are a class of dynamical systems that occur in a wide variety os circumstances. The special properties of Hamilton's equations endow these systems with attributes that differ qualitatively and fundamentally from other systems.\par 
+Hamiltonian systems are a class of dynamical systems that occur in a wide variety of circumstances, the special properties of Hamilton's equations of motion that are characteristic of this kind of systems endow Hamiltonian systems with attributes that differ qualitatively and fundamentally from other systems.\par 
 
 The dynamics of a Hamiltonian system is completely specified by a single function, the Hamiltonian, $H(\bm{p},\bm{q},t)$. The state of the system is specified by its \say{momentum} and \say{position} usually known as $\bm{p}$ and $\bm{q}$ respectively, both vectors with dimension $N$. $N$ is also known as the number of degrees of freedom of the system. The Hamilton's equations determine the trajectory $(\bm{p}(t),\bm{q}(t))$ the system follows in the $2N$ dimensional phase space, these equations are given by
 
 \begin{equation}
 \frac{d \bm{p}}{dt} =-\frac{\partial H(\bm{p},\bm{q},t)}{\partial \bm{q}},
 \label{eq:pdot_hamil}
-
 \end{equation}
+\par 
 \begin{equation}
 \frac{d \bm{q}}{dt} =\frac{\partial H(\bm{p},\bm{q},t)}{\partial \bm{p}}.
 \label{eq:qdot_hamil}
 \end{equation}
-In the special case that the Hamiltonian has no explicit time dependance, $H=H(\bm{p},\bm{q})$, we can use Hamilton's equations to show that, as $\bm{p}$ and $\bm{q}$ vary with time, the value of $H(\bm{p}(t),\bm{q}(t))$ remains constant:
+In the special case where the Hamiltonian has no explicit time dependance, $H=H(\bm{p},\bm{q})$, we can use Hamilton's equations of motion to show that, as $\bm{p}$ and $\bm{q}$ vary with time, the value of $H(\bm{p}(t),\bm{q}(t))$ remains constant:
 \begin{equation*}
 \frac{dH}{dt}=\frac{d\bm{q}}{dt}\frac{\partial H(\bm{p},\bm{q})}{d\bm{q}}+\frac{d\bm{p}}{dt}\frac{\partial H(\bm{p},\bm{q})}{d\bm{p}}=\frac{\partial H(\bm{p},\bm{q})}{d\bm{p}}\frac{\partial H(\bm{p},\bm{q})}{d\bm{q}}-\frac{\partial H(\bm{p},\bm{q})}{d\bm{q}}\frac{\partial H(\bm{p},\bm{q})}{d\bm{p}}=0
 \end{equation*}
-Thus identifying the value of the Hamiltonian with the energy $E$ of the system, we see that the energy is conserved in the case of time independent systems, $E=H(\bm{p},\bm{q})=constant$\cite{ottChaosDynamicalSystems2002}.\par
+Thus identifying the value of the Hamiltonian as the energy $E$ of the system, we conclude that the energy is conserved in the case of time independent systems, $E=H(\bm{p},\bm{q})=constant$ \cite{ottChaosDynamicalSystems2002}.\par
 
-Another particularity of Hamilton equations and Hamiltonian systems is that we can write Eqs. (\ref{eq:pdot_hamil},   \ref{eq:qdot_hamil}) in matrix form as
+Another particularity of Hamilton equations and Hamiltonian systems is that we can write Equations (\ref{eq:pdot_hamil},   \ref{eq:qdot_hamil}) in matrix form as
 \begin{equation}
 \frac{d\tilde{\bm{x}}}{dt}=\bm{F}(\tilde{\bm{x}},t),
 \label{eq:symplectic1}
@@ -100,35 +106,35 @@ where $\bm{S}_N$ is the so called symplectic matrix given by
 \end{equation}
 where $\bm{I}_N$ is the $N$ dimensional identity matrix, $\bm{O}_N$ is the $N \times N$ matrix of zeros, and
 \begin{equation}
-\frac{\partial H}{\partial \tilde{\bm{x}}}}=\begin{bmatrix}
+\frac{\partial H}{\partial \tilde{\bm{x}}}=\begin{bmatrix}
 \partial H / \partial \bm{p} \\
 \partial H / \partial \bm{q}
-\end{bmatrix}
+\end{bmatrix}.
 \label{eq:sympl_hamil}
 \end{equation}
-From this we see how restricted the class of Hamiltonian systems is. In particular, a general system of the form (\ref{eq:symplectic1}) requires the specification of all the components of the vector function $\bm{F}(\tilde{\bm{x}},t)$, while by (\ref{eq:symplectic2}), if the system is Hamiltonian, it is specified by a single scalar function of $\bm{p}$, $\bm{q}$ and $t$ (the Hamiltonian).\par
+From this vector notation we see how restricted the class of Hamiltonian systems is. In particular, a general system of the form (\ref{eq:symplectic1}) requires the specification of all the components of the vector function $\bm{F}(\tilde{\bm{x}},t)$, while by (\ref{eq:symplectic2}), if the system is Hamiltonian, it is specified by a single scalar function of $\bm{p}$, $\bm{q}$ and $t$ (the Hamiltonian).\par
 
-One of the basic properties of Hamilton's equations is that they preserve $2N$ dimensional volumes in the phase space. This follows by taking the divergence of $\bm{F}(\tilde{\bm{x}})$ in Eq. (\ref{eq:symplectic1}), which gives
+One of the basic properties of Hamilton's equations is that they preserve $2N$ dimensional volumes in phase space. This follows by taking the divergence of $\bm{F}(\tilde{\bm{x}})$ in Equation (\ref{eq:symplectic1}), which gives
 \begin{equation}
 \nabla \cdot \bm{F}=\frac{\partial}{\partial \tilde{\bm{x}}}\cdot \bm{F}=\frac{\partial}{\partial \bm{p}}\Bigg(-\frac{\partial H}{\partial \bm{q}}\Bigg)+\frac{\partial}{\partial \bm{q}}\cdot \Bigg(\frac{\partial H}{\partial \bm{p}}\Bigg)=0
 \end{equation}
-Thus, if we consider an initial closed surface $S_0$ in the $2N$ dimensional phase space and evolve each point on the surface forward with time, we obtain at each instant	of time $t$ a new closed surface $S_t$ which contains within it precisely the same $2N$ dimensional volume as does $S_0$. This follows from
+Thus, if we consider an initial closed surface $S_0$ in the $2N$ dimensional phase space and evolve each point on the surface forward in time, we obtain at each instant of time $t$ a new closed surface $S_t$ which contains within it precisely the same $2N$ dimensional volume as the initial surface $S_0$. This follows as
 
 \begin{equation}
 \frac{d}{dt}\int_{S_t}d^{2N}\tilde{\bm{x}}= \oint_{S_t}\frac{d\tilde{\bm{x}}}{dt}\cdot d\bm{S}=\oint_{S_t}\bm{F}\cdot d\bm{S}=\int_{S_t}\frac{\partial }{\partial \tilde{\bm{x}}}\cdot d^{2N}\tilde{\bm{x}}=0,
 \end{equation}
-where $\int_{S_t} \cdots$ denotes integration over the volume enclosed by $S_t$, $ \oint_{S_t}\cdots$ denotes a surface integral over the closed surface $S_t$, and the third equality is from the divergence theorem \cite{ottChaosDynamicalSystems2002}.. As a consequence of this result, Hamiltonian systems do not have attractors in the usual sense. This incompressibility of phase space volumes for Hamiltonian systems is called Liouville's theorem \cite{ottChaosDynamicalSystems2002}
+where the integrals $\int_{S_t} \cdots$ denotes integration over the volume enclosed by $S_t$, $ \oint_{S_t}\cdots$ denotes a surface integral over the closed surface $S_t$, and the third equality is from the divergence theorem \cite{ottChaosDynamicalSystems2002}. From this result we can conclude that Hamiltonian systems do not posses what are called attractors in phase space. This incompressibility of phase space volumes for Hamiltonian systems is called Liouville's theorem \cite{ottChaosDynamicalSystems2002}
 CITAR AL GOLDSTEIN.\par
 
-Perhaps the most important basic structural property og Hamilton's equations is that they are symplectic \cite{ottChaosDynamicalSystems2002}:
+Perhaps we can say that the most important basic structural property of Hamilton's equations is that they follow a symplectic structure \cite{ottChaosDynamicalSystems2002}:
 \begin{equation}
 \frac{d\tilde{\bm{x}}}{dt}=\bm{S}_N\cdot \frac{\partial H}{\partial \tilde{\bm{x}}}.
 \end{equation}
-That is, if we consider three orbits that are infinitesimally displaced from each other, $(\bm{p}(t),\bm{q}(t))$, $(\bm{p}(t)+\delta \bm{p}(t),\bm{q}(t)+\delta \bm{q}(t))$ and $(\bm{p}(t)+\delta \bm{p}'(t),\bm{q}(t)+\delta \bm{q}'(t))$, where $\delta \bm{p}$, $\delta \bm{q}$, $\delta \bm{p}'$ and $\delta \bm{q}'$ are infinitesimal $N$ vectors, then the quantity,
+We can illustrate this geometry with the following arguments, if we consider three orbits that are infinitesimally displaced from each other, $(\bm{p}(t),\bm{q}(t))$, $(\bm{p}(t)+\delta \bm{p}(t),\bm{q}(t)+\delta \bm{q}(t))$ and $(\bm{p}(t)+\delta \bm{p}'(t),\bm{q}(t)+\delta \bm{q}'(t))$, where $\delta \bm{p}$, $\delta \bm{q}$, $\delta \bm{p}'$ and $\delta \bm{q}'$ are infinitesimal $N$ vectors, then the quantity,
 \begin{equation}
 \delta \bm{p}\cdot \delta \bm{q}'-\delta \bm{q}\cdot \delta \bm{p}',
 \end{equation}
-which we call the differential symplectic area, is independent of time,
+which is to be called the differential symplectic area, is a quantity independent of time,
 \begin{equation}
 \frac{d}{dt}(\delta\bm{p}\cdot\delta\bm{q}'-\delta\bm{q}\cdot\delta\bm{p}')=0.
 \label{eq:sympl_area_no_time}
@@ -140,7 +146,7 @@ The differential symplectic area can also be written as
 \end{equation}
 where $\dagger$ denotes transpose.\par
 
-To derive (\ref{eq:sympl_area_no_time}) we differentiate (\ref{eq:sympl_area_matrix}) with respect to time and use Eqs. (\ref{eq:symplectic1}) - (\ref{eq:sympl_hamil}):
+To derive (\ref{eq:sympl_area_no_time}) we differentiate (\ref{eq:sympl_area_matrix}) with respect to time and use Equations (\ref{eq:symplectic1}) - (\ref{eq:sympl_hamil}):
 
 \begin{align}
 \frac{d}{dt}(\delta \tilde{\bm{x}}^{\dagger}\cdot \bm{S}_N\cdot \delta \tilde{\bm{x}}')
@@ -155,7 +161,7 @@ To derive (\ref{eq:sympl_area_no_time}) we differentiate (\ref{eq:sympl_area_mat
 &=0,
 \label{eq:proff_sympl_area}
 \end{align} 
-where we have used $\bm{S}_N\cdot\bm{S}_N=-\bm{I}_{2N}$ (where $\bm{I}_{2N}$ is the $2N$ dimensional identity matrix), $\bm{S}_N^{\dagger}=-\bm{S}_N$ and noted that $\partial^2H/\partial\tilde{\bm{x}}}\partial\tilde{\bm{x}}}$ is a symmetric matrix.Then the symplectic matrix $\bm{S}_N$ satisfies the folowing conditions CITE ARNOLD ERGODIC PROBLEMS OF CLASSICAL MECHANICS :
+where we have used the properties of the symplectic matrix $\bm{S}_N\cdot\bm{S}_N=-\bm{I}_{2N}$ (where $\bm{I}_{2N}$ is the $2N$ dimensional identity matrix), $\bm{S}_N^{\dagger}=-\bm{S}_N$ and noted that $\partial^2H/\partial\tilde{\bm{x}}\partial\tilde{\bm{x}}$ is a symmetric matrix. We can also prove that the symplectic matrix $\bm{S}_N$ satisfies the folowing conditions CITE ARNOLD ERGODIC PROBLEMS OF CLASSICAL MECHANICS :
 \begin{equation}
 \bm{S}_N^{-1}=\bm{S}_N^{\dagger}=-\bm{S}_N
 \end{equation}
@@ -163,56 +169,56 @@ and
 \begin{equation}
 det(\bm{S}_N)=1,
 \end{equation}
-which can be obtained directly form Eq.(\ref{eq:symplectic_matrix}).\par
+which can be obtained directly from Equation (\ref{eq:symplectic_matrix}).\par
 
 Symplectic systems present a wide variety of properties CITE ARNOLD ERGODIC PROBLEMS OF CLASSICAL MECHANICS, but the one that is more relevant for this work, is that they conserve the volume on the $2N$ dimensional phase space, this means that symplectic dynamical systems follow the Liouville Theorem \cite{ottChaosDynamicalSystems2002}.\par
 
-The fact that a Hamiltonian system conserves volume in the phase space has some consequences, we will highlight here the Poincar\´e  Recurrence Theorem CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS AND ZASLAVSKI THE PHYSICS OF CHAOS IN HAMILTONIAN SYSTEMS. When considering the movement of the system in a limited region of the phase space, which we denote as $Gamma$, wif we define a small area $A$ within this region (REF FIGURA QUE NO HE HECHO), with volume $\Gamma_A < \Gamma$, we can obtain a set of time values $\{ t_j\}$ for which the flow crosses this region from the inside out. The time intervals
+The fact that a Hamiltonian system conserves volume in the phase space has some consequences, we will highlight here the Poincar\´e  Recurrence Theorem CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS AND ZASLAVSKI THE PHYSICS OF CHAOS IN HAMILTONIAN SYSTEMS. When considering the movement of the system in a limited region of the phase space, which we denote as $\Gamma$, if we define a small area $A$ within this region (REF FIGURA QUE NO HE HECHO), with volume $\Gamma_A < \Gamma$, we can obtain a set of time values $\{ t_j\}$ for which the flow crosses this region from the inside out. The time intervals
 \begin{equation}
 \tau_j=t_{j+1}-t_j;\qquad j=0,1,2,...
 \end{equation}
-are the Poincar\´e Cycles and $t_j$ the Poincar\´e Recurrence Times. \par
+are the Poincaré Cycles and $t_j$ the Poincaré Recurrence Times. \par
 
 
 
 FIGURA QUE NO HE HECHO DE LA REFERENCIA DE LOS CICLOS DE POINCARE\par
 
-Poincar\´e proved that for a movement in a finite region of space in which the volume is preserved, the entire path sould return to a previously determined region (for example $A$ in Fig. FIGURA QUE NO HE HECHO) in a finite time and an infinite number of times. An exception occurs only if $A$ is a zero dimension set CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS AND ZASLAVSKI THE PHYSICS OF CHAOS IN HAMILTONIAN SYSTEMS.\par 
+Poincaré proved that for a movement in a finite region of space in which the volume is preserved, the entire path sould return to a previously determined region (for example $A$ in Figure FIGURA QUE NO HE HECHO) in a finite time and an infinite number of times. An exception occurs only if $A$ is a zero dimension set CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS AND ZASLAVSKI THE PHYSICS OF CHAOS IN HAMILTONIAN SYSTEMS CITE JOAO.\par 
 
 Thus, some general properties of Hamiltonian dynamical systems have been described. This ocurred without taking into account its movement, that is, its dynamics. In the coming sections, this question starts to gain space, focusing attention on some characteristics of its dynamics, more specifically when there is the presence of regular movement, chaos or a mixture of both.
 
 
 
 \subsection{Integrability in Hamiltonian problems}
-As we have previously stated, the case where the Hamiltonian has no explicit time dependence, $H=H(\bm{p},\bm{q})$, we have seen that Hamilton's equations imply that $dH/dt=0$ adn the energy $E=H(\bm{p},\bm{q})$ is a conserved quantity. Thus, orbits with a given energy $E$ are restricted to lie on the $(2N-1)$ dimensional surface $E=H(\bm{p},\bm{q})$. A function $f(\bm{p},\bm{q})$ is said to be a constant of motion of for a system with Hamiltonian $H$ is a constant of motion. More generally, differentiating $f(\bm{p},\bm{q})$ with respect to time, and assuming that there is no explicit time dependence of the Hamiltonian, we have
+Another important topic related to Hamiltonian systems involve integrability, we will see in this subsection that this will naturally lead to the concept of chaos. As we have previously stated, in the case where the Hamiltonian of the system has no explicit time dependence, $H=H(\bm{p},\bm{q})$, we have showed that Hamilton's equations imply that the Hamiltonian does not change in time $dH/dt=0$ and the energy identified as the Hamiltonian $E=H(\bm{p},\bm{q})$ is a conserved quantity. Thus, orbits with a given energy $E$ are restricted to lie on the $(2N-1)$ dimensional surface $E=H(\bm{p},\bm{q})$. A function $f(\bm{p},\bm{q})$ is said to be a constant of motion of a system with Hamiltonian $H$ if this quantity does not change in time even if $\bm{p}$ and $\bm{q}$ do. More generally, if we differentiate the function $f(\bm{p},\bm{q})$ with respect to time, and assuming that there is no explicit time dependence for the Hamiltonian, we obtain that
 \begin{equation}
 \frac{df}{dt}=\frac{d\bm{p}}{dt}\cdot\frac{\partial f}{\partial \bm{p}}+\frac{d\bm{q}}{dt}\cdot\frac{\partial f}{\partial \bm{q}}= \frac{\partial H}{\partial \bm{p}}\cdot\frac{\partial f}{\partial \bm{q}}-\frac{\partial H}{\partial \bm{q}}\cdot\frac{\partial f}{\partial \bm{p}}=0
 \end{equation}
-We call the expression appearing on the right hand side of the second equality the Poisson bracket of $f$ and $H$ CITAR AL GOLDSTEIN, and we abbreviate it as $\{F,h\}$. Using this definition, we have a condition for a function $f$ to be a constant of motion when the Hamiltonian does not depend on time CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS:
+We call the expression appearing on the right hand side of the second equality the Poisson bracket between  $f$ and $H$ CITAR AL GOLDSTEIN, and we shall abbreviate it as $\{F,h\}$. Using this definition, we have a condition for a general function $f$ to be a constant of motion when the Hamiltonian does not depend on time CITE ZASLAVSKI HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS, for $f$ to be a constant of motion then its Poisson bracket with the Hamiltonian must be equal to zero:
 \begin{equation}
 \{ f,H\} =0.
 \end{equation}
-(The Hamiltonian is a constant of the motion since $\{H,H\}=0$.)\par
+(We can show using this condition that th Hamiltonian is correspondingly a constant of the motion since $\{H,H\}=0$.)\par
 
 
-For a system with $N$ degrees of freedom to be integrable, in the Liouville sence, it is necessary to exist $N$ constants independent of movement (or motion) $f_i(\bar{p},\bar{q})$(PIE DE PAGINA: If a constant cannot be described as a function of others, then it is called \say{independent} CITE OTT DYNAMICAL), with $i=1,2,...,N$ in such a way that
+For a system with $N$ degrees of freedom to be integrable, in the Liouville sense, it is necessary for the system to posses $N$ constants independent of motion $f_i(\bar{p},\bar{q})$\footnote{If a constant cannot be described as a function of others, then it is called \say{independent} CITE OTT DYNAMICAL}, with $i=1,2,...,N$ in such a way that
 \begin{equation}
 \{f_i,H\}=0
 \label{eq:integrability_1}
 \end{equation}
 and 
 \begin{equation}
-\{f_i,f_j\}\delta_{ij}
+\{f_i,f_j\}=\delta_{ij}
 \label{eq:integrability_2}
 \end{equation}
-where $\delta_{ij}$ is the kronecker delta, for all $i$ and $j$ CITAR HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. Said in another wat, the vectors $\bm{v_i}$, defined by
+where $\delta_{ij}$ is the so called kronecker delta CITAR HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. To state it in another way, the vectors $\bm{v_i}$, defined by
 \begin{equation}
 \bm{v_i}=\nabla f_i,
 \label{eq:integrability_3}
 \end{equation}
 where $\nabla=(\partial/\partial q_1,...,\partial/\partial q_N,\partial/\partial p_1,...,\partial/\partial p_N)$ is the nabla operator of phase space, must be linearly independent at all the points in phase space CITE LIBRO DE MECANICA ANALITICA QUE DIGA ESO. If the conditions (\ref{eq:integrability_1})-(\ref{eq:integrability_3}) apply to any $i$ and $j$, then we say that the $N$ constants of motion are in involution.\par 
 
-When an $N$ dimensional Hamiltonian system is integrable possesing $N$ independent constants of motion, the topology of the surface on which its trajectories evolve in the phase space are restricted to an $N$ dimensional torus CITE HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. For the case $N=2$, an orbit over a torus is shown in Figure (\ref{fig:trajectory_torus})
+When an $N$-dimensional Hamiltonian system is integrable possesing $N$ independent constants of motion, the topology of the surface on which its trajectories evolve in phase space is restricted to an $N$ dimensional torus CITE HAMILTONIAN CHAOS AND FRACTIONAL DYNAMICS ZASLAVSKI. For the case $N=2$, an orbit over a torus is shown in Figure (\ref{fig:trajectory_torus})
 
 \begin{figure}[H]
 \centering
@@ -221,37 +227,37 @@ When an $N$ dimensional Hamiltonian system is integrable possesing $N$ independe
 \label{fig:trajectory_torus}
 \end{figure}
 
-A simpler description of the movement of integrable Hamiltonian systems over the $N$ dimensional torus, can be made using the description in terms of the action-angle variables and the Hamilton-Jacobi equations, whose formalism can be found in Ref. CITAR AL GOLDSTEIN. For this, a canonical change of variables $(\bm{p},\bm{q})=\rightarrow (\tilde{\bm{p}},\tilde{\bm{q}})$ is introduced such that the Hamiltonian $\tilde{H}$ depends only on $\tilde{\bm{p}}$ and not on $\tilde{\bm{q}}$. This way, the Hamilton's equations with the new Hamiltonian become
+We can state a simpler description of the movement of integrable Hamiltonian systems over the $N$ dimensional torus by using the description in terms of the action-angle variables and the Hamilton-Jacobi equations, this formalism is explained in detail in Ref. CITAR AL GOLDSTEIN. In this formalism a canonical change of variables $(\bm{p},\bm{q})=\rightarrow (\tilde{\bm{p}},\tilde{\bm{q}})$ is introduced such that the Hamiltonian $\tilde{H}$ depends only on $\tilde{\bm{p}}$ and not on $\tilde{\bm{q}}$. This way, the Hamilton's equations with the new Hamiltonian become
 \begin{equation}
 \frac{d\tilde{\bm{p}}}{dt}= -\frac{\partial \tilde{H}}{\partial \tilde{\bm{q}}}=0  \qquad and \qquad  
 \frac{d\tilde{\bm{q}}}{dt}= \frac{\partial \tilde{H}}{\partial \tilde{\bm{p}}}
 \label{eq:action_angle_variables1}
 \end{equation}
-and $H(\bm{p},\bm{q})$ becomes $\tilde{H}(\tilde{\bm{p}})$.\par
+and $H(\bm{p},\bm{q})$ becomes a much simpler Hamiltonian depending only on the canonical momentum, $\tilde{H}(\tilde{\bm{p}})$.\par
 
 
-Using the action-angle variables, we will write the components of the moment $\tilde{\bm{p}}$ and of the generalized coordinates $\tilde{\bm{q}}$ as
+Using the action-angle variable formalism, we will write the components of the moment $\tilde{\bm{p}}$ and of the generalized coordinates $\tilde{\bm{q}}$ as
 \begin{equation}
 (\tilde{\bm{p}},\tilde{\bm{q}})=(\bm{I},\bm{\theta}),
 \end{equation}
-where the components of the action $\bm{I}_i$ are defined by CITAR AL GOLDSTEIN
+where the components of the action $\bm{I}_i$ are defined by CITE CITAR AL GOLDSTEIN
 \begin{equation}
 \bm{I}_i=\frac{1}{2\pi}\oint p_idq_i \qquad where \qquad i=1,2,...,N.
 \end{equation}
-This way, we are writing the components of $\tilde{\bm{p}}$ as being $N$ constants of motion and at the same time satisfying Eq. (\ref{eq:action_angle_variables1}), since the time variation of a motion constant is zero.\par
+This way, we are writing the components of the momentum $\tilde{\bm{p}}$ as being $N$ constants of motion  symplifying the Hamiltonian and at the same time satisfying Equation (\ref{eq:action_angle_variables1}), since the time variation of a motion constant is zero.\par
 
 In order to achieve the change of variables $(\bm{p},\bm{q})\rightarrow (\bm{I},\bm{\theta})$, we use the generating function $S(\bm{I},\bm{q})$ and the relations CITAR AL GOLDSTEIN
 \begin{equation}
-\bm{\theta}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{I}} \qquad and\qquad \bm{p}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{q}}
+\bm{\theta}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{I}} \qquad ,\qquad \bm{p}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{q}}
 \end{equation}
-because this function relates the \say{old} coordinates of the postion $\bm{q}$ and the \say{new} moment $\bm{I}$ CITAR AL GOLDSTEIN. With this, we can construct the Hamiltonian function in terms of the action-angle variables, $\tilde{H}(I)$ which is independent of $\theta$.\par
+as this function relates the \say{old} coordinates of the postion $\bm{q}$ and the \say{new} momentum $\bm{I}$ CITAR AL GOLDSTEIN. With this relations, we will be able to construct the Hamiltonian function in terms of the action-angle variables, $\tilde{H}(I)$ which is independent of $\theta$.\par
 
-As said in the last paragraph, the new Hamiltonian is independent of $\bm{\theta}$ and the Hamilton equations Eq. (\ref{eq:action_angle_variables1}), can be written as 
+As said in the last paragraph, the new Hamiltonian is independent of $\bm{\theta}$ and the Hamilton equations (\ref{eq:action_angle_variables1}), may be written as 
 \begin{equation}
 \frac{d\bm{I}}{dt}=0 \qquad and \qquad \frac{d\bm{\theta}}{dt}=\frac{\partial \tilde{H}(\bm{I})}{\partal \bm{I}}\equiv \bm{\omega}(\bm{I}),
 \label{eq:action_angle_variables2}
 \end{equation}
-their solutions are
+their solutions are easily calculated as
 \begin{equation}
 \bm{I}(t)=\bm{I}(0)
 \end{equation}
@@ -261,18 +267,18 @@ and
 \end{equation}
 where each angle variable is periodic with a period of $2\pi$.\par
 
-The second equation in Eq.(\ref{eq:action_angle_variables2}) can be interpreted as an angular velocity vector specifying trajectories over the $N$ dimensional torus CITAR AL GOLDSTEIN, where $\bm{I}$ represents the radius of the trajectory and $\bm{\theta}$ the angle of rotation. this fact is illustrated in Fig. FIGURA QUE NO HE HECHO DE LA SECCION TRANSVERSAL DEL TORO for the case where $N=2$. With the interpretation of $\bm{\omega}(\bm{I})$ as an angular velocity vector that specifies different paths over an $N$ dimensional torus, different types of movement over the torus can occur, which may be periodic or quasi-periodic, depending on the ratio between these frequencies. If there is an $N$ dimensional vector of integers $\bm{m}=(m_1,m_2,...,m_n)$, such that
+The second equation in  (\ref{eq:action_angle_variables2}) can be interpreted as an angular velocity vector specifying trajectories over the $N$ dimensional torus CITAR AL GOLDSTEIN, where $\bm{I}$ represents the radius of the trajectory and $\bm{\theta}$ the angle of rotation. this fact is illustrated in Figure FIGURA QUE NO HE HECHO DE LA SECCION TRANSVERSAL DEL TORO for the case where $N=2$. When we interpret $\bm{\omega}(\bm{I})$ as an angular velocity vector that specifies different paths over an $N$ dimensional torus, we can interpret different types of motion along the torus' degrees of freedom, which may be periodic or quasi-periodic, depending on the ratio between these frequencies. If there is an $N$ dimensional vector of integers $\bm{m}=(m_1,m_2,...,m_n)$, such that
 \begin{equation}
 \bm{m}\cdot \bm{\omega}=0,
 \label{eq:rational_condition}
 \end{equation}
-except when $\bm{m}$ is a vector with all null components, the movement over the torus is a periodic movement and the ratio $\omega_1/\omega_i$ is a rational number. In these cases, the orbits followed by the system close on themselves after $m_1$ cycles cycles in $\theta_1$, $m_2$ cycles in $\theta_2$ and so on \cite{ottChaosDynamicalSystems2002}. When condition (\ref{eq:rational_condition}) is not satisfied and $\omega_1/\omega_i$ is an irrational number, the motion of the system is called quasi-periodic and an orbit never returns to its starting point, completely filling the surface of the torus \cite{ottChaosDynamicalSystems2002}.\par
+except when $\bm{m}$ is a vector with all null components, the movement over the torus is a periodic movement and the ratio $\omega_1/\omega_i$ is a rational number. In these cases, the orbits followed by the system close on themselves after $m_1$ cycles in $\theta_1$, $m_2$ cycles in $\theta_2$ and so on \cite{ottChaosDynamicalSystems2002}. When the condition (\ref{eq:rational_condition}) is not satisfied and $\omega_1/\omega_i$ is an irrational number, the motion of the system is called quasi-periodic and an orbit never returns to its starting point, this will result in the trajectory completely filling the surface of the torus \cite{ottChaosDynamicalSystems2002}.\par
 
-When an integrable system begins to suffer the action of a disturbance, the tori whose ratio between frequencies is a rational or irrational number, behave in dfferent ways. The consequences of this disturbance on such tori  are explained by the KAM theorem, which we will describe later.
+When an integrable system begins to suffer the action of a disturbance, the tori whose ratio between frequencies is a rational or irrational number, behave in dfferent ways. The consequences of this disturbance on such tori are explained by the KAM theorem, which we will describe next.
 
 
 \subsection{KAM Theorem}
-In the last subsections we introduced the necessary conditions for a system to be integrable. We also found that when the Hamiltonian is written in terms of the motion constants, especially in relation to the angle-action variables, the system's movement is limited to a rational or irrational $N$ dimensional torus, depending on the frequencies of the motion. But where does the integrability of a Hamiltonian system go? Or yet, what happens to rational and irrational tori when an integrable Hamiltonian system is subject to a disturbance? The answers to these questions came with the rigorous mathematical work of Kolmogorov, Arnold and Moser (KAM) and with the numerical studies developed on chaos and integrability after the advent of computer. The results obtained by Kolmogorov, Arnold and Moser became known as the KAM Theorem. The deduction of the theorem will not be detailed here, as it is ourside the scope of this work, only its results will be presented.\par
+In the last subsections we introduced the necessary conditions for a system to be integrable. We also found that when we rewrite the Hamiltonian in terms of the constants of motion, especially in relation to the formalism of the angle-action variables, the system's movement can be described as to be limited to a rational or irrational $N$ dimensional torus, depending on the frequencies of the motion. But where does the integrability of a Hamiltonian system go? Or yet, what happens to rational and irrational tori when an integrable Hamiltonian system is subject to a disturbance? The answers to these questions came with the rigorous mathematical work of Kolmogorov, Arnold and Moser (KAM) and with the numerical studies developed on chaos and integrability after the advent of computer. The results obtained by Kolmogorov, Arnold and Moser became known as the KAM Theorem. The deduction of the theorem will not be detailed here, as it is ourside the scope of this work, only its results will be presented.\par
 
 To describe the KAM theorem, we consider a disturbed Hamiltonian system, written in terms of the action-angle variables as
 \begin{equation}
@@ -285,11 +291,11 @@ The main idea of the KAM Theorem is to consider the effect of the disturbance on
 
 
 \subsection{Rational Tori}
-We call Rational Tori those whose ratio between the frequencies given by Eq.(\ref{eq:action_angle_variables2}) is a rational number. As a result of the action of the disturbance, these Tori are destroyed and it does not matter how small the values of $\epsilon$ are \cite{ottChaosDynamicalSystems2002}. Due to the destruction of the Rational Torus, there is the appeaance of an equal number of fixed elliptic and hyperbolic points. This result is known as the Poincar\´e Birkhoff theorem CITE REGULAR AND CHAOTIC DYNAMICS LICHTENBERG LIEBERMAN . The number of fixed points that appear depends on the ratio between the frequencies of the rational torus. If we call $R=\tilde{p}/\tilde{q}$ the torus rotation number, where $\tilde{q}$ represents the largest number of cycles performed on the torus before the path returns over itself, then, due to the disturbance, there will appear an equal or multiple number of $\tilde{q}$ of elliptical points and hyperbolic points \cite{ottChaosDynamicalSystems2002}. Fig. (FIGURA QUE NO HE HECHO DEL TORO RACIONAL PERTURBADO POCAMENTE) illustrates a case where $\tilde{q}=3$ and $\tilde{q}=4$ in a Poincar\´e section for a system with $N=2$.\par
+We call Rational Tori those whose ratio between the frequencies given by Equation (\ref{eq:action_angle_variables2}) is a rational number. As a result of the action of the disturbance, these Tori are destroyed and it does not matter how small the values of $\epsilon$ are \cite{ottChaosDynamicalSystems2002}. Due to the destruction of the Rational Torus, there is the appeaance of an equal number of fixed elliptic and hyperbolic points. This result is known as the Poincar\´e Birkhoff theorem CITE REGULAR AND CHAOTIC DYNAMICS LICHTENBERG LIEBERMAN . The number of fixed points that appear depends on the ratio between the frequencies of the rational torus. If we call $R=\tilde{p}/\tilde{q}$ the torus rotation number, where $\tilde{q}$ represents the largest number of cycles performed on the torus before the path returns over itself, then, due to the disturbance, there will appear an equal or multiple number of $\tilde{q}$ of elliptical points and hyperbolic points \cite{ottChaosDynamicalSystems2002}. Figure (FIGURA QUE NO HE HECHO DEL TORO RACIONAL PERTURBADO POCAMENTE) illustrates a case where $\tilde{q}=3$ and $\tilde{q}=4$ in a Poincar\´e section for a system with $N=2$.\par
 
-These elliptical and hyperbolic points that result from the breakdown of the rational torus due to the perturbation, they remain fixed points of the disturbed system and with the same perio $\tilde{q}$ of the rational torus CITE REGULAR AND HAOTIC DYNAMICS LICHTENBERG LIEBERMAN . The difference between the two points is in the way initial conditions close to them behave. Next to fixed elliptical points, new curves appear similar to those that existed before the perturbation, which we call KAM curves, some of which are rational and others irrational. Such fact is presented inside the box on Fig. (FIGURA ANTERIOR LA PARTE B TIENE UNA CAJA CERRADA DE UN PUNTO ELIPTICO). When these rational KAM curves that appeared due to the action of the disturbance are destroyed, other elliptical and hyperbolic points will appear, surrounded again by rational and irrational KAM curves and so on \cite{ottChaosDynamicalSystems2002}.\par
+These elliptical and hyperbolic points that result from the breakdown of the rational torus due to the perturbation, they remain fixed points of the disturbed system and with the same perio $\tilde{q}$ of the rational torus CITE REGULAR AND HAOTIC DYNAMICS LICHTENBERG LIEBERMAN . The difference between the two points is in the way initial conditions close to them behave. Next to fixed elliptical points, new curves appear similar to those that existed before the perturbation, which we call KAM curves, some of which are rational and others irrational. Such fact is presented inside the box on Figure (FIGURA ANTERIOR LA PARTE B TIENE UNA CAJA CERRADA DE UN PUNTO ELIPTICO). When these rational KAM curves that appeared due to the action of the disturbance are destroyed, other elliptical and hyperbolic points will appear, surrounded again by rational and irrational KAM curves and so on \cite{ottChaosDynamicalSystems2002}.\par
 
-Orbits enerated near hyperbolic points, can have different behaviors, because hyperbolic points, also known as saddle points, have stable directions or varieties, those that move to the fixed point, or unstable, those who move away from it \cite{ottChaosDynamicalSystems2002}. If we follow the varieties, moving away from a fixed point, they will usually present homoclonic or heteroclonic intersections, which occur when unstable varieties from the same point cross over themselves or from two different points intersect at different points, respectively \cite{ottChaosDynamicalSystems2002}. Fig. (REF FIGURA QUE NO HE HECHO DE LOS ENREDAMIENTOS HOMOCLINICOS) represents these crossings for a single point and for two distinct hyperbolic points.\par 
+Orbits enerated near hyperbolic points, can have different behaviors, because hyperbolic points, also known as saddle points, have stable directions or varieties, those that move to the fixed point, or unstable, those who move away from it \cite{ottChaosDynamicalSystems2002}. If we follow the varieties, moving away from a fixed point, they will usually present homoclonic or heteroclonic intersections, which occur when unstable varieties from the same point cross over themselves or from two different points intersect at different points, respectively \cite{ottChaosDynamicalSystems2002}. Figure (REF FIGURA QUE NO HE HECHO DE LOS ENREDAMIENTOS HOMOCLINICOS) represents these crossings for a single point and for two distinct hyperbolic points.\par 
 
 Thus, the destruction of the rational torus not only generates stable elliptical points, but also generates hyperbolic points, which are responsible for the chaotic movement, which is always trapped by the KAM curves that haven't been \say{broken} \cite{ottChaosDynamicalSystems2002}, at least for an $N=2$ case. As these curves begin to \say{break}, more and more chaotic regions are appearing, completely filling with points the allowed region of the Poincar\´e section. We will now see what is the sequence in which the irrational torus gives rise to the elliptical and hyperbolic points.
 FIGURA\par
@@ -325,7 +331,7 @@ R=a_1+\frac{1}{a_2+\frac{1}{a_3+\frac{1}{a_3+ \cdots}}}
 \end{equation}
 where the $a_i$'s are integer numbers. However, if the integers $a_i$'s for $i\geq k$ are equal to one, this irrational number is called \say{noble} CITE ORDER AND CHAOS IN DYNAMICAL ASTRONOMY CONTOPOULOS. The \say{most irrational} numer that exists is consequently the most \say{noble} of them all CITE ORDER AND CHAOS IN DYNAMICAL ASTRONOMY CONTOPOULOS, and it is the golden ratio
 \begin{equation}
-R=\frac{(\sqrt{5}-1}{2}
+R=\frac{(\sqrt{5}-1)}{2}
 \end{equation}
 When the most \say{noble} number of all is related to the irrationality of a KAM Tori, it will be the last one to be destroyed as the intensity of the perturbation is increased. However, if it is not present, the last KAM Tori to be destroyed will be the one with the most \say{noble} number CITE ORDER AND CHAOS IN DYNAMICAL ASTRONOMY CONTOPOULOS.\par
 
