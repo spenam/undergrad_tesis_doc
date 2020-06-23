@@ -1,15 +1,15 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction\040REVISARLA}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Hamiltonian\040systems\040and\040Symplectic\040structure-\040OTT\040Y\040JOAO}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Hamiltonian\040systems\040and\040Symplectic\040structure}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Dynamical\040systems}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Hamilton\040equations\040and\040Symplectic\040Structure-\040OTT\040Y\040JOAO}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Hamilton\040equations\040and\040Symplectic\040Structure}{chapter.2}% 4
 \BOOKMARK [2][-]{subsection.2.2.1}{Integrability\040in\040Hamiltonian\040problems}{section.2.2}% 5
 \BOOKMARK [2][-]{subsection.2.2.2}{KAM\040Theorem}{section.2.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.3}{Rational\040Tori}{section.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.2.4}{Irrational\040Tori}{section.2.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Symplectic\040Integrator\040NUMERICAL\040HAMILTONIAN\040PROBLEMS}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Symplectic\040Integrator}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.3.1}{Importance\040of\040symplecticness\040in\040an\040integrator}{section.2.3}% 10
 \BOOKMARK [2][-]{subsection.2.3.2}{Conservation\040of\040constants\040of\040motion}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.3}{Chaos\040and\040integrators\040TOCA\040METERLE\040VARIAS\040REFERENCIAS}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{Chaos\040and\040integrators}{section.2.3}% 12
 \BOOKMARK [1][-]{section.2.4}{Randomness\040in\040classical\040and\040quantum\040mechanics}{chapter.2}% 13
 \BOOKMARK [0][-]{chapter.3}{Double\040well\040and\040finite\040heat\040bath}{}% 14
 \BOOKMARK [1][-]{section.3.1}{Double\040well\040as\040a\040two\040level\040system}{chapter.3}% 15
@@ -17,11 +17,11 @@
 \BOOKMARK [2][-]{subsection.3.1.2}{Heat\040bath\040proper\040modeling}{section.3.1}% 17
 \BOOKMARK [1][-]{section.3.2}{Dynamics\040of\040the\040system}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.2.1}{Hamilton\040equations\040of\040motion}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.2}{Poincaré surface plots}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{Poincaré surface plots for finite heat bath}{section.3.2}% 20
 \BOOKMARK [2][-]{subsection.3.2.3}{Dynamics\040for\0401\040oscillator}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.4}{Dynamics\040for\0402\040oscillators}{section.3.2}% 22
 \BOOKMARK [1][-]{section.3.3}{Nature\040of\040the\040heat\040bath}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.1}{Frequency\040spectra\040FALTA\040MUCHO\040POR\040ACABAR}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Frequency\040spectra}{section.3.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.2}{Energy\040spectra}{section.3.3}% 25
 \BOOKMARK [3][-]{subsubsection.3.3.2.1}{Drawing\040energy\040from\040a\040distribution}{subsection.3.3.2}% 26
 \BOOKMARK [3][-]{subsubsection.3.3.2.2}{Quasi-gaussian\040distribution\040in\040phase\040space}{subsection.3.3.2}% 27

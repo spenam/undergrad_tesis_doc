@@ -1,38 +1,38 @@
 \thispagestyle {empty}
-\contentsline {chapter}{\numberline {1}Introduction REVISARLA}{13}{chapter.1}
-\contentsline {chapter}{\numberline {2}Hamiltonian systems and Symplectic structure- OTT Y JOAO}{15}{chapter.2}
+\contentsline {chapter}{\numberline {1}Introduction}{13}{chapter.1}
+\contentsline {chapter}{\numberline {2}Hamiltonian systems and Symplectic structure}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Dynamical systems}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}Hamilton equations and Symplectic Structure- OTT Y JOAO}{18}{section.2.2}
+\contentsline {section}{\numberline {2.2}Hamilton equations and Symplectic Structure}{18}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Integrability in Hamiltonian problems}{22}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}KAM Theorem}{25}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Rational Tori}{26}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Irrational Tori}{28}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Symplectic Integrator NUMERICAL HAMILTONIAN PROBLEMS}{29}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Importance of symplecticness in an integrator}{30}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.2.4}Irrational Tori}{27}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Symplectic Integrator}{29}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Importance of symplecticness in an integrator}{31}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Conservation of constants of motion}{31}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Chaos and integrators TOCA METERLE VARIAS REFERENCIAS}{31}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Randomness in classical and quantum mechanics}{32}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.3}Chaos and integrators}{32}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Randomness in classical and quantum mechanics}{33}{section.2.4}
 \contentsline {chapter}{\numberline {3}Double well and finite heat bath}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Double well as a two level system}{35}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Quantum modeling for continuous variables}{35}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Heat bath proper modeling}{35}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Dynamics of the system}{35}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Hamilton equations of motion}{35}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Poincaré surface plots}{38}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Hamilton equations of motion}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Poincaré surface plots for finite heat bath}{38}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Dynamics for 1 oscillator}{44}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Dynamics for 2 oscillators}{45}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}Nature of the heat bath}{45}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Frequency spectra FALTA MUCHO POR ACABAR}{46}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Energy spectra}{46}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}Frequency spectra}{46}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Energy spectra}{47}{subsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Drawing energy from a distribution}{47}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Quasi-gaussian distribution in phase space}{47}{subsubsection.3.3.2.2}
-\contentsline {section}{\numberline {3.4}Number of modes in the bath}{47}{section.3.4}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Quasi-gaussian distribution in phase space}{48}{subsubsection.3.3.2.2}
+\contentsline {section}{\numberline {3.4}Number of modes in the bath}{48}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Chaos to dissipative dynamics}{48}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Variation of the double well and heat bath parameters}{48}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Changing the exponent $s$}{48}{subsubsection.3.4.2.1}
+\contentsline {subsection}{\numberline {3.4.2}Variation of the double well and heat bath parameters}{49}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Changing the exponent $s$}{49}{subsubsection.3.4.2.1}
 \contentsline {subsubsection}{\numberline {3.4.2.2}Changing the individual coupling $g_0$}{49}{subsubsection.3.4.2.2}
 \contentsline {subsubsection}{\numberline {3.4.2.3}Changing the initial energy of the heat bath}{50}{subsubsection.3.4.2.3}
-\contentsline {subsubsection}{\numberline {3.4.2.4}Changing the height of the potential barrier}{50}{subsubsection.3.4.2.4}
+\contentsline {subsubsection}{\numberline {3.4.2.4}Changing the height of the potential barrier}{51}{subsubsection.3.4.2.4}
 \contentsline {chapter}{\numberline {4}Approach to the Measurement theory}{53}{chapter.4}
 \contentsline {section}{\numberline {4.1}Classical Measurement}{53}{section.4.1}
 \contentsline {section}{\numberline {4.2}Quantum Measurement}{54}{section.4.2}
@@ -42,4 +42,4 @@
 \contentsline {section}{\numberline {5.1}Quantum measurement in a unitary setting}{57}{section.5.1}
 \contentsline {chapter}{\numberline {6}Conclusion}{59}{chapter.6}
 \contentsline {chapter}{Bibliography}{61}{section*.18}
-\contentsline {chapter}{\numberline {A}Extra Information}{63}{appendix.A}
+\contentsline {chapter}{\numberline {A}Extra Information}{67}{appendix.A}

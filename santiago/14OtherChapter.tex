@@ -5,9 +5,13 @@
 
 \chapter{Double well and finite heat bath}
 
-In this chapter we will use a model to test the interaction between a particle on a double well potential coupled bilinearly on position with a bath consisting of harmonic oscillators. This model is initially chaotic following the rules we have stated on the previous chapters regarding chaotic motion. The difference here with the previous chapters is that we will increase the number of degrees of freedom in the whole system by increasing the number of harmonic oscillators in the heat bath.\par 
+In this chapter we will use a model to test the interaction between a particle on a double well potential coupled bilinearly on position with a bath consisting of harmonic oscillators. This model is initially chaotic following the rules we have stated on the previous chapters regarding chaotic motion. The difference here with the previous chapters is that we will increase the number of degrees of freedom in the whole system by increasing the number of harmonic oscillators in the heat bath\cite{dittrich2019quantum}.\par 
 
 The main results of this chapter are related to the theory of  dissipative dynamics in open systems but with a finite number of oscillators in the heat bath. We will play with different parameters of the heat bath such as energy and frequencies following this matter.\par 
+
+
+
+
 
 \section{Double well as a two level system}
 
@@ -17,10 +21,10 @@ The main results of this chapter are related to the theory of  dissipative dynam
 \subsection{Heat bath proper modeling}
 
 \section{Dynamics of the system}
-
+In this section we will describe the mathematical properties of the system as a hamiltonian problem. We will study the different dynamics the system will have as afunction of its parameters, we will treat the heat bath as a finite heat bath instead of the common infinite heatbath in the microscopic theory of dissipation in Langevin dynamics. We will evidence here that even if the heat bath is not infinite, it will mimic the dissipation of an infinite heat bath.
 
 \subsection{Hamilton equations of motion}
-This system is governed by the following hamiltonian:
+The model of a particle coupled to a heat bath that we will study here is described by the following hamiltonian:
 \begin{equation}
 H(p,x;\textbf{P,X})=H_{S}+H_B+H_{SB}
 \end{equation}
@@ -39,7 +43,7 @@ each oscillator $n$ posses position $X_n$, momentum $P_N$, frequency $\omega_n$ 
 \begin{equation}
 H_{SB}(p,x;\textbf{P,X})=-x\sum_{n=1}^N g_n X_n+x^2 \sum_{n=1}^N\frac{g_n^2}{2M_n \omega_n}
 \end{equation}
-The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This hamiltonian is often called the Caldeira-Leggett hamiltonian CITAR POR QUE LLAMAN CALDEIRA LEGGETT.\par 
+The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This hamiltonian is often called the Caldeira-Leggett hamiltonian \cite{caldeira1981influence}.\par 
 
 The hamilton equations for this hamiltonian can be separated in the two parts, the particle and the heat bath. The hamilton equations of the particle read as
 
@@ -113,8 +117,7 @@ PB(a,b)=\frac{a^2}{4b}
 
 
 
-
-\subsection{Poincaré surface plots}
+\subsection{Poincaré surface plots for finite heat bath}
 We start the numerical experiments of this model with only one oscillator coupled to the particle of the central system. This very simple model already exhibits the traits and characteristics of a chaotic system, this is due to the barrier of the unstable equilibrium position. We can illustrate this by picturing the particle moving on the double well potential without any coupling with the heat bath, if the particle has enough energy, it will move freely between the two wells, otherwise it will orbit around one well. This can be seen in two different ways, the first one is by looking at the potential part of the hamiltonian of each part of the whole system i.e. the quartic potential and the harmonic oscillator potential, plotting each potential along an axis we can see the contours of energy for the dynamics of the system.
 
 \begin{figure}[H]
@@ -136,15 +139,7 @@ Following this representation we can observe the perturbation induced by the har
 \end{figure}
 This means that independently of the initial conditions of the particle, the motion will be certainly affected by the presence of the potential due to the harmonic oscillator.\par 
 
-Now that we have seen a visual representation of the system without solving the equations of motion of the system, it is necessary to take a look at the specific dynamics of the system numerically by using a symplectic integrator. The integrator of our choice is the Calvo Sanz-Serna 4th order symplectic integrator CITAR 
-
-Stephen K. Gray, Donald W. Noid and Bobby G. Sumpter, Symplectic integrators for large scale molecular dynamics simulations: A comparison of several explicit methods The Journal of Chemical Physics 101, 4062 (1994); doi: https://dx.doi.org/10.1063/1.467523
-
-M. P. Calvo & J. M. Sanz-Serna, Symplectic numerical methods for Hamiltonian problems, Int. J. Mod. Phys. C 4(1993), 617-634
-
-Rackauckas, C. & Nie, Q., (2017). DifferentialEquations.jl – A Performant and Feature-Rich Ecosystem for Solving Differential Equations in Julia. Journal of Open Research Software. 5(1), p.15. DOI: https://doi.org/10.5334/jors.151
-
-, we use a timestep defined by $dt=0.05*T$ where $T=\frac{2\pi}{\omega_t}$ is the period of a harmonic oscillator of frequency $\omega_t=12$. Here we set up different initial conditions for the particle along its phase space, the position of the oscillator always to start at $X_1=0$ and fixed the energy (twice the energy of the potential barrier between the wells here) as a constraint to be followed by the initial momentum of the oscillator. Each point of the poincaré section is registered as the event when the oscillator crosses its equilibrium position $X_1=0$ with a possitive momentum. We will take a number of initial conditions along the phase space of the particle and start to increase the coupling to see the behavior of the orbits in the phase space of the particle.
+Now that we have seen a visual representation of the system without solving the equations of motion of the system, it is necessary to take a look at the specific dynamics of the system numerically by using a symplectic integrator. The integrator of our choice is the Calvo Sanz-Serna 4th order symplectic integrator \cite{gray1994symplectic}\cite{sanz1993symplectic}\cite{rackauckas2017differentialequations}, we use a timestep defined by $dt=0.05*T$ where $T=\frac{2\pi}{\omega_t}$ is the period of a harmonic oscillator of frequency $\omega_t=12$. Here we set up different initial conditions for the particle along its phase space, the position of the oscillator always to start at $X_1=0$ and fixed the energy (twice the energy of the potential barrier between the wells here) as a constraint to be followed by the initial momentum of the oscillator. Each point of the Poincaré section is registered as the event when the oscillator crosses its equilibrium position $X_1=0$ with a possitive momentum. We will take a number of initial conditions along the phase space of the particle and start to increase the coupling to see the behavior of the orbits in the phase space of the particle.
 
 \begin{figure}[H]
 \centering
@@ -239,18 +234,31 @@ The harmonic oscillators will share some of the initial energy of the particle f
 
 
 \section{Nature of the heat bath}
-As it is evident, in this particular system we can vary a big amount of parameters to search for different dynamics and properties that exhibit the system, the model is rich in quantities that can be calculated and extracted from it. This idea also plays against our odds because as there are many parameters to play with it is difficult to control the whole system in an optimal and hierarchical way. There are two types of parameters that we will monitor very closely: the frequency spectra and the energy spectra for the heat bath.
+It is natural to consider the possibilities in this particular problem were we can vary a big amount of parameters to search for different dynamics and properties that exhibit the system, the model is rich in quantities that can be calculated and extracted from it. This idea also plays against our odds because as there are many parameters to play with it is difficult to control the whole system in an optimal and hierarchical way. There are two types of parameters that we will monitor very closely: the frequency spectra and the energy spectra for the heat bath; these two parameters contain the information regarding the nature of the heat bath, meaning we can model different behaviors of the heat bath interacting with the particle. In this section we will give a little insight on the importance of correctly modeling the nature of the heat bath.
 
 
-\subsection{Frequency spectra FALTA MUCHO POR ACABAR}
-The way the frequencies of the harmonic oscillators are distributed in this work is taken from the theory of quantum dissipation in open systems
+FIGURA\par
+LAPIZ\par 
+BAÑO\par 
+
+The importance to model correctly the heat bath is related to the idea of this numerical experiment. We shall imagine this problem as a pencil perfectly balanced on its tip, it is of course an unstable equilibrium point, therefore the slightest perturbation of this pencil will cause the pencil to fall somewhere, if we imagine this on a two dimensional plane, the pencil will either fall left or right. Then modeling the bath in a correct numerical way will give us the way these perturbations considered as an environment will affect the state of the initially balanced pencil. This environment may have different parameters to vary in order to have different dynamics for the pencil.\par 
+
+In principle we can consider the whole system of particle$+$bath as a compound closed system, but if we look at just the particle in the double well then it can be considered as an open system interacting with its environment given by the heat bath. When the number of oscillators in the heat bath is small, then the poincaré recurrence time will be also small as the particle will exchange energy with the heat bath in a short period of time. Nevertheless when the number of harmonic oscillators increases then the poincaré recurrence time will increase also, in the limit of infinite harmonic oscillators the poincaré recurrence time will also go to infinity producing dissipation phenomena in the system\cite{mazur1960poincare}.
+
+
+\subsection{Frequency spectra}
+The way the frequencies of the harmonic oscillators are distributed in this work is taken from the theory of quantum dissipation in open systems.  When the system is composed by a huge number of harmonic oscillators it is convenient to choose wisely how the frequencies of harmonic oscillators are distributed, therefore we may introduce the idea of the spectral density of bath modes as
+\begin{equation}
+J(\omega) =\pi \sum_{i=1}^N\frac{g_i^2}{2_i\omega_i}\delta (\omega-\omega_i).
+\end{equation}
+This quantity will in fact give the information about how the heat bath's frequencies relate and include how the coupling to the system is chosen characterizing the bath. Depending on the system to be studied different values for the parameters may be taken to reproduce different dynamics, in the case of infinite modes this spectral density will relate to the damping integral kernel characterizing the Langevin dissipative dynamics.\par 
+In this work we will take the distribution of the frequencies as in standard open systems dynamics\cite{leggett1987dynamics} \cite{wang2010coherent}\cite{wang2008coherent}
 
 \begin{equation}
 J(\omega) \sim w^s f(\omega,\omega_c)
 \label{eq:spectral_density}
 \end{equation}
-Where $\omega_c$ is the characteristic frequency of the bath, and $f(\omega,\omega_c)$ is a damping function which helps $J(\omega)$ to vanish in the limit of $\omega \rightarrow \infty$. There are many different ways to choose $f(\omega,\omega_c)$ (CITAR CITE From coherent motion to localization: II. Dynamics of the spin-boson model
-with sub-Ohmic spectral density at zero temperature), in this case we will choose an exponential cut-off damping type as $f(\omega,\omega_c)=e^{-\omega/\omega_c}$.   
+Where $\omega_c$ is the characteristic frequency of the bath, and $f(\omega,\omega_c)$ is a damping function which helps $J(\omega)$ to vanish in the limit of $\omega \rightarrow \infty$. There are many different ways to choose $f(\omega,\omega_c)$ \cite{wang2008coherent}, in this case we will choose an exponential cut-off damping type as $f(\omega,\omega_c)=e^{-\omega/\omega_c}$.   
 
 \begin{figure}[H]
 \centering
@@ -261,13 +269,13 @@ with sub-Ohmic spectral density at zero temperature), in this case we will choos
 
 
 \subsection{Energy spectra}
-In this work we will monitor the energy spectra in two different ways, both are related to the idea of having a cloud of harmonic oscillators with initial conditions around the origin of phase space. The first idea is by  drawing the energy of the oscillators from a distribution with a certain mean and variance, the second one consists of using the Box-Muller transform to sample a quasi-gaussian two dimensional distribution of harmonic oscillators in phase space. 
+In this work we will monitor the energy spectra in two different ways, both are related to the idea of having a cloud of harmonic oscillators with initial conditions around the origin of phase space. The first idea is by  drawing the energy of the oscillators from a distribution with a certain mean and variance, the second one consists of using the Box-Muller transform to sample a quasi-gaussian two dimensional distribution of harmonic oscillators in phase space.  Essentially both of these cases will relate to a gaussian distribution in energies of the heat bath, we will model most of the times a cold heat bath i.e. with small energy compared to the central system, therefore it the energy distribution does not need to be necessarily a Boltzmann distribution.
 \subsubsection{Drawing energy from a distribution}
 The method outlined in this subsection consists on drawing the energy of each harmonic oscillator from a probability distribution (mostly a gaussian) with a determined mean and variance. This method will let us normalize the energy of the heat bath at will, having the energy of each harmonic oscillator will let us compute the sum and divide each energy by the normalization desired.\par 
 Now to decide where to locate each oscillator we sample a random number from a uniform distribution $[0,2\pi)$, this will represent an angle on a circle which will be deformed into an ellipse according to the energy and frequency of each harmonic oscillator obtaining finally a position of a harmonic oscillator according to a determined energy ellipse. This process is repeated for every oscillator on the bath giving as a result a distribution of oscillators in phase space with an energy distribution of the heat bath perfectly defined and normalized.
 
 \subsubsection{Quasi-gaussian distribution in phase space}
-This method consists in implementing the Box-Muller transform algorithm onto a uniform distribution to obtain a two dimensional distribution grid of points that represent a gaussian with a defined mean and variance along each dimension (CITE CITAR BOX MULLER TRANSFORM). This method is important in the way that it allows us to have a gaussian distribution in phase space for the harmonic oscillators that can be canged at will to have a defined width along position or momentum as desired, this feedom in choosing the shape of the distribution gives us freedom in the nature of the heat bath on how the harmonic oscillators' motion changes in the initial conditions have different consequences in the particle's motion. This method can also be normalized efficiently.
+This method consists in implementing the Box-Muller transform algorithm onto a uniform distribution to obtain a two dimensional distribution grid of points that represent a gaussian with a defined mean and variance along each dimension \cite{box1958note}. This method is important in the way that it allows us to have a gaussian distribution in phase space for the harmonic oscillators that can be canged at will to have a defined width along position or momentum as desired, this feedom in choosing the shape of the distribution gives us freedom in the nature of the heat bath on how the harmonic oscillators' motion changes in the initial conditions have different consequences in the particle's motion. This method can also be normalized efficiently.
 
 
 
@@ -284,7 +292,7 @@ In this section we will start to evidence the loss of chaotic dynamics due to th
 There are four types of parameters that are interesting for us to look at the variation of the dynamics of the system: The exponent $s$ in the  equation (\ref{eq:spectral_density}), the coupling constant of the oscillators $g_0$ that multiplies the coupling constant of each oscillator $g_i=g_0/\sqrt{N}$, the height of the potential barrier and the initial energy of the heat bath. Each of these conditions will affect the number of jumps from one well to the other that the particle makes. We will therefore evaluate the results of changing these parameters for different number of oscillators for $100$ test cases where the positions, frequencies and energies are randomized every time and the numbers of jumps will be averaged. The way of sampling the energies and initial conditions are described in the method of drawing energies from a gaussian distribution in order to have more control on the energies of the harmonic oscillators. For most of the cases we will use fixed values for each parameter unless explicitly stated otherwise, these values are $s=0.5$, $g_0=0.1$, the initial energy of the heat bath $E_{bath}=0.1$ and the height of the potential barrier $PB=1$
 
 \subsubsection{Changing the exponent $s$}
-According to the microscopic theory of dissipation (CITAR CITE EL ARTICULO DE LEGGET), the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the \say{ohmic} case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called \say{super-ohmic} and the case of $0<s<1$ is called \say{sub-ohmic}. Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
+According to the microscopic theory of dissipation \cite{leggett1987dynamics}, the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the \say{ohmic} case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called \say{super-ohmic} and the case of $0<s<1$ is called \say{sub-ohmic}. Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
 
 FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE S\par 
 
