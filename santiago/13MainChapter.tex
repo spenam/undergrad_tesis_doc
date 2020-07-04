@@ -55,7 +55,7 @@ NO\\
 HE\\
 HECHO\\
 
-Fig (NUMERO DE LA FIGURA) shows a Poincaré section on a two dimensional plane $S$ where the fixed condition will be $x^{3}=constant$. The points labeled as A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always considered to be on the same direction, a crossing of the plane through the opposite direction will result into another section. Given the point A, by using Equation (\ref{eq_:vect_diff_eqs}), we can certainly determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition, this is done just by changing the sign of time on the same equation. Thus, the Poincar\'e map in this illustration represents an invertible two dimensional map that transforms the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertible map.
+Fig (NUMERO DE LA FIGURA) shows a Poincaré section on a two dimensional plane $S$ where the fixed condition will be $x^{3}=constant$. The points labeled as A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always considered to be on the same direction, a crossing of the plane through the opposite direction will result into another section. Given the point A, by using Equation (\ref{eq_:vect_diff_eqs}), we can certainly determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition, this is done just by changing the sign of time on the same equation. Thus, the Poincaré map in this illustration represents an invertible two dimensional map that transforms the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertible map.
 
 \section{Hamilton equations and Symplectic Structure}
 
@@ -225,57 +225,12 @@ When an $N$-dimensional Hamiltonian system is integrable possesing $N$ independe
 \label{fig:trajectory_torus}
 \end{figure}
 
-We can state a simpler description of the movement of integrable Hamiltonian systems over the $N$ dimensional torus by using the description in terms of the action-angle variables and the Hamilton-Jacobi equations, this formalism is explained in detail in Ref. \cite{goldstein2002classical}. In this framework a canonical change of variables $(\bm{p},\bm{q})\rightarrow (\tilde{\bm{p}},\tilde{\bm{q}})$ is introduced such that the Hamiltonian $\tilde{H}$ depends only on $\tilde{\bm{p}}$ and not on $\tilde{\bm{q}}$. This way, the Hamilton's equations with the new Hamiltonian become
-\begin{equation}
-\frac{d\tilde{\bm{p}}}{dt}= -\frac{\partial \tilde{H}}{\partial \tilde{\bm{q}}}=0  \qquad and \qquad  
-\frac{d\tilde{\bm{q}}}{dt}= \frac{\partial \tilde{H}}{\partial \tilde{\bm{p}}}
-\label{eq:action_angle_variables1}
-\end{equation}
-and $H(\bm{p},\bm{q})$ becomes a much simpler Hamiltonian depending only on the canonical momentum, $\tilde{H}(\tilde{\bm{p}})$.\par
+We can state a simpler description of the movement of integrable Hamiltonian systems over the $N$ dimensional torus by using the description in terms of the action-angle variables and the Hamilton-Jacobi equations, this formalism is explained in detail in Ref. \cite{goldstein2002classical}. 
+
+When an integrable system begins to suffer the action of a disturbance of its trajectory, the tori whose ratio between frequencies is a rational or irrational number, behave in dfferent ways. The consequences of this disturbance on such tori are explained in detail by the KAM theorem
 
 
-Using the action-angle variable formalism, we will write the components of the moment $\tilde{\bm{p}}$ and of the generalized coordinates $\tilde{\bm{q}}$ as
-\begin{equation}
-(\tilde{\bm{p}},\tilde{\bm{q}})=(\bm{I},\bm{\theta}),
-\end{equation}
-we will call $\bm{I}$ the action variable and $ \bm{\theta}$ the angle variable, where the components of the action $\bm{I}_i$ are defined by \cite{goldstein2002classical}
-\begin{equation}
-\bm{I}_i=\frac{1}{2\pi}\oint p_idq_i \qquad where \qquad i=1,2,...,N.
-\end{equation}
-This way, we are writing the components of the momentum $\tilde{\bm{p}}$ as being $N$ constants of motion  symplifying the Hamiltonian and at the same time satisfying Equation (\ref{eq:action_angle_variables1}), since the time variation of a motion constant is zero.\par
-
-In order to achieve the change of variables $(\bm{p},\bm{q})\rightarrow (\bm{I},\bm{\theta})$, we use the generating function $S(\bm{I},\bm{q})$ and the relations \cite{goldstein2002classical}
-\begin{equation}
-\bm{\theta}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{I}} \qquad ,\qquad \bm{p}=\frac{\partial S(\bm{I},\bm{q})}{\partial \bm{q}}
-\end{equation}
-as these functions relate the \say{old} coordinates of the position $\bm{q}$ and the \say{new} momentum $\bm{I}$ \cite{goldstein2002classical}. With this relations, we will be able to construct the Hamiltonian function in terms of the action-angle variables, $\tilde{H}(I)$ which is independent of $\theta$.\par
-
-As said in the last paragraph, the new Hamiltonian is independent of $\bm{\theta}$ and the Hamilton equations (\ref{eq:action_angle_variables1}), may be written as 
-\begin{equation}
-\frac{d\bm{I}}{dt}=0 \qquad and \qquad \frac{d\bm{\theta}}{dt}=\frac{\partial \tilde{H}(\bm{I})}{\partal \bm{I}}\equiv \bm{\omega}(\bm{I}),
-\label{eq:action_angle_variables2}
-\end{equation}
-their solutions are easily calculated as
-\begin{equation}
-\bm{I}(t)=\bm{I}(0)
-\end{equation}
-and
-\begin{equation}
-\bm{\theta}(t)=\bm{\theta}(0)+\bm{\omega}(\bm{I})t
-\end{equation}
-where each angle variable is periodic with a period of $2\pi$.\par
-
-The second equation in  (\ref{eq:action_angle_variables2}) can be interpreted as an angular velocity vector specifying trajectories over the $N$ dimensional torus \cite{goldstein2002classical}, where $\bm{I}$ represents the radius of the trajectory and $\bm{\theta}$ the angle of rotation. this fact is illustrated in Figure FIGURA QUE NO HE HECHO DE LA SECCION TRANSVERSAL DEL TORO for the case where $N=2$. When we interpret $\bm{\omega}(\bm{I})$ as an angular velocity vector that specifies different paths over an $N$ dimensional torus, we can interpret different types of motion along the torus' degrees of freedom, which may be periodic or quasi-periodic, depending on the ratio between these frequencies. If there is an $N$ dimensional vector of integers $\bm{m}=(m_1,m_2,...,m_n)$, such that
-\begin{equation}
-\bm{m}\cdot \bm{\omega}=0,
-\label{eq:rational_condition}
-\end{equation}
-except when $\bm{m}$ is a vector with all null components, the movement over the torus is a periodic movement and the ratio $\omega_1/\omega_i$ is a rational number. In these cases, the orbits followed by the system close on themselves after $m_1$ cycles in $\theta_1$, $m_2$ cycles in $\theta_2$ and so on \cite{ott_chaos_2002}. If by any chance the condition (\ref{eq:rational_condition}) is not satisfied and $\omega_1/\omega_i$ is an irrational number, the motion of the system is called quasi-periodic and that orbit never returns to its starting point, this will result in the trajectory completely filling the surface of the torus \cite{ott_chaos_2002}.\par
-
-When an integrable system begins to suffer the action of a disturbance of its trajectory, the tori whose ratio between frequencies is a rational or irrational number, behave in dfferent ways. The consequences of this disturbance on such tori are explained in detail by the KAM theorem, which we will describe next.
-
-
-\subsection{KAM Theorem}
+\subsubsection{KAM Theorem}
 In the last subsections we introduced the necessary conditions for a system to be integrable. We also found that when we rewrite the Hamiltonian in terms of the constants of motion, especially in relation to the formalism of the angle-action variables, the system's movement can be described as to be limited to a rational or irrational $N$ dimensional torus, depending on the frequencies of the motion. But where does the integrability of a Hamiltonian system go? Or yet, what happens to rational and irrational tori when an integrable Hamiltonian system is subject to a disturbance? The answers to these questions came with the rigorous mathematical work of Kolmogorov, Arnold and Moser (KAM) and with the numerical studies developed on chaos and integrability after the advent of computer. The results obtained by Kolmogorov, Arnold and Moser became known as the KAM Theorem. The deduction of the theorem will not be detailed here, as it is ourside the scope of this work, only its results will be presented.\par
 
 To describe the KAM theorem, we consider a disturbed Hamiltonian system, written in terms of the action-angle variables as
@@ -288,54 +243,9 @@ The main idea of the KAM Theorem is to consider the effect of the disturbance on
 
 
 
-\subsection{Rational Tori}
-We call Rational Tori those whose ratio between the frequencies given by Equation (\ref{eq:action_angle_variables2}) is a rational number. As a result of the action of the disturbance, these Tori are destroyed and it does not matter how small the values of $\epsilon$ are \cite{ott_chaos_2002}. Due to the destruction of the Rational Torus, there is the appearance of an equal number of fixed elliptic and hyperbolic points. This result is known as the Poincaré Birkhoff theorem \cite{lichtenberg2013regular} . The number of fixed points that appear depends on the ratio between the frequencies of the rational torus. If we call $R=\tilde{p}/\tilde{q}$ the torus rotation number, where $\tilde{q}$ represents the largest number of cycles performed on the torus before the path returns over itself, then, due to the disturbance, there will appear an equal or multiple number of $\tilde{q}$ of elliptical points and hyperbolic points \cite{ott_chaos_2002}. Figure (FIGURA QUE NO HE HECHO DEL TORO RACIONAL PERTURBADO POCAMENTE) illustrates a case where $\tilde{q}=3$ and $\tilde{q}=4$ in a Poincaré section for a system with $N=2$.\par
+\subsubsection{Need of numerical algorithms}
 
-These elliptical and hyperbolic points that result from the breakdown of the rational torus due to the perturbation, they remain fixed points of the disturbed system and with the same period $\tilde{q}$ of the rational torus \cite{lichtenberg2013regular}. The difference between the two points is in the way initial conditions close to them behave. Next to fixed elliptical points, new curves appear similar to those that existed before the perturbation, which we call KAM curves, some of which are rational and others irrational. Such fact is presented inside the box on Figure (FIGURA ANTERIOR LA PARTE B TIENE UNA CAJA CERRADA DE UN PUNTO ELIPTICO). When these rational KAM curves that appeared due to the action of the disturbance are destroyed, other elliptical and hyperbolic points will appear, surrounded again by rational and irrational KAM curves and so on \cite{ott_chaos_2002}.\par
-
-Orbits enerated near hyperbolic points, can have different behaviors, because hyperbolic points, also known as saddle points, have stable directions or varieties, those that move to the fixed point, or unstable, those who move away from it \cite{ott_chaos_2002}. If we follow the varieties, moving away from a fixed point, they will usually present homoclonic or heteroclonic intersections, which occur when unstable varieties from the same point cross over themselves or from two different points intersect at different points, respectively \cite{ott_chaos_2002}. Figure (REF FIGURA QUE NO HE HECHO DE LOS ENREDAMIENTOS HOMOCLINICOS) represents these crossings for a single point and for two distinct hyperbolic points.\par 
-
-Thus, the destruction of the rational torus not only generates stable elliptical points, but also generates hyperbolic points, which are responsible for the chaotic movement, which is always trapped by the KAM curves that haven't been \say{broken} \cite{ott_chaos_2002}, at least for an $N=2$ case. As these curves begin to \say{break}, more and more chaotic regions are appearing, completely filling with points the allowed region of the Poincaré section. We will now see what is the sequence in which the irrational torus gives rise to the elliptical and hyperbolic points.
-FIGURA\par
-QUE\par
-NO\par
-HE\par
-HECHO\par
-DE\par
-LOS\par
-PUNTOS\par
-Y\par
-CRUZAMIENTO\par
-HOMOCLINICO\par
-
-
-
-
-
-\subsection{Irrational Tori}
-When an integrable system is disturbed, the KAM Theorem guarantess the existence of a torus in the phase space, if te conditions below are met:
-\begin{enumerate}
-\item The torus' linear frequencies of the integrable system are independent	 \cite{lichtenberg2013regular}, that is, we hae a torus whose ratio between the frequencies is an irrational number.
-\item The perturbation is a smooth function \cite{lichtenberg2013regular} (a sufficient number of derivaties of $H_1$).
-\item Initial conditions are sufficiently far from the rational tori \cite{lichtenberg2013regular}.
-\end{enumerate}
-With the above conditions satisfied, the KAM Theorem guarantess the existence of deformed torus, with the same topology as the unperturbed torus, in the vicinity of te irrational torus of the system in the non-perturbed. These tori that appear deformed after the perturbation are called the KAM Tori.\par
-
-The that the irrational torus must be sufficiently far from the rational torus, for the existence of the KAM Tori, implies that the more irrational the ratio between the frequencies of the non-perturbed tori, the easier it is for the KAM Tori to appear \cite{lichtenberg2013regular}.\par
-
-The idea of more irrational numbers can come with the help of number theory. An irrational number $R$ can  be represented as an infinite continuous function \cite{ott_chaos_2002}:
-\begin{equation}
-R=a_1+\frac{1}{a_2+\frac{1}{a_3+\frac{1}{a_3+ \cdots}}}
-\end{equation}
-where the $a_i$'s are integer numbers. However, if the integers $a_i$'s for $i\geq k$ are equal to one, this irrational number is called \say{noble} \cite{contopoulos2004order}. The \say{most irrational} numer that exists is consequently the most \say{noble} of them all \cite{contopoulos2004order}, and it is the golden ratio
-\begin{equation}
-R=\frac{(\sqrt{5}-1)}{2}
-\end{equation}
-When the most \say{noble} number of all is related to the irrationality of a KAM Tori, it will be the last one to be destroyed as the intensity of the perturbation is increased. However, if it is not present, the last KAM Tori to be destroyed will be the one with the most \say{noble} number \cite{contopoulos2004order}.\par
-
-In general, the effect of the perturbation on an integrable system can be summarized as follows: When the disturbance begins to act on the integrable system, many tori of the integrable system are slightly deformed and survive (Irrational Tori), while others are destroyed (Rational Tori). Regions close to the tori that were not destroyed by the perturbation are occupied by new irrational orbits, elliptical points, hyperbolic orbits and chaotic orbits. As the disturbance increases, the irrational tori destroy themselves, the last one to be \say{destroyed}, is the one that has the value of the ratio between the frequencies as a \say{more noble} number.\par
-
-When the perturbation on the integrable system breaks all tori, including the \say{noblest}, the system starts to present characteristics such as ergodicity, drops of correlations, etc...
+The perturbation of the hamiltonian leads to the system being difficult to integrate (even impossible in some cases) in terms of analytical solutions of the hamilton equations of motion sometimes. For this reason numerical algorithms are very helpful in the way that they can describe the dynamics of the system step by step in an approximate way without the need of the analytical solutions, this will be our approach in this work. Choosing the correct numerical algorithm and its parameters so that it integrates a system of differential equations correctly is truly a task that might not be easy at first and is a very interactive research topic in applied mathematics. For hamiltonian systems the numerical algorithms that must be used to solve hamilton equations of motion need to conserve the properties and structure of this family of differential equations, for this topic we dedicated the next section of this work.
 
 
 
@@ -346,10 +256,10 @@ As we said previously, symplecticness is a very important property of the Hamilt
 
 \begin{figure}[H]%
     \centering
-    \subfloat[Position dynamics]{{\includegraphics[width=10cm]{Figures/harmonic_oscillator.png} }}%
+    \subfloat[Position dynamics]{\includegraphics[width=10cm]{Figures/harmonic_oscillator.png} }%
     \qquad
-    \subfloat[Phase space dynamics]{{\includegraphics[width=10cm]{Figures/harmonic_oscillator_PS.png} }}%
-    \caption{Euler non symplectic integrator compared to symplectic Verlet Leapfrog method}}%
+    \subfloat[Phase space dynamics]{\includegraphics[width=10cm]{Figures/harmonic_oscillator_PS.png} }%
+    \caption{Euler non symplectic integrator compared to symplectic Verlet Leapfrog method}%
     \label{fig:euler}%
 \end{figure}
 

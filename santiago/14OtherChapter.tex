@@ -16,46 +16,71 @@ The main results of this chapter are related to the theory of  dissipative dynam
 \section{Double well potential as a two level system}
 Two state systems are a way to represent in the most simple way many of the most studied quantum systems such as photons and spins, the nature of two level systems is naturally described by discrete values variables, in 1987 Legget et al. \cite{leggett1987dynamics} published a review article on how two level quantum systems can also be described using continuous variables as a double well potential and also showed how this representation of two state systems helps to describe how dissipative dynamics can be modeled in these systems. First of all the variable of interest is represented as a continuous degree of freedom $q$ and a potential function $V(q)$ that posses two separate minima can be associated to this variable. In the same review, the authors describe the different properties that this potential function can have that may have significance related to quantum quantities such as separations between energy states and also how to size of the barrier in teh double well potential affects the dynamics of tunneling of quantum particles between the wells. The conclusion of the review article is that two state systems can certainly be modeled as a continuous degree of freedom subject to a potential double well function and how this continuous double well function can be coupled in different ways to a bigger system that can be considered as an environment leading to other types of dynamics. When the bigger system is considered as a set of bosonic systems then this initially simple model leads naturally to the spin-boson hamiltonian and eventually used to describe dissipative dynamics in quantum systems, in this model the environment can be used as a help in a certain way to get more information about the two level system. This is our starting point of the argument we will follow in our work.\par 
 
-Two state quantum systems can be described as a continuous variable subject to a double well potential, we will use this information to describe a classical system in a double well potential and make it interact with a heat \say{bosonic} heat bath in order to get some information about how the quantum version of this might behave. It is necessary to state that the classical consideration is not directly the classicalization of a two level quantum state but more like the closest analogue that may be found. We may take the double well potential and calculate its first eigenfunctions as shown in Figure \ref{fig:double_well_eigen}.
+\subsection{Quantum modeling for continuous variables}
+Two state quantum systems can be described as a continuous variable subject to a double well potential, we will use this information to describe a classical system in a double well potential and make it interact with a heat \say{bosonic} heat bath in order to get some information about how the quantum version of this might behave. It is necessary to state that the classical consideration is not directly the classicalization of a two level quantum state but more like the closest analogue that may be found. We may take the double well potential and calculate its first eigenfunctions as shown in Figure \ref{fig:double_well_eigen}. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/eigen_functions.png}
-\label{fig:double_well_eigen}
+
 \caption{First eigenfunctions of a double well potential}
+\label{fig:double_well_eigen}
+\end{figure}
+
+These two eigen-functions can be combined by addition and subtraction to create combinations of even and odd parity as 
+\begin{equation}
+\ket{L}=\frac{1}{\sqrt{2}}(\ket{0}-\ket{1})\qquad,\qquad \ket{R}=\frac{1}{\sqrt{2}}(\ket{0}+\ket{1}).
+\end{equation}
+The resulting wave functions of these operations are shown in Figure \ref{fig:double_well_eigen_sum}. These eigenfunctions then represent in the language of wave functions a particle located on the left or the right side of the double well potential as a discrete two level system, this reinforces the idea of using the continuous variable subject to the double well potential to validate the model we will be using.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/eigen_functions_sum.png}
+
+\caption{Sum of the eigen-functions of a double well potential}
+\label{fig:double_well_eigen_sum}
+
 
 \end{figure}
 
 
 
-
-
-\subsection{Quantum modeling for continuous variables}
-
 \subsection{Heat bath proper modeling}
 
+The system described in the last subsection can be described by the hamiltonian given by
+
+\begin{equation}
+H=-\frac{1}{2}\hbar\Delta_0\sigma_x	+\frac{1}{2}\epsilon\sigma_z,
+\end{equation}
+where $\hbar\Delta_0$ is the tunneling matrix between the two wells, $\epsilon$ is a detuning parameter between the ground states of the two wells and $\sigma_i(i=x,y,z)$ are the Pauli matrices. When this hamiltonian is completely isolated then the problem can be solved exactly, different happens when it is not isolated. In real life, any two level system is continuously interacting with an environment so it becomes a necessity to model an environment properly in order to understand in a more detailed degree the dynamics the two level system may have. Generally in open quantum systems literature \cite{leggett1987dynamics} the way the interaction of an environment with the central system is modeled is by coupling the system with an environment  of the form $\sigma_z\hat{\Omega}$ where $\hat{\Omega}$ is an operator of the environment. When the coupling is considered in this way will let the environment to be sensitive to the state $\sigma_z$ of the system, this way we can say that the environment can help as an observer of the central system by interacting with the state $\sigma_z$. If the environment is taken as a bosonic heat bath then this approach leads to the commonly known \say{spin-boson} hamiltonian with a given spectral function $J(\omega)$.
+
+
 \section{Dynamics of the system}
-In this section we will describe the mathematical properties of the system as a hamiltonian problem. We will study the different dynamics the system will have as afunction of its parameters, we will treat the heat bath as a finite heat bath instead of the common infinite heatbath in the microscopic theory of dissipation in Langevin dynamics. We will evidence here that even if the heat bath is not infinite, it will mimic the dissipation of an infinite heat bath.
+In this section we will describe the mathematical properties of the system as a classical hamiltonian problem. We will study the different dynamics the system will have as afunction of its parameters, we will treat the heat bath as a finite heat bath instead of the common infinite heatbath in the microscopic theory of dissipation in Langevin dynamics. We will evidence here that even if the heat bath is not infinite, it will mimic the dissipation of an infinite heat bath.
 
 \subsection{Hamilton equations of motion}
 The model of a particle coupled to a heat bath that we will study here is described by the following hamiltonian:
 \begin{equation}
 H(p,x;\textbf{P,X})=H_{S}+H_B+H_{SB}
+\label{eq:total_hamiltonian}
 \end{equation}
 
 Where the hamiltonian for the central system $(S)$ can be viewed as a particle of mass $m$ moving in a double well potential of quartic nature. The corresponding hamiltonian reads as
 \begin{equation}
 H_{S}=\frac{p^2}{2m}-a\frac{x^2}{2}+b\frac{x^4}{4},
+\label{eq:particle_hamiltonian}
 \end{equation}
 
 where $p$ is the momentum of the particle, $q$ is te position of the particle, and $a,b$ are parameters that change the shape of the potential.The hamiltonian for the bath $(B)$ is described as a set of harmonic oscillators
 \begin{equation}
 H_B(\textbf{P,X})= \sum_{n=1}^N \Big(\frac{P_n^2}{2M_n}+M_n \omega_n^2\frac{X_n^2}{2} \Big),
+\label{eq:bath_hamiltonian}
 \end{equation}
 
 each oscillator $n$ posses position $X_n$, momentum $P_N$, frequency $\omega_n$ and mass $M_n$. The last term of the hamiltonian consists on the interaction term where the system and bath positions are coupled bilinearly according to
 \begin{equation}
 H_{SB}(p,x;\textbf{P,X})=-x\sum_{n=1}^N g_n X_n+x^2 \sum_{n=1}^N\frac{g_n^2}{2M_n \omega_n}
+\label{eq:interaction_hamiltonian}
 \end{equation}
 The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This hamiltonian is often called the Caldeira-Leggett hamiltonian \cite{caldeira1981influence}.\par 
 
@@ -129,6 +154,22 @@ PB(a,b)=\frac{a^2}{4b}
 
 
 
+\subsection{Infinite heat bath and dissipation}
+In the limit of infinite oscillators, the system approaches to irreversible dynamics such as in the case of a system with dissipation. In the case of our hamiltonian (\ref{eq:total_hamiltonian}) where we are interested in a linear coupling of the oscillator with the central system (\ref{eq:interaction_hamiltonian}) the dissipation takes the form of a damping term proportional to the velocity of the central system such as in the case of a harmonic oscillator in a viscous fluid. This damped dynamics will then have the Newton equation of motion given as:
+\begin{equation}
+m\ddot{x}+\lambda x\dot{x}-ax+bx^3=0,
+\label{eq:newton_damped}
+\end{equation}
+this equation is identical to the unforced version of the Duffing oscillator \cite{guckenheimer2013nonlinear}, where $\lambda$  is the damping coefficient that will be defined by the nature of the coupling coefficient $g_0$ of the heat bath.
+
+\begin{figure}[H]%
+    \centering
+    \subfloat[Changing only $b$]{\includegraphics[width=7cm]{Figures/doublewella.png} }%
+    \qquad
+    \subfloat[Changing $a$ and $b$ but keeping the ratio $a/b=2$]{\includegraphics[width=7cm]{Figures/doublewell-1.png} }%
+    \caption{Number of jumps between the wells as a function of the number of oscillators in the heat bath for different values for the height of the potential barrier $PB$}%
+    \label{fig:changing_PB}%
+\end{figure}
 
 
 \subsection{Poincaré surface plots for finite heat bath}
@@ -137,8 +178,8 @@ We start the numerical experiments of this model with only one oscillator couple
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/energy_contour.png}
-\caption{Energy contour of the double well potential on the $x$ axis and the harmonic oscillator potential on the $y$ axis for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$\label{fig:contour_g0}}
-
+\caption{Energy contour of the double well potential on the $x$ axis and the harmonic oscillator potential on the $y$ axis for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$}
+\label{fig:contour_g0}
 \end{figure}
 
 In Figure (\ref{fig:contour_g0}) we see that as the dynamics is uncoupled, the particle moves freely on the double well potential and the harmonic oscillator doesn't really changes its motion. \par 
@@ -158,8 +199,9 @@ Now that we have seen a visual representation of the system without solving the 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g0.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$\label{fig:poinc_g0}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0$
 }
+\label{fig:poinc_g0}
 \end{figure}
 
 In Figure (\ref{fig:poinc_g0}) we start with $g_1=0$ and see that the orbits on the phase space of the particle are closed, the particle is totally unaware of the harmonic oscillator's potential. Now we will slowly start to \say{turn on} the coupling between the systems.\par 
@@ -168,8 +210,9 @@ In Figure (\ref{fig:poinc_g0}) we start with $g_1=0$ and see that the orbits on 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g0001.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.001$\label{fig:poinc_g0001}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.001$
 }
+\label{fig:poinc_g0001}
 \end{figure}
 
 As soon as there is coupling present in the dynamics of the system the orbits start to destroy progresively as we can see in this Figure (\ref{fig:poinc_g0001}). 
@@ -177,8 +220,9 @@ As soon as there is coupling present in the dynamics of the system the orbits st
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g0005.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.005$\label{fig:poinc_g0005}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.005$
 }
+\label{fig:poinc_g0005}
 \end{figure}
 
 The section of phase space where we start to see pure chaos at first is when the energy of the particle is very close to the energy of the barrier between the two wells as we can see in Figure (\ref{fig:poinc_g0005}), this particular behavior around this points is of particular interest for our case as we will later use the unstable equilibrium position as the initial condition for the particle.
@@ -186,23 +230,26 @@ The section of phase space where we start to see pure chaos at first is when the
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g001.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.01$\label{fig:poinc_g001}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.01$
 }
+\label{fig:poinc_g001}
 \end{figure}
 As we continue to increase the coupling strength we progress on the destruction of the orbits and approach to a more chaotic behavior.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g005.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.05$\label{fig:poinc_g005}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.05$
 }
+\label{fig:poinc_g005}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g01.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.1$\label{fig:poinc_g01}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.1$
 }
+\label{fig:poinc_g01}
 \end{figure}
 Finally in Figure (\ref{fig:poinc_g01}) we arrive to the coupling we used for Figure (\ref{fig:contour_g01}) $g=0.1$. As we can see from the poincaré section, the overall behavior of the system is very chaotic except for the stable islands very near to the condition of the particle to have small energy located near to the stable equilibrium points  with a small momentum. Comparing these two pictures we can see that even if the shearing behavior observed in the contour plots can barely be noticed, the dynamics of the system is almost completely chaotic.\par 
 
@@ -211,37 +258,46 @@ Just for illustration we calculated the poincare section for $g=0.2$ to show tha
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/poincare_g02.png}
-\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.2$\label{fig:poinc_g02}
+\caption{Poincaré surface plot for the particle phase space for $m=1$, $a=2$, $b=1$, $\omega_1=1.5$, $M_1=0.1$ and $g_1=0.2$
 }
+\label{fig:poinc_g02}
 \end{figure} 
 
 
 \subsection{Dynamics for 1 oscillator}
-We have seen in the precious subsection that with only one oscillator, the system is immediately chaotic. We will now study the usual trajectories that the central system will follow for only one oscillator. The conditions for the general parameters of these cases will be similar to the ones of the previous section. 
+We have seen in the previous subsection that with only one oscillator, the system is immediately chaotic. We will now study the usual trajectories that the central system will follow for only one oscillator. The conditions for the general parameters of these cases will be similar to the ones of the previous section. 
 
-FIGURA DE \par 
-TRAYECTORIA \par 
-TIPICA \par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/one_osci_tray.png}
+\caption{Typical trajectory in phase space of the particle in the double well potential coupled to one oscillator
+}
+\label{fig:one_osci_tray}
+\end{figure} 
 
- In Figura (REFERENCIAR FIGURA ANTERIOR) we see a typical trajectory of the particle interacting with a harmonic oscillator, we see that the particle falls to one well and the other in an erratically way. The chaotic dynamics makes it difficult to predict to which side the particle will fall when the dynamics begins. The phase space trajectory permits the
+ In Figura (\ref{fig:one_osci_tray}) we see a typical trajectory of the particle interacting with a harmonic oscillator, we see that the particle falls to one well and the other in an erratically way. The chaotic dynamics makes it difficult to predict to which side the particle will fall when the dynamics begins. The phase space trajectory permits the
  
- FIGURA DE \par 
-TRAYECTORIA \par 
-OSCILADOR ARMONICO \par 
-ESPACIO DE FASE \par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/one_osci_tray_osci.png}
+\caption{Typical trajectory in phase space of the oscillator coupled to the particle in the double well potential 
+}
+\label{fig:one_osci_tray_osci}
+\end{figure} 
 
-In Figure (REFERENCIAR FIGURA ANTERIOR) we can see the phase space trajectory of the harmonic oscillator and how it is perturbed compared with a typical trajectory of  a harmonic oscillator without a coupling whose orbits in phase space are perfect ellipses.\par 
-
-We can also see in Figure (REFERENCIAR FIGURA ANTERIOR) that the dynamics is antisymmetric with the inversion of the initial conditions of the harmonic oscillator $X_1\rightarrow -X_1$ and $P_1 \rightarrow -P_1$.
+In Figure (\ref{fig:one_osci_tray_osci}) we can see the phase space trajectory of the harmonic oscillator and how it is perturbed compared with a typical trajectory of  a harmonic oscillator without a coupling whose orbits in phase space are perfect ellipses. it is to note that the dynamics is antisymmetric with the inversion of the initial conditions of the harmonic oscillator $X_1\rightarrow -X_1$ and $P_1 \rightarrow -P_1$ will lead to the particle falling into the opposite well.
 
 
 \subsection{Dynamics for 2 oscillators}
-When we start to increase the number of harmonic oscillators that compose the heat bath we start to evidence the tendency to stay on one well for a longer period of time as it is shown in Figure (REFERENCIAR FIGURA SIGUIENTE) .
+When we start to increase the number of harmonic oscillators that compose the heat bath we start to evidence the tendency to stay on one well for a longer period of time as it is shown in Figure (\ref{fig:two_osci_tray}) .
 
-FIGURA DE \par 
-TRAYECTORIA \par 
-TIPICA \par 
-DOS OSCI \par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/two_osci_tray.png}
+\caption{Typical trajectory in phase space of the particle in the double well potential coupled to two oscillator 
+}
+\label{fig:two_osci_tray}
+\end{figure} 
 
 The harmonic oscillators will share some of the initial energy of the particle for a longer time and  this means that the particle will take longer to have again enough energy to jump from one well to the other. 
 
@@ -251,9 +307,13 @@ The harmonic oscillators will share some of the initial energy of the particle f
 It is natural to consider the possibilities in this particular problem were we can vary a big amount of parameters to search for different dynamics and properties that exhibit the system, the model is rich in quantities that can be calculated and extracted from it. This idea also plays against our odds because as there are many parameters to play with it is difficult to control the whole system in an optimal and hierarchical way. There are two types of parameters that we will monitor very closely: the frequency spectra and the energy spectra for the heat bath; these two parameters contain the information regarding the nature of the heat bath, meaning we can model different behaviors of the heat bath interacting with the particle. In this section we will give a little insight on the importance of correctly modeling the nature of the heat bath.
 
 
-FIGURA\par
-LAPIZ\par 
-BAÑO\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{Figures/pencilonend-1.png}
+\caption{Pencil immersed in an environment that we can consider as a heat bath.
+}
+\label{fig:pencil}
+\end{figure}
 
 The importance to model correctly the heat bath is related to the idea of this numerical experiment. We shall imagine this problem as a pencil perfectly balanced on its tip, it is of course an unstable equilibrium point, therefore the slightest perturbation of this pencil will cause the pencil to fall somewhere, if we imagine this on a two dimensional plane, the pencil will either fall left or right. Then modeling the bath in a correct numerical way will give us the way these perturbations considered as an environment will affect the state of the initially balanced pencil. This environment may have different parameters to vary in order to have different dynamics for the pencil.\par 
 
@@ -277,8 +337,9 @@ Where $\omega_c$ is the characteristic frequency of the bath, and $f(\omega,\ome
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/frequency_spectra.png}
-\caption{Frequency spectrum distribution without normalization for the case of $s=0.6$.\label{fig:frequency_spectra}
+\caption{Frequency spectrum distribution without normalization for the case of $s=0.5$.
 }
+\label{fig:frequency_spectra}
 \end{figure} 
 
 
@@ -308,7 +369,13 @@ There are four types of parameters that are interesting for us to look at the va
 \subsubsection{Changing the exponent $s$}
 According to the microscopic theory of dissipation \cite{leggett1987dynamics}, the exponent $s$ in equation (\ref{eq:spectral_density}) controls the nature of the bath where $s=1$ is the \say{ohmic} case where it can be compared to a dissipative term proportional to velocity in the classical equation. The case of $s>1$ is called \say{super-ohmic} and the case of $0<s<1$ is called \say{sub-ohmic}. Here we observe the behavior of the system in terms of the jumps between the wells seen for different numbers of harmonic oscillators and different values of the parameter $s$. \par
 
-FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE S\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/change_s_number.png}
+\caption{Number of jumps between the wells as a function of the number of oscillators in the heat bath for different values of the parameter $s$ of the spectral function.
+}
+\label{fig:changing_s}
+\end{figure} 
 
 We conclude that for the classical case, the parameter $s$ in the spectral density does not really affect the dynamics of the system in a particular way as we don't see a real difference between having a bath with sub-ohmic, ohmic or super-ohmic nature. We see the general behavior of dissipation where the jumps between the wells decrease with the increase in the in the number of oscillators in the heat bath and it is independent of the parameter $s$.
 
@@ -317,39 +384,66 @@ We have seen the effect of the coupling involving chaos with only one oscillator
 
 We simulated the dynamics of the $100$ test cases for different values of $g_0$ and different number of harmonic oscillators. We know from previous the experience of only one oscillator that if the coupling is strong the overall behavior will tend to be more chaotic, but now that we have more harmonic oscillators we start to see the effects of dissipation over chaos. A big coupling constant will continue to result in strong interactions between the oscillators and the particles, but the tendency of the particle to stay on one side will prevail.
 
-FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE G\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/change_g_number.png}
+\caption{Number of jumps between the wells as a function of the number of oscillators in the heat bath for different values of the coupling constant  $g_0$ of each oscillator.
+}
+\label{fig:changing_g}
+\end{figure} 
 
-In Figure (REFERENCIAR LA FIGURA ANTERIOR) we evidence that the overall tendency of dissipation is observed when the number of harmonic oscillators increases regardless the coupling constant $g_0$ (for $g=0.001$ in the figure we believe for a bigger number of harmonic oscillators this behavior will be seen). It is also interesting to see that for coupling $g_0=0.3$ the curve descends really fast but seems to start to grow again, this can be attributed to the fact that this value for the coupling constant starts to be a very strong interaction of the bath with the system making it not very suitable for a dissipation model in long term. 
+In Figure (\ref{fig:changing_g}) we evidence that the overall tendency of dissipation is observed when the number of harmonic oscillators increases regardless the coupling constant $g_0$ (for $g=0.001$ in the figure we believe for a bigger number of harmonic oscillators this behavior will be seen). It is also interesting to see that for coupling $g_0=0.3$ the curve descends really fast but seems to start to grow again, this can be attributed to the fact that this value for the coupling constant starts to be a very strong interaction of the bath with the system making it not very suitable for a dissipation model in long term. 
 
 
 \subsubsection{Changing the initial energy of the heat bath}
 The initial energy of the heat bath is an important parameter statistically speaking, this is because it represents the \say{temperature} of the environment our central system is located in. If the whole system has initially a very high temperature then the dynamics will become very difficult to predict in long term as it will take longer time to reach a thermal equilibrium, if we take the temperature of the system to be relatively low compared to the height of the unstable equilibirum point where the particle is always located then we can see how energy from the particle is transfered to the heat bath in a somewhat irreversible manner. This analysis involved then different initial energies for the heat bath and how it affects the number of jumps between the wells of the particle.\par 
 
-FIGURA FIGURE DE LOS SALTOS CAMBIANDO EL VALOR DE E_bath\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/change_E_number.png}
+\caption{Number of jumps between the wells as a function of the number of oscillators in the heat bath for different values for the initial energy of the heat bath $E_{bath}$.
+}
+\label{fig:changing_E}
+\end{figure} 
 
-In Figure (REFERENCIAR LA FIGURA QUE ACABO DE HACER) we can evidence that the different initial energies of the heat bath will result in a change of scale of the number of jumps that the particle suffers. The overall behavior of dissipation is continued to be present. For a heat bath with a high initial energy or \say{temperature} we see that the particle jumps between the wells more times than for a small energy but when the number of oscillators increases then the jumps decrease. When we \say{freeze} the heat bath by giving it a low initial energy we experience less jumps between the wells and a faster decay of it when the number of oscillators increase. Then we can conclude that the overall consequence of changing the initial energy of the heat bath will be a scaling factor in the exponential decay of the jumps.
+In Figure (\ref{fig:changing_E}) we can evidence that the different initial energies of the heat bath will result in a change of scale of the number of jumps that the particle suffers. The overall behavior of dissipation is continued to be present. For a heat bath with a high initial energy or \say{temperature} we see that the particle jumps between the wells more times than for a small energy but when the number of oscillators increases then the jumps decrease. When we \say{freeze} the heat bath by giving it a low initial energy we experience less jumps between the wells and a faster decay of it when the number of oscillators increase. Then we can conclude that the overall consequence of changing the initial energy of the heat bath will be a scaling factor in the exponential decay of the jumps.
 
 
 
 \subsubsection{Changing the height of the potential barrier}
-The particle of the central system is located on the unstable equilibrium unless otherwise stated for the simulations done in this work, then a very interesting parameter to study is the difference in the dynamics when the height of the potential barrier where the unstable equilibrium point is changed. We recall that the shape of the quartic potential for the particle is given by equation (\ref{eq:potential}) where the parameters $a$ and $b$ are in charge of the shape of the double well potential. We have shown previously in equation (\ref{eq:PB_eq}) that the height of the potential barrier is completely determined by the parameters $a$ and $b$ and that the resonance frequency of small oscillations for the two minima is given by equation (\ref{eq:freq_small_oscillations}) which only depends on parameter $a$. This ideas are relevant to determine how to change the potential barrier height, in general there will be two ways in which we can change this height. If we change only $b$ we will rescale the whole potential, this means that the resonance frequency will change and the particle will have to travel more distance in general to go from one well to the other. The difference between changing the height this way is shown in Figure (REF FIGURA VARIANDO SOLAMENTE B) where the shape of the potential is completely scaled.\par 
-PONER\par 
-FIGURA\par 
-FIGURE\par 
-VARIANDO\par 
-SOLO\par 
-B\par 
+The particle of the central system is located on the unstable equilibrium unless otherwise stated for the simulations done in this work, then a very interesting parameter to study is the difference in the dynamics when the height of the potential barrier where the unstable equilibrium point is changed. We recall that the shape of the quartic potential for the particle is given by equation (\ref{eq:potential}) where the parameters $a$ and $b$ are in charge of the shape of the double well potential.\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/double_well_PB_scale.png}
+\caption{Shape of the double well potential keeping the same value of $a$ but changing the value of $b$.
+}
+\label{fig:PB_scale}
+\end{figure} 
 
-The other way to change the height of the potential barrier is by changing both $a$ and $b$ but mantaining the ratio $a/b$, this ensures the roots of $V(x)$ to remain unchanged but makes the minimums of the potential deeper and as a consequence changing the height of the potential barrier as it is shown on Figure (REF FIGURA VARIANDO A Y B). It is to be noted that this change of the wells' dept will in fact change the frequency of small oscillations  around the potential minima.
+We have shown previously in equation (\ref{eq:PB_eq}) that the height of the potential barrier is completely determined by the parameters $a$ and $b$ and that the resonance frequency of small oscillations for the two minima is given by equation (\ref{eq:freq_small_oscillations}) which only depends on parameter $a$. This ideas are relevant to determine how to change the potential barrier height, in general there will be two ways in which we can change this height. If we change only $b$ we will rescale the whole potential, this means that the resonance frequency will change and the particle will have to travel more distance in general to go from one well to the other. The difference between changing the height this way is shown in Figure (\ref{fig:PB_scale}) where the shape of the potential is completely scaled.\par 
 
-PONER\par 
-FIGURA\par 
-FIGURE\par 
-VARIANDO\par 
-A Y\par 
-B\par 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/double_well_PB.png}
+\caption{Shape of the double well potential changing the values of $a$ and $b$ but keeping the ratio $a/b=2$.
+}
+\label{fig:PB_ratio}
+\end{figure} 
 
-The height of the potential barrier is an important parameter for the reason that whenever the particle is inside one of the wells it will need an energy near to the height of the potential barrier in order to be able to jump to the other side. If the potential barrier is small then the particle does not need a lot of energy to be given from the oscillators in order to be able to surpass it, while if the potential barrier is big then it will need the oscillators to synchronize in a way to be able to give the particle enough energy to jump to the other well. In Figure (REF FIGURA JUMPS VARIANDO LA PROFUNDIDAD) we test both cases of changing the height of the potential barrier. The results coincide with the intuition in the sense of more height means less jumps and less height means more jumps, also when the bath is composed of more harmonic oscillators then the number of jumps reduce significantly. In Figure (REF FIGURA JUMPS VARIANDO LA PROFUNDIDAD) we also evidence that there is not a significant difference on how we decide to change the height of the potential barrier as both cases have similar results on the counts of jumps.
+The other way to change the height of the potential barrier is by changing both $a$ and $b$ but mantaining the ratio $a/b$, this ensures the roots of $V(x)$ to remain unchanged but makes the minimums of the potential deeper and as a consequence changing the height of the potential barrier as it is shown on Figure (\ref{fig:PB_ratio}). It is to be noted that this change of the wells' depth will in fact change the frequency of small oscillations  around the potential minima.
+
+\begin{figure}[H]%
+    \centering
+    \subfloat[Changing only $b$]{\includegraphics[width=10cm]{Figures/change_PB_a_quieto_number.png} }%
+    \qquad
+    \subfloat[Changing $a$ and $b$ but keeping the ratio $a/b=2$]{\includegraphics[width=10cm]{Figures/change_PB_a_b_number.png} }%
+    \caption{Number of jumps between the wells as a function of the number of oscillators in the heat bath for different values for the height of the potential barrier $PB$}%
+    \label{fig:changing_PB}%
+\end{figure}
+
+The height of the potential barrier is an important parameter for the reason that whenever the particle is inside one of the wells it will need an energy near to the height of the potential barrier in order to be able to jump to the other side. If the potential barrier is small then the particle does not need a lot of energy to be given from the oscillators in order to be able to surpass it, while if the potential barrier is big then it will need the oscillators to synchronize in a way to be able to give the particle enough energy to jump to the other well. In Figure (\ref{fig:changing_PB}) we test both cases of changing the height of the potential barrier. The results coincide with the intuition in the sense of more height means less jumps and less height means more jumps, also when the bath is composed of more harmonic oscillators then the number of jumps reduce significantly. In Figure (\ref{fig:changing_PB}) we also evidence that there is not a significant difference on how we decide to change the height of the potential barrier as both cases have similar results on the counts of jumps.
+
+
 
 
 
