@@ -4,7 +4,7 @@
 \lhead{\thepage}
 
 \chapter{Hamiltonian systems and Symplectic structure}
-In this chapter we are going to introduce some important concepts regarding dynamical systems and how they relate to hamiltonian systems and its geometric structure. Also we describe the theory involving the numerical integration of differential equations conserving the symplectic structure. These descriptions are made mostly following Ref. \cite{ott_chaos_2002} and Ref. \cite{sanz2018numerical}.
+In this chapter we are going to introduce some important concepts regarding dynamical systems and how they relate to Hamiltonian systems and its geometric structure. Also we describe the theory involving the numerical integration of differential equations conserving the symplectic structure. These descriptions are made mostly following Ref. \cite{ott_chaos_2002} and Ref. \cite{sanz2018numerical}.
 
 
 
@@ -41,21 +41,22 @@ here we take $\vec{x}$ as an $n$ dimensional vector that represents the state of
 
 For the case of discrete systems, time is represented as integer values ($t=1,2,3,...$). The best example of a dynamical system with discrete time is a map, which can be written in vector notation as
 \begin{equation}
-
-\vec{x}_{t+1}=\vec{M}(\vec{x}_t)
+\vec{x} _{t+1}=\vec{M}(\vec{x}_t),
 \label{eq:discrete_dyn_sys}
 \end{equation}
+
 where $\vec{x}_t$ is an n-dimensional vector $\vec{x}_t=(x^{1}_t,x^{2}_t,...,x^{n}_t)$ and $\vec{M}$ a function of $\vec{x}_t$. Given an initial state $\vec{x}_0$, it is possible to obtain the state at time $t=1$ by applying the map $\vec{x}_{1}=\vec{M}(\vec{x}_0)$. Having determined $\vec{x}_1$ it will be possible to determine the state at time $t=2$ by applying the map again but to the new state at $t=1$ as $\vec{x}_2=\vec{M}(\vec{x}_1)$ and so on. Thus, given an initial condition $\vec{x}_0$ we generate a trajectory of the discrete time system in time: $\vec{x}_0,\vec{x}_1,\vec{x}_2,...$. 
 
-A dynamical system that posses continuous time evolution may be reduced to a discrete time system to evaluate in more detail the dynamical properties of the system, this is done by using the technique called Poincaré Surface Section. To do so we consider a set of $n$ first order, autonomous, ordinary differential equations such as in  (\ref{eq:set_diff_eqs}), a Poincaré map represents a reduction of the flow in the n-dimensional space to a map of dimension $n-1$. To illustrate this, an example with $n=3$ is given:
+A dynamical system that posses continuous time evolution may be reduced to a discrete time system to evaluate in more detail the dynamical properties of the differential equaitions by using the technique called Poincaré Surface Section. To do so we consider a set of $n$ first order, autonomous, ordinary differential equations such as in  (\ref{eq:set_diff_eqs}), a Poincaré map represents a reduction of the flow in the n-dimensional space to a map of dimension $n-1$. To illustrate this, an example with $n=3$ is given:
 
-FIGURA\\
-QUE\\
-NO\\
-HE\\
-HECHO\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{Figures/poincare_scheme.png}
+\caption{Poincaré section on a two dimensional plane}
+\label{fig:poincare_scheme}
+\end{figure}
 
-Fig (NUMERO DE LA FIGURA) shows a Poincaré section on a two dimensional plane $S$ where the fixed condition will be $x^{3}=constant$. The points labeled as A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always considered to be on the same direction, a crossing of the plane through the opposite direction will result into another section. Given the point A, by using Equation (\ref{eq_:vect_diff_eqs}), we can certainly determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition, this is done just by changing the sign of time on the same equation. Thus, the Poincaré map in this illustration represents an invertible two dimensional map that transforms the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertible map.
+Fig (\ref{fig:poincare_scheme}) shows a Poincaré section on a two dimensional plane $S$ where the fixed condition will be $x^{3}=c$ where $c$ is a constant value. The points labeled as A and B represent the succesive intersections of the trajectory followed by the system with the plane $S$, this crossing is always considered to be on the same direction, a crossing of the plane through the opposite direction will result into another section. Given the point A, by using Equation (\ref{eq_:vect_diff_eqs}), we can certainly determine the position of point B, this is because A can be used as an initial condition to determine B. The same argument can be used to determine A given B as initial condition, this is done just by changing the sign of time on the same equation. Thus, the Poincaré map in this illustration represents an invertible two dimensional map that transforms the coordinates $(x_n^{(1)},x_n^{(2)})$ of the $n$th piercing of the surface section to the coordinates $(x_{n+1}^{(1)},x_{n+1}^{(2)})$ at piercing $n+1$. This map can be generalized to an $N$ dimensional flow with an $N-1$ dimensional invertible map.
 
 \section{Hamilton equations and Symplectic Structure}
 
@@ -166,7 +167,7 @@ where we have used the properties of the symplectic matrix $\bm{S}_N\cdot\bm{S}_
 \end{equation}
 and
 \begin{equation}
-det(\bm{S}_N)=1,
+\det(\bm{S}_N)=1,
 \end{equation}
 which can be obtained directly from Equation (\ref{eq:symplectic_matrix}).\par
 
@@ -182,14 +183,14 @@ are the Poincaré Cycles and $t_j$ the Poincaré Recurrence Times. \par
 
 FIGURA QUE NO HE HECHO DE LA REFERENCIA DE LOS CICLOS DE POINCARE\par
 
-Poincaré proved that for a movement in a finite region of space in which the volume is preserved, the entire path sould return to a previously determined region (for example $A$ in Figure FIGURA QUE NO HE HECHO) in a finite time and an infinite number of times. An exception occurs only if $A$ is a zero dimension set \cite{zaslavsky2005hamiltonian} \cite{zaslavsky2007physics} \cite{xavier2015banhos}.\par 
+Poincaré proved that for a movement in a finite region of space in which the volume is preserved, the entire path should return to a previously determined region (for example $A$ in Figure FIGURA QUE NO HE HECHO) in a finite time and an infinite number of times. An exception occurs only if $A$ is a zero dimension set \cite{zaslavsky2005hamiltonian} \cite{zaslavsky2007physics} \cite{xavier2015banhos}.\par 
 
 Thus, in this chapter, some general properties of Hamiltonian dynamical systems have been described. This was made possible even without taking into account time evolution analysis of the systems, that is, their dynamics. In the coming sections, this question starts to gain space, focusing attention on some characteristics of its dynamics, more specifically when there is the presence of regular movement, chaos or a mixture of both.
 
 
 
 \subsection{Integrability in Hamiltonian problems}
-Another important topic related to Hamiltonian systems involves integrability, we will see in this subsection that integrability will naturally lead to the concept of chaos. As we have previously stated, in the case where the Hamiltonian of the system has no explicit time dependence, $H=H(\bm{p},\bm{q})$, we have showed that Hamilton's equations imply that the Hamiltonian does not change in time $dH/dt=0$ and the energy identified as the Hamiltonian $E=H(\bm{p},\bm{q})$ is thus a conserved quantity. Therefore, orbits with a given energy $E$ are restricted to lie on the $(2N-1)$ dimensional surface $E=H(\bm{p},\bm{q})$ as a consequence of the dimensionality reduction due to the energy being a constant in time. A function $f(\bm{p},\bm{q})$ is said to be a constant of motion of a system with Hamiltonian $H$ if this quantity does not change in time even if $\bm{p}$ and $\bm{q}$ do. More generally, if we differentiate the function $f(\bm{p},\bm{q})$ with respect to time, and assuming that there is no explicit time dependence for the Hamiltonian, if we make use of the hamilton's equations we obtain that
+Another important topic related to Hamiltonian systems involves integrability, we will see in this subsection that integrability will naturally lead to the concept of chaos. As we have previously stated, in the case where the Hamiltonian of the system has no explicit time dependence, $H=H(\bm{p},\bm{q})$, we have showed that Hamilton's equations imply that the Hamiltonian does not change in time $dH/dt=0$ and the energy identified as the Hamiltonian $E=H(\bm{p},\bm{q})$ is thus a conserved quantity. Therefore, orbits with a given energy $E$ are restricted to lie on the $(2N-1)$ dimensional surface $E=H(\bm{p},\bm{q})$ as a consequence of the dimensionality reduction due to the energy being a constant in time. A function $f(\bm{p},\bm{q})$ is said to be a constant of motion of a system with Hamiltonian $H$ if this quantity does not change in time even if $\bm{p}$ and $\bm{q}$ do. More generally, if we differentiate the function $f(\bm{p},\bm{q})$ with respect to time, and assuming that there is no explicit time dependence for the Hamiltonian, if we make use of the Hamilton's equations we obtain that
 \begin{equation}
 \frac{df}{dt}=\frac{d\bm{p}}{dt}\cdot\frac{\partial f}{\partial \bm{p}}+\frac{d\bm{q}}{dt}\cdot\frac{\partial f}{\partial \bm{q}}= \frac{\partial H}{\partial \bm{p}}\cdot\frac{\partial f}{\partial \bm{q}}-\frac{\partial H}{\partial \bm{q}}\cdot\frac{\partial f}{\partial \bm{p}}=0
 \end{equation}
@@ -199,7 +200,7 @@ We call the expression appearing on the right hand side of the second equality t
 \end{equation}
 (We can show using this condition also that the Hamiltonian is correspondingly a constant of the motion since $\{H,H\}=0$.)\par
 
-For a system with $N$ degrees of freedom to be integrable, in the Liouville sense, it is necessary for the system to posses $N$ constants independent of motion $f_i(\bar{p},\bar{q})$\footnote{If a constant cannot be described as a function of others, then it is called \say{independent} \cite{ott_chaos_2002}}, with $i=1,2,...,N$ in such a way that
+Liouville and Arnold showed that motion subject for a big family of Hamiltonians can be reduced to a Hamiltonian system written in action-angle coordinates and related the constant of motion to a criteria of integrability \cite{arnol2013mathematical}. For a system with $N$ degrees of freedom to be integrable, in this theoretical framework, it is necessary for the system to posses $N$ constants independent of motion $f_i(\bar{p},\bar{q})$\footnote{If a constant cannot be described as a function of others, then it is called \say{independent} \cite{ott_chaos_2002}}, with $i=1,2,...,N$ in such a way that
 \begin{equation}
 \{f_i,H\}=0
 \label{eq:integrability_1}
@@ -239,18 +240,18 @@ H(\bm{I},\bm{\theta})=H_0(\bm{I})+\epsilon H_1(\bm{I},\bm{\theta}),
 \end{equation}
 where $H_0(\bm{I})$ is the integrable Hamiltonian, $H_1(\bm{I},\bm{\theta})$ the perturbation and $(\bm{I},\bm{\theta})$ the action-angle variables of perturbed system.\par
 
-The main idea of the KAM Theorem is to consider the effect of the disturbance on invariant Tori \footnote{A torus is called invariant if once the motion of the system starts on itm the motion will remain on it \cite{ott_chaos_2002}.} instead of the trajectories in the phase space \cite{zaslavsky2005hamiltonian}. In this way, we will divide the discussion into two cases, the Rational Torus and the Irrational Torus. We will se that many tori survive small disturbances, while others destroy themselves, giving rise to chaotic orbits, new tori and also elliptical and hyperbolic points.
+The main idea of the KAM Theorem is to consider the effect of the disturbance on invariant Tori \footnote{A torus is called invariant if once the motion of the system starts on its surface, the motion will remain on it \cite{ott_chaos_2002}.} instead of the trajectories in the phase space \cite{zaslavsky2005hamiltonian}.
 
 
 
 \subsubsection{Need of numerical algorithms}
 
-The perturbation of the hamiltonian leads to the system being difficult to integrate (even impossible in some cases) in terms of analytical solutions of the hamilton equations of motion sometimes. For this reason numerical algorithms are very helpful in the way that they can describe the dynamics of the system step by step in an approximate way without the need of the analytical solutions, this will be our approach in this work. Choosing the correct numerical algorithm and its parameters so that it integrates a system of differential equations correctly is truly a task that might not be easy at first and is a very interactive research topic in applied mathematics. For hamiltonian systems the numerical algorithms that must be used to solve hamilton equations of motion need to conserve the properties and structure of this family of differential equations, for this topic we dedicated the next section of this work.
+The perturbation of the Hamiltonian leads to the system being difficult to integrate (even impossible in some cases) in terms of analytical solutions of the Hamilton equations of motion sometimes. For this reason numerical algorithms are very helpful in the way that they can describe the dynamics of the system step by step in an approximate way without the need of the analytical solutions, this will be our approach in this work. Choosing the correct numerical algorithm and its parameters so that it integrates a system of differential equations correctly is not a trivial task and is a very active research topic in applied mathematics. For Hamiltonian systems the numerical algorithms that must be used to solve Hamilton equations of motion need to conserve the properties and structure of this family of differential equations, for this topic we dedicated the next section of this work.
 
 
 
 \section{Symplectic Integrator}
-As we said previously, symplecticness is a very important property of the Hamiltonian systems, this feature is also present on numerical integration and the need of symplectic integrators algorithms arise. Numerical integrators, generally speaking, are  numerical mappings of the differential equations, most of the times these mappings are nonsymplectic. Applying nonsymplectic algorithms to hamiltonian problems tend to show solutions where the area in phase space is not conserved. We show this problem in Figure (\ref{fig:euler}) which illustrates this issue by taking the fundamental problem of the harmonic oscillator and integrating its equations of motion using the standard first order differential equation solver known as the Euler method (which is a nonsymplectic integrator) and also a first order symplectic algorithm known as the Verlet Leapfrog method\cite{verlet1967computer}  \cite{forest1990fourth}. The general problem of nonsymplectic algorithms and hamiltonian problems is their tendency to not conserve the energy in time, we see this feature on Figure (\ref{fig:euler}) where the trajectory of the nonsymplectic algorithm drifts in time as a consequence of energy being transferred to the system due to numerical error.
+As we said previously, symplecticness is a very important property of the Hamiltonian systems, this feature is also present on numerical integration meaning that the need of symplectic integrators algorithms arises when trying to solve these type of problems with a good precision. Numerical integrators, generally speaking, are  numerical mappings of the differential equations, most of the times these mappings are nonsymplectic. Applying nonsymplectic algorithms to Hamiltonian problems tend to show solutions where the area in phase space is not conserved. We show this problem in Figure (\ref{fig:euler}) which illustrates this issue by taking the fundamental problem of the harmonic oscillator and integrating its equations of motion using the standard first order differential equation solver known as the Euler method (which is a nonsymplectic integrator) and also a first order symplectic algorithm known as the Verlet Leapfrog method\cite{verlet1967computer}  \cite{forest1990fourth}. The general problem of nonsymplectic algorithms and Hamiltonian problems is their tendency to not conserve the energy in time, we see this feature on Figure (\ref{fig:euler}) where the trajectory of the nonsymplectic algorithm drifts in time as a consequence of energy being transferred to the system due to numerical error.
 
 
 
@@ -268,7 +269,7 @@ This failure of mimicking well known Hamiltonian dynamics suggested the consider
 
 
 \subsection{Importance of symplecticness in an integrator}
-When talking about a domain $\Omega$ possesing a symplectic structure $\Lambda$, taking a smooth hamiltonian function gives rise to a hamiltonian system of differential equations known as the Hamilton equations. This domain we are talking about reffers to the phase space of the hamiltonian system. If we consider a time step $h>0$, we can build a numerical scheme to solve these differential equations by using the function $\Psi :\Omega \rightarrow \Omega$ that depends on the step size $h$ and the hamiltonian function of the system $H$. Then given an initial condition on the phase space $(p_0,q_o)$ we can estimate an aproximation to the solution at time $nh$ by iteratively applying the function $\Psi$
+When talking about a domain $\Omega$ possesing a symplectic structure $\Lambda$, taking a smooth Hamiltonian function gives rise to a Hamiltonian system of differential equations known as the Hamilton equations. This domain we are talking about reffers to the phase space of the Hamiltonian system. If we consider a time step $h>0$, we can build a numerical scheme to solve these differential equations by using the function $\Psi :\Omega \rightarrow \Omega$ that depends on the step size $h$ and the Hamiltonian function of the system $H$. Then given an initial condition on the phase space $(p_0,q_o)$ we can estimate an aproximation to the solution at time $nh$ by iteratively applying the function $\Psi$
 \begin{equation}
 (p_{n+1},q_{n+1})=\Psi(p_{n},q_{n}).
 \end{equation}
@@ -281,9 +282,9 @@ A symplectic integrator is then an integrator whose solution resides on a symple
 Therefore symplectic integrators tend to capture the long-time patterns better than normal integrators because of this lack of drift in the trajectory and this almost guarantee the periodicity of certain problems at least for the desired time span. 
 
 \subsection{Conservation of constants of motion}
-As we have seen previously, when one uses a symplectic integrator of order $n$ what you do is to solve in an exact way the evolution of the system, but not using the hamiltonian $H$ but one softly perturbated as $\tilde{H}=H+\epsilon H_1$, where $\epsilon=t^n$ and $H_1=H_1^0+hH_1^1+h^2H_1^2+...$ If what we really want to obtain is a qualitative information of the behavior of the system, we can expect that if $\epsilon H_1$ is sufficiently small, the system will evolve in a very similar way for $\tilde{H}$ as for $H$.\par
+As we have seen previously, when one uses a symplectic integrator of order $n$ what you do is to solve in an exact way the evolution of the system, but not using the Hamiltonian $H$ but one softly perturbated as $\tilde{H}=H+\epsilon H_1$, where $\epsilon=t^n$ and $H_1=H_1^0+hH_1^1+h^2H_1^2+...$ If what we really want to obtain is a qualitative information of the behavior of the system, we can expect that if $\epsilon H_1$ is sufficiently small, the system will evolve in a very similar way for $\tilde{H}$ as for $H$.\par
 
-Consider now a system that has $m$ independent constants of motion $J_i$ where $i=1,...,m$, this means that for every $J_i$ it satisfies the condition of a null poisson bracket with the hamiltonian as $\{H,J_i\}=0$. As the integrator is solving in an exact way the evolution due to the hamiltonian $\tilde{H}$, it will follow that the constants of motion, in general, will not be constant as they will not have a null poisson bracket, in principle, with this new hamiltonian. Nonetheless, the following is obtained
+Consider now a system that has $m$ independent constants of motion $J_i$ where $i=1,...,m$, this means that for every $J_i$ it satisfies the condition of a null Poisson bracket with the Hamiltonian as $\{H,J_i\}=0$. As the integrator is solving in an exact way the evolution due to the Hamiltonian $\tilde{H}$, it will follow that the constants of motion, in general, will not be constant as they will not have a null Poisson bracket, in principle, with this new Hamiltonian. Nonetheless, the following is obtained
 \begin{equation}
 \{\tilde{H},J_i\}=\{H+\mathcal{O}(h^n),J_i\}=\mathcal{O}(h^n).
 \end{equation}
@@ -297,7 +298,7 @@ Numerical integrators and chaos consequently gather on an exotic dance of condit
 
 Some chaotic problems might require calculations with a precision not always performed by usual codes and computers and if this is achieved the computational resources needed to arrive to a fixed point solution might be way to big to calculate \cite{galias2016numerical}.\par 
 
-For the case of Hamiltonian systems, if the system is perturbed by a certain degree, the KAM theorem gives us information about the quasiperiodic orbits that will arise in the dynamics of the system\cite{arnold2009proof}\cite{kolmogorov1954conservation}\cite{tabor1989chaos}. If a normal hamiltonian system is perturbed to a certain degree the problem may become non integrable in the sense of its orbits not easily represented by analytical functions, this is where numerical integrators play a huge role on determining the dynamics of these systems. Therefore correct numerical algorithms that map the hamiltonian dynamics in a correct way in systems including chaos plays a very important role in the area of numerical differential equations problems. This means that symplectic algorithms to solve the differential equations for Hamiltonian systems with these properties arise as a very useful tool due to the conservation of the important quantities of the overall system.
+For the case of Hamiltonian systems, if the system is perturbed by a certain degree, the KAM theorem gives us information about the quasiperiodic orbits that will arise in the dynamics of the system\cite{arnold2009proof}\cite{kolmogorov1954conservation}\cite{tabor1989chaos}. If a normal Hamiltonian system is perturbed to a certain degree the problem may become non integrable in the sense of its orbits not easily represented by analytical functions, this is where numerical integrators play a huge role on determining the dynamics of these systems. Therefore correct numerical algorithms that map the Hamiltonian dynamics in a correct way in systems including chaos plays a very important role in the area of numerical differential equations problems. This means that symplectic algorithms to solve the differential equations for Hamiltonian systems with these properties arise as a very useful tool due to the conservation of the important quantities of the overall system.
 
 
 

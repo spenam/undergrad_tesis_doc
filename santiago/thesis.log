@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  3 JUL 2020 20:36
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  9 JUL 2020 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2439,67 +2439,8 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.44 
-     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! Package amsmath Error: \vec allowed only in math mode.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \vec{x}
-            _{t+1}=\vec{M}(\vec{x}_t)
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.45 \vec{x}_
-             {t+1}=\vec{M}(\vec{x}_t)
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.47 \end{equation}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.47 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
-
- []
+File: Figures/poincare_scheme.png Graphic file (type bmp)
+<Figures/poincare_scheme.png>
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2529,7 +2470,14 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Overfull \hbox (6.26125pt too wide) in paragraph at lines 183--183
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+Overfull \hbox (6.26125pt too wide) in paragraph at lines 184--184
 []\TU/lmr/m/n/12 FIGURA QUE NO HE HECHO DE LA REFERENCIA DE LOS CICLOS DE POINC
 ARE 
  []
@@ -2540,17 +2488,13 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [22]
+
+Package natbib Warning: Citation `arnol2013mathematical' on page 23 undefined o
+n input line 203.
+
 File: Figures/trajectory_torus.png Graphic file (type bmp)
 <Figures/trajectory_torus.png>
-
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -2566,13 +2510,20 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [24]
 
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
 ! LaTeX Error: No counter 'subfigure@save' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.259     \subfloat
+l.260     \subfloat
                    [Position dynamics]{\includegraphics[width=10cm]{Figures/...
 
 Your command was ignored.
@@ -2588,7 +2539,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261     \subfloat
+l.262     \subfloat
                    [Phase space dynamics]{\includegraphics[width=10cm]{Figur...
 
 Your command was ignored.
@@ -2597,13 +2548,6 @@ or  <return>  to continue without it.
 
 File: Figures/harmonic_oscillator_PS.png Graphic file (type bmp)
 <Figures/harmonic_oscillator_PS.png>
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -2631,18 +2575,32 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]) (./14OtherChapter.tex
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
-Chapter 3.
-[31
+[30]) (./14OtherChapter.tex
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
 
 ]
+Chapter 3.
+[33]
 File: Figures/eigen_functions.png Graphic file (type bmp)
 <Figures/eigen_functions.png>
 
@@ -2652,24 +2610,10 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
+[34]
 File: Figures/eigen_functions_sum.png Graphic file (type bmp)
 <Figures/eigen_functions_sum.png>
 
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -2684,6 +2628,20 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [36]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
 
 ! LaTeX Error: No counter 'subfigure@save' defined.
 
@@ -2724,7 +2682,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[39]
 File: Figures/energy_contour_coupled01.png Graphic file (type bmp)
 <Figures/energy_contour_coupled01.png>
 
@@ -2734,7 +2692,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[40]
 File: Figures/poincare_g0.png Graphic file (type bmp)
 <Figures/poincare_g0.png>
 File: Figures/poincare_g0001.png Graphic file (type bmp)
@@ -2746,7 +2704,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[41]
 File: Figures/poincare_g0005.png Graphic file (type bmp)
 <Figures/poincare_g0005.png>
 
@@ -2756,7 +2714,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[42]
 File: Figures/poincare_g001.png Graphic file (type bmp)
 <Figures/poincare_g001.png>
 File: Figures/poincare_g005.png Graphic file (type bmp)
@@ -2770,7 +2728,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[43]
 File: Figures/poincare_g02.png Graphic file (type bmp)
 <Figures/poincare_g02.png>
 
@@ -2780,7 +2738,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[44]
 File: Figures/one_osci_tray.png Graphic file (type bmp)
 <Figures/one_osci_tray.png>
 
@@ -2790,7 +2748,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[45]
 File: Figures/one_osci_tray_osci.png Graphic file (type bmp)
 <Figures/one_osci_tray_osci.png>
 
@@ -2800,7 +2758,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[46]
 File: Figures/two_osci_tray.png Graphic file (type bmp)
 <Figures/two_osci_tray.png>
 
@@ -2810,26 +2768,9 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[47]
 File: Figures/pencilonend-1.png Graphic file (type bmp)
 <Figures/pencilonend-1.png>
-
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[46]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
-File: Figures/frequency_spectra.png Graphic file (type bmp)
-<Figures/frequency_spectra.png>
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2845,6 +2786,23 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  This may cause the page layout to be inconsistent, however.
 
 [49]
+File: Figures/frequency_spectra.png Graphic file (type bmp)
+<Figures/frequency_spectra.png>
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 369.
@@ -2859,7 +2817,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]
+[52]
 File: Figures/change_s_number.png Graphic file (type bmp)
 <Figures/change_s_number.png>
 
@@ -2881,7 +2839,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
+[53]
 File: Figures/change_g_number.png Graphic file (type bmp)
 <Figures/change_g_number.png>
 
@@ -2891,7 +2849,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[54]
 File: Figures/change_E_number.png Graphic file (type bmp)
 <Figures/change_E_number.png>
 
@@ -2901,7 +2859,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
+[55]
 File: Figures/double_well_PB_scale.png Graphic file (type bmp)
 <Figures/double_well_PB_scale.png>
 
@@ -2911,7 +2869,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54]
+[56]
 File: Figures/double_well_PB.png Graphic file (type bmp)
 <Figures/double_well_PB.png>
 
@@ -2953,20 +2911,6 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[56]) (./15ResultsEvaluation.tex
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [57]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2974,10 +2918,13 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58
+[58]) (./15ResultsEvaluation.tex
 
-]
-Chapter 4.
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [59]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2985,23 +2932,34 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60])
+[60
+
+]
+Chapter 4.
+[61]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61] (./16RelatedWork.tex
+[62])
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62]
+[63] (./16RelatedWork.tex
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
 Chapter 5.
-) (./18Conclusion.tex [63
+) (./18Conclusion.tex [65
 
 ]
 
@@ -3010,18 +2968,18 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64
+[66
 
 ]
 Chapter 6.
-) [65]
+) [67]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66] (./thesis.bbl [67
+[68] (./thesis.bbl [69
 
 
 ]
@@ -3031,21 +2989,7 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[69]
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[70]) (./21Appendix.tex
+[70]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -3059,11 +3003,14 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72
+[72]) (./21Appendix.tex
 
-]
-Appendix A.
-) (./22Index.tex [73]
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
  Make it at least 14.49998pt.
@@ -3073,15 +3020,29 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 [74
 
 ]
+Appendix A.
+) (./22Index.tex [75]
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76
+
+]
 No file thesis.ind.
 )
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
- (./thesis.aux)
+(./thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C9AB6363EE3F3E699FE96553024FEDE8.
+(rerunfilecheck)             Checksum: 3ADE0347AEF0F54930E512411E373C9E.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3089,12 +3050,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 45051 strings out of 492970
- 803474 string characters out of 6133938
- 853400 words of memory out of 5000000
- 48305 multiletter control sequences out of 15000+600000
+ 45056 strings out of 492970
+ 803608 string characters out of 6133938
+ 853478 words of memory out of 5000000
+ 48309 multiletter control sequences out of 15000+600000
  542646 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,96p,10425b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (74 pages).
+Output written on thesis.pdf (76 pages).

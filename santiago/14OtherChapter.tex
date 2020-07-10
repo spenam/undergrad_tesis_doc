@@ -14,7 +14,7 @@ The main results of this chapter are related to the theory of  dissipative dynam
 
 
 \section{Double well potential as a two level system}
-Two state systems are a way to represent in the most simple way many of the most studied quantum systems such as photons and spins, the nature of two level systems is naturally described by discrete values variables, in 1987 Legget et al. \cite{leggett1987dynamics} published a review article on how two level quantum systems can also be described using continuous variables as a double well potential and also showed how this representation of two state systems helps to describe how dissipative dynamics can be modeled in these systems. First of all the variable of interest is represented as a continuous degree of freedom $q$ and a potential function $V(q)$ that posses two separate minima can be associated to this variable. In the same review, the authors describe the different properties that this potential function can have that may have significance related to quantum quantities such as separations between energy states and also how to size of the barrier in teh double well potential affects the dynamics of tunneling of quantum particles between the wells. The conclusion of the review article is that two state systems can certainly be modeled as a continuous degree of freedom subject to a potential double well function and how this continuous double well function can be coupled in different ways to a bigger system that can be considered as an environment leading to other types of dynamics. When the bigger system is considered as a set of bosonic systems then this initially simple model leads naturally to the spin-boson hamiltonian and eventually used to describe dissipative dynamics in quantum systems, in this model the environment can be used as a help in a certain way to get more information about the two level system. This is our starting point of the argument we will follow in our work.\par 
+Two state systems are a way to represent in the most simple way many of the most studied quantum systems such as photons and spins, the nature of two level systems is naturally described by discrete values variables, in 1987 Legget et al. \cite{leggett1987dynamics} published a review article on how two level quantum systems can also be described using continuous variables as a double well potential and also showed how this representation of two state systems helps to describe how dissipative dynamics can be modeled in these systems. First of all the variable of interest is represented as a continuous degree of freedom $q$ and a potential function $V(q)$ that posses two separate minima can be associated to this variable. In the same review, the authors describe the different properties that this potential function can have that may have significance related to quantum quantities such as separations between energy states and also how to size of the barrier in teh double well potential affects the dynamics of tunneling of quantum particles between the wells. The conclusion of the review article is that two state systems can certainly be modeled as a continuous degree of freedom subject to a potential double well function and how this continuous double well function can be coupled in different ways to a bigger system that can be considered as an environment leading to other types of dynamics. When the bigger system is considered as a set of bosonic systems then this initially simple model leads naturally to the spin-boson Hamiltonian and eventually used to describe dissipative dynamics in quantum systems, in this model the environment can be used as a help in a certain way to get more information about the two level system. This is our starting point of the argument we will follow in our work.\par 
 
 \subsection{Quantum modeling for continuous variables}
 Two state quantum systems can be described as a continuous variable subject to a double well potential, we will use this information to describe a classical system in a double well potential and make it interact with a heat \say{bosonic} heat bath in order to get some information about how the quantum version of this might behave. It is necessary to state that the classical consideration is not directly the classicalization of a two level quantum state but more like the closest analogue that may be found. We may take the double well potential and calculate its first eigenfunctions as shown in Figure \ref{fig:double_well_eigen}. 
@@ -47,44 +47,44 @@ The resulting wave functions of these operations are shown in Figure \ref{fig:do
 
 \subsection{Heat bath proper modeling}
 
-The system described in the last subsection can be described by the hamiltonian given by
+The system described in the last subsection can be described by the Hamiltonian given by
 
 \begin{equation}
 H=-\frac{1}{2}\hbar\Delta_0\sigma_x	+\frac{1}{2}\epsilon\sigma_z,
 \end{equation}
-where $\hbar\Delta_0$ is the tunneling matrix between the two wells, $\epsilon$ is a detuning parameter between the ground states of the two wells and $\sigma_i(i=x,y,z)$ are the Pauli matrices. When this hamiltonian is completely isolated then the problem can be solved exactly, different happens when it is not isolated. In real life, any two level system is continuously interacting with an environment so it becomes a necessity to model an environment properly in order to understand in a more detailed degree the dynamics the two level system may have. Generally in open quantum systems literature \cite{leggett1987dynamics} the way the interaction of an environment with the central system is modeled is by coupling the system with an environment  of the form $\sigma_z\hat{\Omega}$ where $\hat{\Omega}$ is an operator of the environment. When the coupling is considered in this way will let the environment to be sensitive to the state $\sigma_z$ of the system, this way we can say that the environment can help as an observer of the central system by interacting with the state $\sigma_z$. If the environment is taken as a bosonic heat bath then this approach leads to the commonly known \say{spin-boson} hamiltonian with a given spectral function $J(\omega)$.
+where $\hbar\Delta_0$ is the tunneling matrix between the two wells, $\epsilon$ is a detuning parameter between the ground states of the two wells and $\sigma_i(i=x,y,z)$ are the Pauli matrices. When this Hamiltonian is completely isolated then the problem can be solved exactly, different happens when it is not isolated. In real life, any two level system is continuously interacting with an environment so it becomes a necessity to model an environment properly in order to understand in a more detailed degree the dynamics the two level system may have. Generally in open quantum systems literature \cite{leggett1987dynamics} the way the interaction of an environment with the central system is modeled is by coupling the system with an environment  of the form $\sigma_z\hat{\Omega}$ where $\hat{\Omega}$ is an operator of the environment. When the coupling is considered in this way will let the environment to be sensitive to the state $\sigma_z$ of the system, this way we can say that the environment can help as an observer of the central system by interacting with the state $\sigma_z$. If the environment is taken as a bosonic heat bath then this approach leads to the commonly known \say{spin-boson} Hamiltonian with a given spectral function $J(\omega)$.
 
 
 \section{Dynamics of the system}
-In this section we will describe the mathematical properties of the system as a classical hamiltonian problem. We will study the different dynamics the system will have as afunction of its parameters, we will treat the heat bath as a finite heat bath instead of the common infinite heatbath in the microscopic theory of dissipation in Langevin dynamics. We will evidence here that even if the heat bath is not infinite, it will mimic the dissipation of an infinite heat bath.
+In this section we will describe the mathematical properties of the system as a classical Hamiltonian problem. We will study the different dynamics the system will have as afunction of its parameters, we will treat the heat bath as a finite heat bath instead of the common infinite heatbath in the microscopic theory of dissipation in Langevin dynamics. We will evidence here that even if the heat bath is not infinite, it will mimic the dissipation of an infinite heat bath.
 
 \subsection{Hamilton equations of motion}
-The model of a particle coupled to a heat bath that we will study here is described by the following hamiltonian:
+The model of a particle coupled to a heat bath that we will study here is described by the following Hamiltonian:
 \begin{equation}
 H(p,x;\textbf{P,X})=H_{S}+H_B+H_{SB}
 \label{eq:total_hamiltonian}
 \end{equation}
 
-Where the hamiltonian for the central system $(S)$ can be viewed as a particle of mass $m$ moving in a double well potential of quartic nature. The corresponding hamiltonian reads as
+Where the Hamiltonian for the central system $(S)$ can be viewed as a particle of mass $m$ moving in a double well potential of quartic nature. The corresponding Hamiltonian reads as
 \begin{equation}
 H_{S}=\frac{p^2}{2m}-a\frac{x^2}{2}+b\frac{x^4}{4},
 \label{eq:particle_hamiltonian}
 \end{equation}
 
-where $p$ is the momentum of the particle, $q$ is te position of the particle, and $a,b$ are parameters that change the shape of the potential.The hamiltonian for the bath $(B)$ is described as a set of harmonic oscillators
+where $p$ is the momentum of the particle, $q$ is te position of the particle, and $a,b$ are parameters that change the shape of the potential.The Hamiltonian for the bath $(B)$ is described as a set of harmonic oscillators
 \begin{equation}
 H_B(\textbf{P,X})= \sum_{n=1}^N \Big(\frac{P_n^2}{2M_n}+M_n \omega_n^2\frac{X_n^2}{2} \Big),
 \label{eq:bath_hamiltonian}
 \end{equation}
 
-each oscillator $n$ posses position $X_n$, momentum $P_N$, frequency $\omega_n$ and mass $M_n$. The last term of the hamiltonian consists on the interaction term where the system and bath positions are coupled bilinearly according to
+each oscillator $n$ posses position $X_n$, momentum $P_N$, frequency $\omega_n$ and mass $M_n$. The last term of the Hamiltonian consists on the interaction term where the system and bath positions are coupled bilinearly according to
 \begin{equation}
 H_{SB}(p,x;\textbf{P,X})=-x\sum_{n=1}^N g_n X_n+x^2 \sum_{n=1}^N\frac{g_n^2}{2M_n \omega_n}
 \label{eq:interaction_hamiltonian}
 \end{equation}
-The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This hamiltonian is often called the Caldeira-Leggett hamiltonian \cite{caldeira1981influence}.\par 
+The last term here acts as a counter term whose job is to renormalize the potential when the interaction between the oscillators is present. This Hamiltonian is often called the Caldeira-Leggett Hamiltonian \cite{caldeira1981influence}.\par 
 
-The hamilton equations for this hamiltonian can be separated in the two parts, the particle and the heat bath. The hamilton equations of the particle read as
+The Hamilton equations for this Hamiltonian can be separated in the two parts, the particle and the heat bath. The Hamilton equations of the particle read as
 
 \begin{equation}
 \dot{p}=\frac{-\partial H}{\partial x}=ax-bx^3+\sum_{n=1}^N g_n X_n-x\sum_{n=1}^N \frac{g_n^2}{M_n \omega_n^2},
@@ -129,7 +129,7 @@ This potential is the same expression of a harmonic oscillator potential with a 
 \label{eq:freq_small_oscillations}
 \end{equation}
 
-For the case of the particle coupled to the heat bath we can do the same analysis and see the role of the counter term in the hamiltonian resulting in the same results as above. The equilibrium points of the whole hamiltonian must satisfy the following condition
+For the case of the particle coupled to the heat bath we can do the same analysis and see the role of the counter term in the Hamiltonian resulting in the same results as above. The equilibrium points of the whole Hamiltonian must satisfy the following condition
 
 \begin{equation}
 \frac{d}{d\textbf{x}}H=0\rightarrow \frac{d}{dx}H =0 \quad , \quad \frac{d}{dX_n}H  = 0.
@@ -155,7 +155,7 @@ PB(a,b)=\frac{a^2}{4b}
 
 
 \subsection{Infinite heat bath and dissipation}
-In the limit of infinite oscillators, the system approaches to irreversible dynamics such as in the case of a system with dissipation. In the case of our hamiltonian (\ref{eq:total_hamiltonian}) where we are interested in a linear coupling of the oscillator with the central system (\ref{eq:interaction_hamiltonian}) the dissipation takes the form of a damping term proportional to the velocity of the central system such as in the case of a harmonic oscillator in a viscous fluid. This damped dynamics will then have the Newton equation of motion given as:
+In the limit of infinite oscillators, the system approaches to irreversible dynamics such as in the case of a system with dissipation. In the case of our Hamiltonian (\ref{eq:total_hamiltonian}) where we are interested in a linear coupling of the oscillator with the central system (\ref{eq:interaction_hamiltonian}) the dissipation takes the form of a damping term proportional to the velocity of the central system such as in the case of a harmonic oscillator in a viscous fluid. This damped dynamics will then have the Newton equation of motion given as:
 \begin{equation}
 m\ddot{x}+\lambda x\dot{x}-ax+bx^3=0,
 \label{eq:newton_damped}
@@ -173,7 +173,7 @@ this equation is identical to the unforced version of the Duffing oscillator \ci
 
 
 \subsection{Poincaré surface plots for finite heat bath}
-We start the numerical experiments of this model with only one oscillator coupled to the particle of the central system. This very simple model already exhibits the traits and characteristics of a chaotic system, this is due to the barrier of the unstable equilibrium position. We can illustrate this by picturing the particle moving on the double well potential without any coupling with the heat bath, if the particle has enough energy, it will move freely between the two wells, otherwise it will orbit around one well. This can be seen in two different ways, the first one is by looking at the potential part of the hamiltonian of each part of the whole system i.e. the quartic potential and the harmonic oscillator potential, plotting each potential along an axis we can see the contours of energy for the dynamics of the system.
+We start the numerical experiments of this model with only one oscillator coupled to the particle of the central system. This very simple model already exhibits the traits and characteristics of a chaotic system, this is due to the barrier of the unstable equilibrium position. We can illustrate this by picturing the particle moving on the double well potential without any coupling with the heat bath, if the particle has enough energy, it will move freely between the two wells, otherwise it will orbit around one well. This can be seen in two different ways, the first one is by looking at the potential part of the Hamiltonian of each part of the whole system i.e. the quartic potential and the harmonic oscillator potential, plotting each potential along an axis we can see the contours of energy for the dynamics of the system.
 
 \begin{figure}[H]
 \centering

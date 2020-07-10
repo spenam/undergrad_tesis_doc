@@ -5,41 +5,41 @@
 \contentsline {section}{\numberline {2.2}Hamilton equations and Symplectic Structure}{18}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Integrability in Hamiltonian problems}{22}{subsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.1.1}KAM Theorem}{24}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Need of numerical algorithms}{24}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Need of numerical algorithms}{25}{subsubsection.2.2.1.2}
 \contentsline {section}{\numberline {2.3}Symplectic Integrator}{25}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Importance of symplecticness in an integrator}{27}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Conservation of constants of motion}{27}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Chaos and integrators}{28}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Randomness in classical and quantum mechanics}{29}{section.2.4}
-\contentsline {chapter}{\numberline {3}Double well and finite heat bath}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}Double well potential as a two level system}{31}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Quantum modeling for continuous variables}{32}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Heat bath proper modeling}{33}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Dynamics of the system}{34}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Hamilton equations of motion}{34}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Infinite heat bath and dissipation}{36}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Poincaré surface plots for finite heat bath}{37}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Dynamics for 1 oscillator}{43}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Dynamics for 2 oscillators}{45}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Nature of the heat bath}{46}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Frequency spectra}{47}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Energy spectra}{48}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Drawing energy from a distribution}{49}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Quasi-gaussian distribution in phase space}{49}{subsubsection.3.3.2.2}
-\contentsline {section}{\numberline {3.4}Number of modes in the bath}{49}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Chaos to dissipative dynamics}{50}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Variation of the double well and heat bath parameters}{50}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Changing the exponent $s$}{50}{subsubsection.3.4.2.1}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Changing the individual coupling $g_0$}{51}{subsubsection.3.4.2.2}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Changing the initial energy of the heat bath}{53}{subsubsection.3.4.2.3}
-\contentsline {subsubsection}{\numberline {3.4.2.4}Changing the height of the potential barrier}{54}{subsubsection.3.4.2.4}
-\contentsline {chapter}{\numberline {4}Approach to the Measurement theory}{59}{chapter.4}
-\contentsline {section}{\numberline {4.1}Classical Measurement}{59}{section.4.1}
-\contentsline {section}{\numberline {4.2}Quantum Measurement}{60}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Postulates of Quantum Mechanics}{61}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Can our model be considered as a measurement?}{61}{section.4.3}
-\contentsline {chapter}{\numberline {5}Related work}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Quantum measurement in a unitary setting}{63}{section.5.1}
-\contentsline {chapter}{\numberline {6}Conclusion}{65}{chapter.6}
-\contentsline {chapter}{Bibliography}{67}{section*.31}
-\contentsline {chapter}{\numberline {A}Extra Information}{73}{appendix.A}
+\contentsline {chapter}{\numberline {3}Double well and finite heat bath}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Double well potential as a two level system}{33}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Quantum modeling for continuous variables}{34}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Heat bath proper modeling}{35}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Dynamics of the system}{36}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hamilton equations of motion}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Infinite heat bath and dissipation}{38}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Poincaré surface plots for finite heat bath}{39}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Dynamics for 1 oscillator}{45}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Dynamics for 2 oscillators}{47}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Nature of the heat bath}{48}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Frequency spectra}{49}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Energy spectra}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Drawing energy from a distribution}{51}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Quasi-gaussian distribution in phase space}{51}{subsubsection.3.3.2.2}
+\contentsline {section}{\numberline {3.4}Number of modes in the bath}{51}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Chaos to dissipative dynamics}{52}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Variation of the double well and heat bath parameters}{52}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Changing the exponent $s$}{52}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Changing the individual coupling $g_0$}{53}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Changing the initial energy of the heat bath}{55}{subsubsection.3.4.2.3}
+\contentsline {subsubsection}{\numberline {3.4.2.4}Changing the height of the potential barrier}{56}{subsubsection.3.4.2.4}
+\contentsline {chapter}{\numberline {4}Approach to the Measurement theory}{61}{chapter.4}
+\contentsline {section}{\numberline {4.1}Classical Measurement}{61}{section.4.1}
+\contentsline {section}{\numberline {4.2}Quantum Measurement}{62}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Postulates of Quantum Mechanics}{63}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Can our model be considered as a measurement?}{63}{section.4.3}
+\contentsline {chapter}{\numberline {5}Related work}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Quantum measurement in a unitary setting}{65}{section.5.1}
+\contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.6}
+\contentsline {chapter}{Bibliography}{69}{section*.32}
+\contentsline {chapter}{\numberline {A}Extra Information}{75}{appendix.A}
